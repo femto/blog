@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="FQ-201002081045" name="blog.models.PostTest" tests="1" time="0.813" timestamp="2010-06-29T07:39:41">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.name" value="Windows XP" />
+    <property name="jar.outdir" value="build/jar" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_18\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_18\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_18\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_18\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_18\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_18\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_18\jre\classes" />
+    <property name="TODAY" value="June 29 2010" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="E:\toolset\apache-ant-1.7.1\bin\.." />
+    <property name="java.runtime.version" value="1.6.0_18-b07" />
+    <property name="app.jar.name" value="${app_name}.jar" />
+    <property name="app.war.name" value="${app_name}.war" />
+    <property name="user.name" value="Administrator" />
+    <property name="testsrc.dir" value="test" />
+    <property name="user.language" value="zh" />
+    <property name="javadoc.outdir" value="docs/javadoc" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_18\jre\bin" />
+    <property name="compile.outdir" value="webapps/${app_name}/WEB-INF/classes" />
+    <property name="ant.project.name" value="scooter" />
+    <property name="DSTAMP" value="20100629" />
+    <property name="java.version" value="1.6.0_18" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_18\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="webapp.webinf.dir" value="webapps/${app_name}/WEB-INF" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_18\jre" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="E:\scooter-project\blog\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="webapp.dir" value="webapps/${app_name}" />
+    <property name="java.vm.version" value="16.0-b13" />
+    <property name="allconfig.dir" value="config" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="E:\toolset\apache-ant-1.7.1\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="ant.file.scooter" value="E:\scooter-project\blog\build.xml" />
+    <property name="user.home" value="C:\Documents and Settings\Administrator" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_18\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Yaws-1.88\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\TortoiseSVN\bin;D:\Ruby\bin;D:\mysql\bin;E:\toolset\play-1.0.2.1;C:\Program Files\IDM Computer Solutions\UltraEdit\;D:\php;E:\soft\tools\powertoys\Junction;E:\soft\develop\scala-2.7.7.final\bin;E:\toolset\apache-ant-1.7.1\bin;E:\toolset\springside-3.3.1-all-in-one\springside-3.3.1\tools\maven\apache-maven-2.2.1\bin;C:\Program Files\Java\jdk1.6.0_18\bin;C:\Program Files\erl5.7.5\bin;C:\Program Files\Google\google_appengine\" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\jdbc-clients\c3p0-0.9.1.2.jar;E:\scooter-project\blog\references\jdbc-clients\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\references\jdbc-clients\mysql.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;E:\scooter-project\blog\references\log4j\log4j-1.2.15.jar;E:\scooter-project\blog\references\markdown\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\references\scooter.jar;E:\scooter-project\blog\references\sitemesh\sitemesh-2.3.jar;E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes;E:\toolset\apache-ant-1.7.1\lib\ant-launcher.jar;E:\toolset\apache-ant-1.7.1\lib\ant.jar;E:\toolset\apache-ant-1.7.1\lib\ant-junit.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.1 compiled on June 27 2008" />
+    <property name="TSTAMP" value="1539" />
+    <property name="allreferences.dir" value="references" />
+    <property name="app.name" value="${app_name}" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="build.outdir" value="build" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="webapp.lib.dir" value="webapps/${app_name}/WEB-INF/lib" />
+    <property name="sun.os.patch.level" value="Service Pack 3" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="junitreport.outdir" value="docs/reports" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_18\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\scooter-project\blog" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="E:\scooter-project\blog" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="javac.source.version" value="1.5" />
+    <property name="ant.core.lib" value="E:\toolset\apache-ant-1.7.1\lib\ant.jar" />
+    <property name="file.encoding" value="GBK" />
+    <property name="war.outdir" value="build/war" />
+    <property name="javac.target.version" value="1.5" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="src.dir" value="src" />
+  </properties>
+  <testcase classname="blog.models.PostTest" name="testDummy" time="0.75" />
+  <system-out><![CDATA[Initializing SCOOTER APP application ... 
+           context name: blog
+              root path: E:\scooter-project\blog
+ property.file.location: E:\scooter-project\blog\config
+10/06/29 15:39:41,953  INFO AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/06/29 15:39:41,953  INFO AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/06/29 15:39:41,953  INFO AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\scooter.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/06/29 15:39:41,953  INFO AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/06/29 15:39:41,953  INFO AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.mchange.v2.log.MLog).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
+</testsuite>

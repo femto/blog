@@ -1,0 +1,65 @@
+=============================
+Assumptions and prerequisite: 
+=============================
+
+1. Files under conf directory are based on apache-tomcat-6.0.x release. 
+   See "How to configure scooter\tools\servers\tomcat directory" topic below 
+   if you prefer to use a different Tomcat release. 
+
+2. This note assumes that you've already installed Tomcat somewhere in your system. 
+   
+3. In order to run Tomcat properly, you must use conf files from the same Tomcat version. 
+
+
+======================================================
+How to run shared Tomcat inside scooter/tools/servers:
+======================================================
+
+1. Open myenv file under bin/ directory and manually change all {change_me} tokens.
+
+      > notepad myenv.bat    (Windows)
+
+      > vi myenv.sh          (Linux, Unix, MAC)
+
+2. Start Up Tomcat
+
+2.1 Tomcat can be started by executing the following commands:
+
+      > startup.bat          (Windows)
+
+      > sh ./startup.sh      (Linux, Unix, MAC)
+
+2.2 After startup, your web application will be available:
+
+      http://localhost:8080/
+
+2.3 Further information about configuring and running Tomcat can be found 
+    in the documentation titled "RUNNING.txt" in Tomcat release. 
+
+3. Shut Down Tomcat
+
+3.1 Tomcat can be shut down by executing the following command:
+
+      > shutdown.bat         (Windows)
+
+      > sh ./shutdown.sh     (Linux, Unix, MAC
+
+
+========================================================
+How to configure scooter/tools/servers/tomcat directory:
+========================================================
+
+1. Copy all conf files from apache-tomcat-x.x.x/conf directory to conf/ directory. 
+
+2. Open conf/server.xml file and locate the "appBase" field. 
+   The "appBase" field is inside the "Host" tag. 
+
+3. Change appBase="webapps"
+
+   to appBase="{root_path}/webapps"
+
+   {root_path} token will be replaced by the absolute path to your web 
+   application during initializtion process. You may manually replace
+   {root_path} with the absolute path to your web application too. 
+
+4. Follow instructions above on "How to run shared Tomcat inside scooter/tools/servers". 

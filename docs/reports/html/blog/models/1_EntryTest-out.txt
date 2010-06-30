@@ -1,0 +1,11 @@
+Initializing SCOOTER APP application ... 
+           context name: blog
+              root path: E:\scooter-project\blog
+ property.file.location: E:\scooter-project\blog\config
+10/06/29 15:39:40,843  INFO AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/06/29 15:39:40,843  INFO AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/06/29 15:39:40,843  INFO AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\scooter.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/06/29 15:39:40,843  INFO AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/06/29 15:39:40,843  INFO AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+10/06/29 15:39:41,468 ERROR SqlExpressUtil - Exception in lookupTableInfo: catalog=blog_development, schema=blog_development, table=ENTRIES, because com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'blog_development.entries' doesn't exist
+

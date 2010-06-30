@@ -1,0 +1,51 @@
+=============================
+Assumptions and prerequisite: 
+=============================
+
+1. Files under conf directory are based on jetty-6.1.21 release. 
+   See "How to configure scooter/tools/servers/jetty directory" topic below 
+   if you prefer to use a different Jetty release. 
+
+2. This note assumes that you've already installed Jetty somewhere in your system. 
+
+3. In order to run Jetty properly, you must use conf files from the same Jetty version. 
+
+
+=====================================================
+How to run shared Jetty inside scooter/tools/servers:
+=====================================================
+
+1. Open myenv file under bin/ directory and manually change all {change_me} tokens.
+
+      > notepad myenv.bat    (Windows)
+
+      > vi myenv.sh          (Linux, Unix, MAC)
+
+2. Start Up Jetty
+
+2.1 Jetty can be started by executing the following commands:
+
+      > startup.bat          (Windows)
+
+      > sh ./startup.sh      (Linux, Unix, MAC)
+
+2.2 After startup, your web application will be available:
+
+      http://localhost:8080/
+
+2.3 Further information about configuring and running Jetty can be found 
+    in the documentation titled "README.txt" in Jetty release. 
+
+3. Shut Down Jetty by Ctrl+C.
+
+
+=======================================================
+How to configure scooter/tools/servers/jetty directory:
+=======================================================
+
+1. Copy jetty.xml from jetty-x.x.x/etc directory to etc/ directory. 
+   Copy other files like realm.properties, and webdefault.xml, etc. if necessary.
+
+2. Open etc/jetty.xml file and replace all "jetty.home" with "myjetty.home". 
+
+3. Follow instructions above on "How to run shared Jetty inside scooter/tools/servers". 

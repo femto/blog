@@ -1,0 +1,33 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results: All Tests</title>
+<link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="blog/models/0_CommentTest.html">CommentTest</a></td><td><a name="testDummy"></a><a href="blog/models/0_CommentTest.html#testDummy">testDummy</a></td><td>Success</td><td></td><td>3.750</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="blog/models/1_EntryTest.html">EntryTest</a></td><td><a name="testDummy"></a><a href="blog/models/1_EntryTest.html#testDummy">testDummy</a></td><td>Error</td><td>Failed to instantiate class "blog.models.Entry". Details: com.scooterframework.orm.sqldataexpress.exception.LookupFailureException: Failed to get meta data info for table ENTRIES, because com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'blog_development.entries' doesn't exist..<br>
+<br>
+<code>com.scooterframework.common.exception.ObjectCreationException: Failed to instantiate class "blog.models.Entry".<br/>Details: com.scooterframework.orm.sqldataexpress.exception.LookupFailureException: Failed to get meta data info for table ENTRIES, because com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'blog_development.entries' doesn't exist..<br/>	at com.scooterframework.common.util.ObjectFactory.newInstance(ObjectFactory.java:53)<br/>	at com.scooterframework.orm.activerecord.ActiveRecordUtil.getHomeInstance(ActiveRecordUtil.java:356)<br/>	at com.scooterframework.orm.activerecord.ActiveRecordUtil.getHomeInstance(ActiveRecordUtil.java:370)<br/>	at blog.models.EntryTest.setUp(EntryTest.java:17)<br/>Caused by: com.scooterframework.orm.sqldataexpress.exception.LookupFailureException: Failed to get meta data info for table ENTRIES, because com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Table 'blog_development.entries' doesn't exist.<br/>	at com.scooterframework.orm.sqldataexpress.util.SqlExpressUtil.lookupAndRegisterTable(SqlExpressUtil.java:726)<br/>	at com.scooterframework.orm.activerecord.ActiveRecord.lookupAndRegister(ActiveRecord.java:2742)<br/>	at com.scooterframework.orm.activerecord.ActiveRecord.initialize(ActiveRecord.java:2647)<br/>	at com.scooterframework.orm.activerecord.ActiveRecord.<init>(ActiveRecord.java:96)<br/>	at blog.models.Entry.<init>(Entry.java:8)<br/>	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)<br/>	at java.lang.Class.newInstance0(Class.java:355)<br/>	at java.lang.Class.newInstance(Class.java:308)<br/>	at com.scooterframework.common.util.ObjectFactory.newInstance(ObjectFactory.java:51)<br/></code></td><td>0.734</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="blog/models/2_PostTest.html">PostTest</a></td><td><a name="testDummy"></a><a href="blog/models/2_PostTest.html#testDummy">testDummy</a></td><td>Success</td><td></td><td>0.750</td>
+</tr>
+</table>
+</body>
+</html>

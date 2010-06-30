@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+
+<project name="scooter" default="usage" basedir=".">
+
+    <!--Set the output directories-->
+    <property name="javac.source.version"   value="1.5"/>
+    <property name="javac.target.version"   value="1.5"/>
+    <property name="app.name"               value="${app_name}"/>
+    <property name="build.outdir"           value="build"/>
+    <property name="jar.outdir"             value="build/jar"/>
+    <property name="war.outdir"             value="build/war"/>
+    <property name="javadoc.outdir"         value="docs/javadoc"/>
+    <property name="junitreport.outdir"     value="docs/reports"/>
+    <property name="app.jar.name"           value="${app.name}.jar"/>
+    <property name="app.war.name"           value="${app.name}.war"/>
+    <property name="allconfig.dir"          value="config"/>
+    <property name="allreferences.dir"      value="references"/>
+    <property name="webapp.dir"             value="webapps/${app.name}"/>
+    <property name="webapp.webinf.dir"      value="${webapp.dir}/WEB-INF"/>
+    <property name="webapp.lib.dir"         value="${webapp.dir}/WEB-INF/lib"/>
+    <property name="compile.outdir"         value="${webapp.dir}/WEB-INF/classes"/>
+
+    <!--Set the classpath-->
+    <path id="classpath">
+        <fileset dir="${allreferences.dir}">
+            <include name="**/*.jar"/>
+            <include name="**/*.zip"/>
+        </fileset>
+    </path>
+
+    <!--Set the source path-->
+    <property name="src.dir" value="src"/>
+    <path id="srcpath">
+        <pathelement location="${src.dir}"/>
+    </path>
+    
+    <property name="testsrc.dir" value="test"/>
+
+    <target name="usage">
+        <echo message=""/>
+        <echo message="Scooter Framework Application Build Script"/>
+        <echo message="-----------------------------------------------"/>
+        <echo message=""/>
+        <echo message="You are strongly encouraged to use the built-in compilation"/>
+        <echo message="capability of Scooter Framework when developing code."/>
+        <echo message=""/>
+        <echo message="This script is mainly for running test, generating Java docs and war."/>
+        <echo message="You need to use -Dapp_name=YourAppName when running this script."/>
+        <echo message=""/>
+        <echo message="Available targets are:"/>
+        <echo message=""/>
+        <echo message="build                            --> build all; don't create JARs"/>
+        <echo message="clean                            --> clean all outputs"/>
+        <echo message="jar -Dapp_name=[YourAppName]     --> create all JAR files"/>
+        <echo message="javadoc                          --> create Java Doc"/>
+        <echo message="test                             --> run tests"/>
+        <echo message="war -Dapp_name=[YourAppName]     --> create WAR file"/>
+        <echo message=""/>
+    </target>
+
+    <target name="init">
+        <tstamp/>
+        <echo>$${ant.java.version}=${ant.java.version}</echo>
+        <echo>$${ant.version}=${ant.version}</echo>
+    </target>
+
+    <target name="compile" depends="init">
+        <mkdir dir="${compile.outdir}"/>
+        
+        <javac destdir="${compile.outdir}" debug="true" encoding="Cp1252" 
+        	source="${javac.source.version}" target="${javac.target.version}">
+            <classpath refid="classpath"/>
+            <src path="${src.dir}"/>
+            <src path="${testsrc.dir}"/>
+        </javac>
+        
+        <copy todir="${compile.outdir}" preservelastmodified="true">
+            <fileset dir="${src.dir}">
+                <exclude name="**/*.java"/>
+                <include name="**/**"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.outdir}"/>
+        <jar destfile="${jar.outdir}/${app.jar.name}" basedir="${compile.outdir}" />
+    </target>
+
+    <target name="javadoc" depends="init">
+        <mkdir dir="${javadoc.outdir}"/>
+        
+        <javadoc classpathref="classpath" 
+                 destdir="${javadoc.outdir}" 
+                 author="false" 
+                 version="false" 
+                 encoding="Cp1252" 
+                 additionalparam="-J-Xmx32m">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+            <fileset dir="${testsrc.dir}">
+                <include name="**/*.java" />
+            </fileset>
+        </javadoc>
+    </target>
+
+    <target name="test" depends="compile">
+        <mkdir dir="${junitreport.outdir}"/>
+        <mkdir dir="${junitreport.outdir}/raw"/>
+        <mkdir dir="${junitreport.outdir}/html"/>
+        
+        <junit printsummary="yes" haltonfailure="no" showoutput="yes">
+            <classpath>
+                <path refid="classpath"/>
+                <pathelement path="${compile.outdir}" />
+            </classpath>
+            
+            <batchtest fork="yes" todir="${junitreport.outdir}/raw/">
+                <formatter type="xml" />
+                <fileset dir="${testsrc.dir}">
+                    <include name="**/*Test*.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+        
+        <junitreport todir="${junitreport.outdir}">
+            <fileset dir="${junitreport.outdir}/raw/">
+                <include name="TEST-*.xml" />
+            </fileset>
+            <report format="frames" todir="${junitreport.outdir}\html\" />
+        </junitreport>
+    </target>
+
+    <target name="clean">
+        <delete dir="${jar.outdir}"/>
+        <delete dir="${war.outdir}"/>
+        <delete dir="${build.outdir}"/>
+        <delete dir="${javadoc.outdir}"/>
+        <delete dir="${junitreport.outdir}"/>
+    </target>
+
+    <target name="build" depends="compile"/>
+
+    <target name="rebuild" depends="clean,compile"/>
+
+    <target name="all" depends="compile, javadoc"/>
+    
+    <target name="war">
+        <mkdir dir="${build.outdir}/tmp"/>
+        <mkdir dir="${war.outdir}"/>
+        
+        <copy todir="${build.outdir}/tmp" preservelastmodified="true">
+            <fileset dir="${webapp.dir}">
+                <include name="**/**"/>
+            </fileset>
+        </copy>
+        
+        <mkdir dir="${build.outdir}/tmp/WEB-INF/config"/>
+        <copy todir="${build.outdir}/tmp/WEB-INF/config" preservelastmodified="true">
+            <fileset dir="${allconfig.dir}">
+                <include name="**/**"/>
+            </fileset>
+        </copy>
+        
+        <jar destfile="${war.outdir}/${app.war.name}" basedir="${build.outdir}/tmp" />
+    	
+        <delete dir="${build.outdir}/tmp"/>
+    </target>
+
+</project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/blog.iml" filepath="$PROJECT_DIR$/blog.iml" />
+      <module fileurl="file://E:/toolset/scooter-source-1.0.RC3/scooter-source-1.0.RC3.iml" filepath="E:/toolset/scooter-source-1.0.RC3/scooter-source-1.0.RC3.iml" />
+    </modules>
+  </component>
+</project>
+
