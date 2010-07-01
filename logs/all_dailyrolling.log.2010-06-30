@@ -1,0 +1,1029 @@
+10/06/30 16:10:34,484 DEBUG [main] PropertyFileChangeMonitor - monitoring file: environment.properties
+10/06/30 16:10:34,859 DEBUG [main] DatabaseConfig - created ds for blog_development with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 16:10:34,875 DEBUG [main] DatabaseConfig - created ds for blog_production with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 16:10:34,890 DEBUG [main] DatabaseConfig - created ds for blog_test with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 16:10:34,890 DEBUG [main] PropertyFileChangeMonitor - monitoring file: database.properties
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: named_route, name: routesinfo
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = routesinfo, routeType = named_route, url = /routes, controller = builtin/siteinfo, controllerClass = com.scooterframework.builtin.SiteInfoController, dynamicController = false, action = routes, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index databases
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = index databases, routeType = rest_route, url = /databases, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = database, resourceName = databases
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = show database, routeType = rest_route, url = /databases/$id, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = database, resourceName = databases
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-tables
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = index database-tables, routeType = rest_route, url = /databases/$database_id/tables, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = table, resourceName = tables
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = show database-table, routeType = rest_route, url = /databases/$database_id/tables/$id, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = table, resourceName = tables
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-table-records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = index database-table-records, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add database-table-record
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = add database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/add, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create database-table-record
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = create database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table-record
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = show database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit database-table-record
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = edit database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id/edit, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 7, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update database-table-record
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = update database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete database-table-record
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = delete database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-views
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = index database-views, routeType = rest_route, url = /databases/$database_id/views, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = view, resourceName = views
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-view
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = show database-view, routeType = rest_route, url = /databases/$database_id/views/$id, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = view, resourceName = views
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-view-vrecords
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = index database-view-vrecords, routeType = rest_route, url = /databases/$database_id/views/$view_id/vrecords, controller = builtin/databrowser/vrecords, controllerClass = com.scooterframework.builtin.databrowser.VrecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, view_id=3}, segmentCount = 5, model = vrecord, resourceName = vrecords
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index posts
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ==> name = index posts, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,921 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = add post, routeType = rest_route, url = /posts/add, controller = posts, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = create post, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = show post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = edit post, routeType = rest_route, url = /posts/$id/edit, controller = posts, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 3, model = post, resourceName = posts
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = update post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = delete post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index post-comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = index post-comments, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post-comment
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = add post-comment, routeType = rest_route, url = /posts/$post_id/comments/add, controller = comments, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post-comment
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = create post-comment, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post-comment
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = show post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post-comment
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = edit post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id/edit, controller = comments, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 5, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post-comment
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = update post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post-comment
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = delete post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add entry
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = add entry, routeType = rest_route, url = /feedbacks/add, controller = entries, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create entry
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = create entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show entry
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = show entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit entry
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = edit entry, routeType = rest_route, url = /feedbacks/edit, controller = entries, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update entry
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = update entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete entry
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = delete entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: default_route, name: 0
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = 0, routeType = default_route, url = $controller/$action, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {action=1, controller=0}, segmentCount = 2
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: default_route, name: 1
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = 1, routeType = default_route, url = $controller/$action/$id, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ========== route type: default_route, name: 2
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - ==> name = 2, routeType = default_route, url = $controller/$action/$id.$format, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = $format, dynamicFormat = true, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 16:10:34,937 DEBUG [main] RouteConfig - 
+10/06/30 16:10:34,937  INFO [main] RouteConfig - total routes = 38
+10/06/30 16:10:34,937 DEBUG [main] PropertyFileChangeMonitor - monitoring file: routes.properties
+10/06/30 16:10:34,937 DEBUG [main] PropertyFileChangeMonitor - monitoring file: log4j.properties
+10/06/30 16:10:34,937  INFO [main] AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/06/30 16:10:34,937  INFO [main] AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/06/30 16:10:34,953  INFO [main] AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/06/30 16:10:34,953  INFO [main] AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/06/30 16:10:34,953  INFO [main] AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+10/06/30 16:10:34,953 DEBUG [main] PropertyFileChangeMonitor - monitoring file: autoloader.properties
+10/06/30 16:10:34,953 DEBUG [main] PropertyFileChangeMonitor - monitoring file: sql.properties
+10/06/30 16:10:34,968 DEBUG [main] MessageResourcesManager - loaded locale: zh_CN
+10/06/30 16:10:34,984 DEBUG [main] DirChangeMonitor - monitoring dirctory: E:\scooter-project\blog\config\locales with filter sameprefix-messages
+10/06/30 16:10:35,031 DEBUG [main] FileMonitor - Java source file change monitor started with an interval of 1000 milliseconds.
+10/06/30 16:10:35,031 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 16:10:36,015 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\SignonController.java:4: 无法访问 com.scooterframework.orm.activerecord.ActiveRecord
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\com\scooterframework\orm\activerecord\ActiveRecord.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import com.scooterframework.orm.activerecord.ActiveRecord;
+                                             ^
+1 错误
+
+10/06/30 16:10:44,656 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/"
+10/06/30 16:10:44,750 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 16:10:44,750 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/index.jsp
+10/06/30 16:10:44,812  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/": 156 ms
+10/06/30 16:15:00,812 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/"
+10/06/30 16:15:00,812 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 16:15:00,812 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/index.jsp
+10/06/30 16:15:00,812  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/": 0 ms
+10/06/30 16:18:58,203 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/"
+10/06/30 16:18:58,203 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 16:18:58,203 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/index.jsp
+10/06/30 16:18:58,203  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/": 0 ms
+10/06/30 16:19:01,640 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/06/30 16:19:01,640 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 16:19:01,640 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 16:19:01,640 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/06/30 16:19:01,640 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/06/30 16:19:01,656 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - execution result: redirectTo=>/signon/login
+10/06/30 16:19:01,656  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/posts": 16 ms
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/signon/login"
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /signon/login, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = signon, routeType = default_route, resourceName = null, controller = signon, controllerClassName = blog.controllers.SignonController, model = signon, modelClassName = blog.models.Signon, action = login, id = null, format = null, requiredFieldValues = {action=login, controller=signon}, requestInfo {requestPath = /signon/login, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - aps: controllerPath = /signon, controller = signon, controllerClassName = blog.controllers.SignonController, resource = null, action = login, model = signon, format = null
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - execution result: null
+10/06/30 16:19:01,687 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/signon/login.jsp
+10/06/30 16:19:01,812  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/signon/login": 125 ms
+10/06/30 20:15:39,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 20:15:41,406 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 类 WelcomeController 是公共的，应在名为 WelcomeController.java 的文件中声明
+public class InitController extends ApplicationController {
+       ^
+E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                       ^
+2 错误
+
+10/06/30 20:15:41,453 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 20:15:41,531 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:15:43,250 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/init/"
+10/06/30 20:15:43,265 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:15:43,296 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /init/, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 20:15:43,343 ERROR [27687351@qtp-11403277-7] RestfulRequestProcessor - No route is found for "GET /init/"
+10/06/30 20:15:43,484 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:15:43,906  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/init/": 688 ms
+10/06/30 20:15:47,328 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:15:47,328 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:15:47,328 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:15:47,343 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:15:47,343 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:15:47,421 ERROR [27687351@qtp-11403277-7] MyClassLoader - Compile error: E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:15:47,437  INFO [27687351@qtp-11403277-7] ControllerFactory - Failed to create instance of "blog.controllers.InitController";
+10/06/30 20:15:47,437  WARN [27687351@qtp-11403277-7] RestfulRequestProcessor - Controller instance for "init" does not exist, forward to view "init\index".
+10/06/30 20:15:47,437 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - execution result: null
+10/06/30 20:15:47,437 ERROR [27687351@qtp-11403277-7] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:15:47,437 ERROR [27687351@qtp-11403277-7] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:15:47,453 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:15:47,453  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/init/index": 125 ms
+10/06/30 20:16:04,921 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:16:04,921 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:16:04,921 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:16:04,921 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:16:04,921 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:16:05,062 ERROR [27687351@qtp-11403277-7] MyClassLoader - Compile error: E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:16:05,062  INFO [27687351@qtp-11403277-7] ControllerFactory - Failed to create instance of "blog.controllers.InitController";
+10/06/30 20:16:05,062  WARN [27687351@qtp-11403277-7] RestfulRequestProcessor - Controller instance for "init" does not exist, forward to view "init\index".
+10/06/30 20:16:05,062 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - execution result: null
+10/06/30 20:16:05,062 ERROR [27687351@qtp-11403277-7] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:16:05,062 ERROR [27687351@qtp-11403277-7] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:16:05,062 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:16:05,078  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/init/index": 157 ms
+10/06/30 20:16:05,093 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:16:05,109 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:16:05,125  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 32 ms
+10/06/30 20:16:05,140  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 31 ms
+10/06/30 20:16:05,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 20:16:05,828 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:16:05,890 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:16:05,890 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:16:05,890 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:16:05,890 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:16:05,890 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:16:05,968 ERROR [8568863@qtp-11403277-6] MyClassLoader - Compile error: E:\scooter-project\blog\src\blog\controllers\InitController.java:6: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:16:05,968  INFO [8568863@qtp-11403277-6] ControllerFactory - Failed to create instance of "blog.controllers.InitController";
+10/06/30 20:16:05,968  WARN [8568863@qtp-11403277-6] RestfulRequestProcessor - Controller instance for "init" does not exist, forward to view "init\index".
+10/06/30 20:16:05,968 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - execution result: null
+10/06/30 20:16:05,968 ERROR [8568863@qtp-11403277-6] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:16:05,968 ERROR [8568863@qtp-11403277-6] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:16:05,968 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:16:05,984  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/init/index": 94 ms
+10/06/30 20:16:05,984 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:16:05,984 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:16:06,000  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 16 ms
+10/06/30 20:16:06,000  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 16 ms
+10/06/30 20:16:31,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 20:16:31,843 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:22:24,468 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\models\Post.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 20:22:24,562 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:22:59,281 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:22:59,281 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:22:59,281 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:22:59,281 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:22:59,281 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:22:59,359 ERROR [8568863@qtp-11403277-6] MyClassLoader - Compile error: E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:22:59,406  INFO [8568863@qtp-11403277-6] ControllerFactory - Failed to create instance of "blog.controllers.InitController";
+10/06/30 20:22:59,406  WARN [8568863@qtp-11403277-6] RestfulRequestProcessor - Controller instance for "init" does not exist, forward to view "init\index".
+10/06/30 20:22:59,406 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - execution result: null
+10/06/30 20:22:59,406 ERROR [8568863@qtp-11403277-6] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:22:59,406 ERROR [8568863@qtp-11403277-6] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:22:59,421 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:22:59,421  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/init/index": 140 ms
+10/06/30 20:22:59,453 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:22:59,453 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:22:59,453  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:22:59,453  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:23:28,046 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:23:28,046 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:23:28,046 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:23:28,062 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:23:28,062 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:23:28,140 ERROR [8568863@qtp-11403277-6] MyClassLoader - Compile error: E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:23:28,140  INFO [8568863@qtp-11403277-6] ControllerFactory - Failed to create instance of "blog.controllers.InitController";
+10/06/30 20:23:28,140  WARN [8568863@qtp-11403277-6] RestfulRequestProcessor - Controller instance for "init" does not exist, forward to view "init\index".
+10/06/30 20:23:28,140 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - execution result: null
+10/06/30 20:23:28,140 ERROR [8568863@qtp-11403277-6] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:23:28,140 ERROR [8568863@qtp-11403277-6] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/init/index.jsp" does not exist.
+10/06/30 20:23:28,140 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:23:28,140  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/init/index": 94 ms
+10/06/30 20:23:28,218 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:23:28,218 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:23:28,218  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:23:28,218  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:23:31,500 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/init"
+10/06/30 20:23:31,500 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:23:31,500 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /init, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 20:23:31,500 ERROR [27687351@qtp-11403277-7] RestfulRequestProcessor - No route is found for "GET /init"
+10/06/30 20:23:31,515 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:23:31,515  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/init": 15 ms
+10/06/30 20:23:42,000 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/init"
+10/06/30 20:23:42,000 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:23:42,000 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - requestInfo: requestPath = /init, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 20:23:42,000 ERROR [27687351@qtp-11403277-7] RestfulRequestProcessor - No route is found for "GET /init"
+10/06/30 20:23:42,015 DEBUG [27687351@qtp-11403277-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:23:42,015  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/init": 15 ms
+10/06/30 20:23:42,031 DEBUG [27687351@qtp-11403277-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:23:42,031 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:23:42,031  INFO [27687351@qtp-11403277-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:23:42,031  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:23:42,578 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/init"
+10/06/30 20:23:42,578 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:23:42,578 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - requestInfo: requestPath = /init, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 20:23:42,578 ERROR [8568863@qtp-11403277-6] RestfulRequestProcessor - No route is found for "GET /init"
+10/06/30 20:23:42,609 DEBUG [8568863@qtp-11403277-6] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:23:42,609  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/init": 31 ms
+10/06/30 20:23:42,625 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:23:42,625  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:23:42,640 DEBUG [8568863@qtp-11403277-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:23:42,640  INFO [8568863@qtp-11403277-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:23:42,656 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\blog\controllers\SignonController.java, E:\scooter-project\blog\src\blog\models\Post.java, E:\scooter-project\blog\src\blog\controllers\PostsController.java, E:\scooter-project\blog\src\blog\controllers\EntriesController.java]
+10/06/30 20:23:42,765 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.controllers.ApplicationController
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\controllers\ApplicationController.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+public class InitController extends ApplicationController {
+                                    ^
+1 错误
+
+10/06/30 20:23:50,671 DEBUG [Shutdown] PropertyFileChangeMonitor - Property file change monitor stopped.
+10/06/30 20:23:50,671 DEBUG [Shutdown] FileMonitor - Java source file change monitor stopped.
+10/06/30 20:23:50,671 DEBUG [Shutdown] DirChangeMonitor - Dir files change monitor stopped.
+10/06/30 20:24:01,312 DEBUG [main] PropertyFileChangeMonitor - monitoring file: environment.properties
+10/06/30 20:24:01,546 DEBUG [main] DatabaseConfig - created ds for blog_development with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:24:01,562 DEBUG [main] DatabaseConfig - created ds for blog_production with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:24:01,562 DEBUG [main] DatabaseConfig - created ds for blog_test with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:24:01,578 DEBUG [main] PropertyFileChangeMonitor - monitoring file: database.properties
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: named_route, name: routesinfo
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = routesinfo, routeType = named_route, url = /routes, controller = builtin/siteinfo, controllerClass = com.scooterframework.builtin.SiteInfoController, dynamicController = false, action = routes, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index databases
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index databases, routeType = rest_route, url = /databases, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = database, resourceName = databases
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show database, routeType = rest_route, url = /databases/$id, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = database, resourceName = databases
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-tables
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index database-tables, routeType = rest_route, url = /databases/$database_id/tables, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = table, resourceName = tables
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show database-table, routeType = rest_route, url = /databases/$database_id/tables/$id, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = table, resourceName = tables
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-table-records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index database-table-records, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add database-table-record
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = add database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/add, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create database-table-record
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = create database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table-record
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit database-table-record
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = edit database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id/edit, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 7, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update database-table-record
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = update database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete database-table-record
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = delete database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-views
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index database-views, routeType = rest_route, url = /databases/$database_id/views, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = view, resourceName = views
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-view
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show database-view, routeType = rest_route, url = /databases/$database_id/views/$id, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = view, resourceName = views
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-view-vrecords
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index database-view-vrecords, routeType = rest_route, url = /databases/$database_id/views/$view_id/vrecords, controller = builtin/databrowser/vrecords, controllerClass = com.scooterframework.builtin.databrowser.VrecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, view_id=3}, segmentCount = 5, model = vrecord, resourceName = vrecords
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index posts, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = add post, routeType = rest_route, url = /posts/add, controller = posts, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = create post, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = edit post, routeType = rest_route, url = /posts/$id/edit, controller = posts, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 3, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = update post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = delete post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index post-comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = index post-comments, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post-comment
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = add post-comment, routeType = rest_route, url = /posts/$post_id/comments/add, controller = comments, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post-comment
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = create post-comment, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post-comment
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post-comment
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = edit post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id/edit, controller = comments, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 5, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post-comment
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = update post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post-comment
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = delete post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add entry
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = add entry, routeType = rest_route, url = /feedbacks/add, controller = entries, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create entry
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = create entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show entry
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = show entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit entry
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = edit entry, routeType = rest_route, url = /feedbacks/edit, controller = entries, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update entry
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = update entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete entry
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = delete entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: default_route, name: 0
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = 0, routeType = default_route, url = $controller/$action, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {action=1, controller=0}, segmentCount = 2
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: default_route, name: 1
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = 1, routeType = default_route, url = $controller/$action/$id, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ========== route type: default_route, name: 2
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - ==> name = 2, routeType = default_route, url = $controller/$action/$id.$format, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = $format, dynamicFormat = true, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 20:24:01,625 DEBUG [main] RouteConfig - 
+10/06/30 20:24:01,625  INFO [main] RouteConfig - total routes = 38
+10/06/30 20:24:01,625 DEBUG [main] PropertyFileChangeMonitor - monitoring file: routes.properties
+10/06/30 20:24:01,640 DEBUG [main] PropertyFileChangeMonitor - monitoring file: log4j.properties
+10/06/30 20:24:01,656  INFO [main] AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/06/30 20:24:01,656  INFO [main] AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/06/30 20:24:01,656  INFO [main] AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/06/30 20:24:01,656  INFO [main] AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/06/30 20:24:01,656  INFO [main] AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+10/06/30 20:24:01,656 DEBUG [main] PropertyFileChangeMonitor - monitoring file: autoloader.properties
+10/06/30 20:24:01,671 DEBUG [main] PropertyFileChangeMonitor - monitoring file: sql.properties
+10/06/30 20:24:01,671 DEBUG [main] MessageResourcesManager - loaded locale: zh_CN
+10/06/30 20:24:01,687 DEBUG [main] DirChangeMonitor - monitoring dirctory: E:\scooter-project\blog\config\locales with filter sameprefix-messages
+10/06/30 20:24:01,718 DEBUG [main] FileMonitor - Java source file change monitor started with an interval of 1000 milliseconds.
+10/06/30 20:24:04,546 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init"
+10/06/30 20:24:04,578 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:24:04,578 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 20:24:04,578 ERROR [1259414@qtp-11596093-7] RestfulRequestProcessor - No route is found for "GET /init"
+10/06/30 20:24:04,593 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:24:04,734  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init": 188 ms
+10/06/30 20:24:04,750 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:24:04,750 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:24:04,765  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 15 ms
+10/06/30 20:24:04,765  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 15 ms
+10/06/30 20:24:05,328 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init"
+10/06/30 20:24:05,328 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:24:05,328 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init, requestHttpMethod = GET, format = null, segmentCount = 1
+10/06/30 20:24:05,328 ERROR [1259414@qtp-11596093-7] RestfulRequestProcessor - No route is found for "GET /init"
+10/06/30 20:24:05,343 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:24:05,359  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init": 31 ms
+10/06/30 20:24:05,359 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:24:05,359 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:24:05,359  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:24:05,375  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 16 ms
+10/06/30 20:24:12,234 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:24:12,234 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:24:12,234 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:24:12,234 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:24:12,234 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:24:12,250 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:24:12,265  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 31 ms
+10/06/30 20:27:19,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java]
+10/06/30 20:27:20,281 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:12: 非法的表达式开始
+        if()
+           ^
+E:\scooter-project\blog\src\blog\controllers\InitController.java:13: 需要 ')'
+        return html("init done");
+                                ^
+2 错误
+
+10/06/30 20:29:11,796 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java]
+10/06/30 20:29:11,906 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Post
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Post.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Post;
+                   ^
+1 错误
+
+10/06/30 20:29:13,187 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:29:13,187 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:29:13,187 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:29:13,187 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:29:13,187 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:29:13,187 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:29:13,203  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 16 ms
+10/06/30 20:29:13,203 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:29:13,218  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 15 ms
+10/06/30 20:29:13,218 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:29:13,218  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:29:13,781 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:29:13,781 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:29:13,781 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:29:13,781 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:29:13,781 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:29:13,781 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:29:13,781  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:29:13,796 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:29:13,796  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:29:13,796 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:29:13,812  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 16 ms
+10/06/30 20:29:56,718 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:29:56,718 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:29:56,718 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:29:56,718 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:29:56,718 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:29:56,718 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:29:56,718  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:29:56,734 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:29:56,734  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:29:56,734 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:29:56,750  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 16 ms
+10/06/30 20:30:29,406 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:29,406 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:29,406 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:29,406 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:29,406 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:29,406 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:29,406  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:30:29,421 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:29,421  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:30:29,421 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:29,421  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:30:29,984 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:29,984 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:29,984 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:29,984 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:29,984 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:29,984 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:29,984  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:30:30,000 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:30,000  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:30:30,000 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:30,015  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 15 ms
+10/06/30 20:30:44,546 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:44,546 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:44,546 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:44,546 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:44,546 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:44,546 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:44,562  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 16 ms
+10/06/30 20:30:44,578 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:44,578 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:44,578  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:30:44,578  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:30:45,078 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:45,078 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:45,078 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:45,078 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:45,078 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:45,078 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:45,109  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 31 ms
+10/06/30 20:30:45,109 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:45,109  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:30:45,125 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:45,125  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:30:51,500 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:51,500 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:51,500 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:51,500 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:51,500 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:51,500 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:51,500  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:30:51,578 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:51,578  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:30:51,578 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:51,593  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 15 ms
+10/06/30 20:30:52,062 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:52,062 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:52,062 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:52,062 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:52,062 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:52,062 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:52,078  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init/index": 16 ms
+10/06/30 20:30:52,078 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:52,078  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:30:52,093 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:52,093  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:30:52,437 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:30:52,437 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:30:52,437 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:30:52,437 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:30:52,437 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:30:52,437 DEBUG [1259414@qtp-11596093-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:30:52,437  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:30:52,453 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:30:52,453  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:30:52,453 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:30:52,453  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:31:05,609 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:31:05,609 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:31:05,609 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:31:05,609 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:31:05,609 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:31:05,609 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:31:05,609  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:31:05,625 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:31:05,625 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:31:05,625  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:31:05,625  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:31:06,062 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:31:06,062 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:31:06,062 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:31:06,062 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:31:06,062 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:31:06,062 DEBUG [14746332@qtp-11596093-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:31:06,062  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/init/index": 0 ms
+10/06/30 20:31:06,078 DEBUG [14746332@qtp-11596093-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:31:06,078 DEBUG [1259414@qtp-11596093-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:31:06,078  INFO [14746332@qtp-11596093-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:31:06,078  INFO [1259414@qtp-11596093-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:31:44,203 DEBUG [Shutdown] PropertyFileChangeMonitor - Property file change monitor stopped.
+10/06/30 20:31:44,203 DEBUG [Shutdown] FileMonitor - Java source file change monitor stopped.
+10/06/30 20:31:44,203 DEBUG [Shutdown] DirChangeMonitor - Dir files change monitor stopped.
+10/06/30 20:32:01,109 DEBUG [main] PropertyFileChangeMonitor - monitoring file: environment.properties
+10/06/30 20:32:01,234 DEBUG [main] DatabaseConfig - created ds for blog_development with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:32:01,250 DEBUG [main] DatabaseConfig - created ds for blog_production with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:32:01,250 DEBUG [main] DatabaseConfig - created ds for blog_test with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:32:01,250 DEBUG [main] PropertyFileChangeMonitor - monitoring file: database.properties
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: named_route, name: routesinfo
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = routesinfo, routeType = named_route, url = /routes, controller = builtin/siteinfo, controllerClass = com.scooterframework.builtin.SiteInfoController, dynamicController = false, action = routes, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index databases
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index databases, routeType = rest_route, url = /databases, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = database, resourceName = databases
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show database, routeType = rest_route, url = /databases/$id, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = database, resourceName = databases
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-tables
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index database-tables, routeType = rest_route, url = /databases/$database_id/tables, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = table, resourceName = tables
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show database-table, routeType = rest_route, url = /databases/$database_id/tables/$id, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = table, resourceName = tables
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-table-records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index database-table-records, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add database-table-record
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = add database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/add, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create database-table-record
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = create database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table-record
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit database-table-record
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = edit database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id/edit, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 7, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update database-table-record
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = update database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete database-table-record
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = delete database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-views
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index database-views, routeType = rest_route, url = /databases/$database_id/views, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = view, resourceName = views
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-view
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show database-view, routeType = rest_route, url = /databases/$database_id/views/$id, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = view, resourceName = views
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-view-vrecords
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index database-view-vrecords, routeType = rest_route, url = /databases/$database_id/views/$view_id/vrecords, controller = builtin/databrowser/vrecords, controllerClass = com.scooterframework.builtin.databrowser.VrecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, view_id=3}, segmentCount = 5, model = vrecord, resourceName = vrecords
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index posts, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = add post, routeType = rest_route, url = /posts/add, controller = posts, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = create post, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = edit post, routeType = rest_route, url = /posts/$id/edit, controller = posts, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 3, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = update post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = delete post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index post-comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = index post-comments, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post-comment
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = add post-comment, routeType = rest_route, url = /posts/$post_id/comments/add, controller = comments, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post-comment
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = create post-comment, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post-comment
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post-comment
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = edit post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id/edit, controller = comments, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 5, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post-comment
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = update post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post-comment
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = delete post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add entry
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = add entry, routeType = rest_route, url = /feedbacks/add, controller = entries, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create entry
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = create entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show entry
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = show entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit entry
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = edit entry, routeType = rest_route, url = /feedbacks/edit, controller = entries, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update entry
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = update entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete entry
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = delete entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: default_route, name: 0
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = 0, routeType = default_route, url = $controller/$action, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {action=1, controller=0}, segmentCount = 2
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: default_route, name: 1
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = 1, routeType = default_route, url = $controller/$action/$id, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ========== route type: default_route, name: 2
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - ==> name = 2, routeType = default_route, url = $controller/$action/$id.$format, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = $format, dynamicFormat = true, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 20:32:01,281 DEBUG [main] RouteConfig - 
+10/06/30 20:32:01,281  INFO [main] RouteConfig - total routes = 38
+10/06/30 20:32:01,281 DEBUG [main] PropertyFileChangeMonitor - monitoring file: routes.properties
+10/06/30 20:32:01,281 DEBUG [main] PropertyFileChangeMonitor - monitoring file: log4j.properties
+10/06/30 20:32:01,296  INFO [main] AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/06/30 20:32:01,296  INFO [main] AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/06/30 20:32:01,296  INFO [main] AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/06/30 20:32:01,296  INFO [main] AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/06/30 20:32:01,296  INFO [main] AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+10/06/30 20:32:01,296 DEBUG [main] PropertyFileChangeMonitor - monitoring file: autoloader.properties
+10/06/30 20:32:01,296 DEBUG [main] PropertyFileChangeMonitor - monitoring file: sql.properties
+10/06/30 20:32:01,312 DEBUG [main] MessageResourcesManager - loaded locale: zh_CN
+10/06/30 20:32:01,312 DEBUG [main] DirChangeMonitor - monitoring dirctory: E:\scooter-project\blog\config\locales with filter sameprefix-messages
+10/06/30 20:32:01,328 DEBUG [main] FileMonitor - Java source file change monitor started with an interval of 1000 milliseconds.
+10/06/30 20:32:01,328 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java]
+10/06/30 20:32:01,765 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Post
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Post.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Post;
+                   ^
+1 错误
+
+10/06/30 20:32:05,578 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:32:05,843 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:32:05,859 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:32:05,859 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:32:05,859 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:32:05,890 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:32:06,062  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/init/index": 500 ms
+10/06/30 20:32:06,078 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:32:06,093 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:32:06,093  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 15 ms
+10/06/30 20:32:06,093  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:32:14,937 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:32:14,937 DEBUG [17423963@qtp-15091334-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:32:14,937 DEBUG [17423963@qtp-15091334-6] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:32:14,937 DEBUG [17423963@qtp-15091334-6] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:32:14,937 DEBUG [17423963@qtp-15091334-6] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:32:14,937 DEBUG [17423963@qtp-15091334-6] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:32:14,953  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/init/index": 16 ms
+10/06/30 20:32:14,968 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:32:14,968 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:32:14,968  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:32:14,968  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:32:15,421 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:32:15,421 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:32:15,421 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:32:15,421 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:32:15,437 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:32:15,437 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - execution result: html=>init done
+10/06/30 20:32:15,437  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/init/index": 16 ms
+10/06/30 20:32:15,453 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:32:15,453 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:32:15,453  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:32:15,453  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/06/30 20:32:18,203 DEBUG [Shutdown] PropertyFileChangeMonitor - Property file change monitor stopped.
+10/06/30 20:32:18,203 DEBUG [Shutdown] FileMonitor - Java source file change monitor stopped.
+10/06/30 20:32:18,203 DEBUG [Shutdown] DirChangeMonitor - Dir files change monitor stopped.
+10/06/30 20:32:31,234 DEBUG [main] PropertyFileChangeMonitor - monitoring file: environment.properties
+10/06/30 20:32:31,328 DEBUG [main] DatabaseConfig - created ds for blog_development with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:32:31,343 DEBUG [main] DatabaseConfig - created ds for blog_production with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:32:31,343 DEBUG [main] DatabaseConfig - created ds for blog_test with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/06/30 20:32:31,359 DEBUG [main] PropertyFileChangeMonitor - monitoring file: database.properties
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: named_route, name: routesinfo
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = routesinfo, routeType = named_route, url = /routes, controller = builtin/siteinfo, controllerClass = com.scooterframework.builtin.SiteInfoController, dynamicController = false, action = routes, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index databases
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index databases, routeType = rest_route, url = /databases, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = database, resourceName = databases
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show database, routeType = rest_route, url = /databases/$id, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = database, resourceName = databases
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-tables
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index database-tables, routeType = rest_route, url = /databases/$database_id/tables, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = table, resourceName = tables
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show database-table, routeType = rest_route, url = /databases/$database_id/tables/$id, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = table, resourceName = tables
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-table-records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index database-table-records, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add database-table-record
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = add database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/add, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create database-table-record
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = create database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table-record
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit database-table-record
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = edit database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id/edit, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 7, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update database-table-record
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = update database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete database-table-record
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = delete database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-views
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index database-views, routeType = rest_route, url = /databases/$database_id/views, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = view, resourceName = views
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-view
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show database-view, routeType = rest_route, url = /databases/$database_id/views/$id, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = view, resourceName = views
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-view-vrecords
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index database-view-vrecords, routeType = rest_route, url = /databases/$database_id/views/$view_id/vrecords, controller = builtin/databrowser/vrecords, controllerClass = com.scooterframework.builtin.databrowser.VrecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, view_id=3}, segmentCount = 5, model = vrecord, resourceName = vrecords
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index posts, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = add post, routeType = rest_route, url = /posts/add, controller = posts, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = create post, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = edit post, routeType = rest_route, url = /posts/$id/edit, controller = posts, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 3, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = update post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = delete post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index post-comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = index post-comments, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post-comment
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = add post-comment, routeType = rest_route, url = /posts/$post_id/comments/add, controller = comments, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post-comment
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = create post-comment, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post-comment
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post-comment
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = edit post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id/edit, controller = comments, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 5, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post-comment
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = update post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post-comment
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = delete post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add entry
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = add entry, routeType = rest_route, url = /feedbacks/add, controller = entries, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create entry
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = create entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show entry
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = show entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit entry
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = edit entry, routeType = rest_route, url = /feedbacks/edit, controller = entries, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update entry
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = update entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete entry
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = delete entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ========== route type: default_route, name: 0
+10/06/30 20:32:31,375 DEBUG [main] RouteConfig - ==> name = 0, routeType = default_route, url = $controller/$action, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {action=1, controller=0}, segmentCount = 2
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - ========== route type: default_route, name: 1
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - ==> name = 1, routeType = default_route, url = $controller/$action/$id, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - ========== route type: default_route, name: 2
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - ==> name = 2, routeType = default_route, url = $controller/$action/$id.$format, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = $format, dynamicFormat = true, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/06/30 20:32:31,390 DEBUG [main] RouteConfig - 
+10/06/30 20:32:31,390  INFO [main] RouteConfig - total routes = 38
+10/06/30 20:32:31,390 DEBUG [main] PropertyFileChangeMonitor - monitoring file: routes.properties
+10/06/30 20:32:31,390 DEBUG [main] PropertyFileChangeMonitor - monitoring file: log4j.properties
+10/06/30 20:32:31,390  INFO [main] AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/06/30 20:32:31,390  INFO [main] AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/06/30 20:32:31,390  INFO [main] AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/06/30 20:32:31,390  INFO [main] AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/06/30 20:32:31,390  INFO [main] AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+10/06/30 20:32:31,390 DEBUG [main] PropertyFileChangeMonitor - monitoring file: autoloader.properties
+10/06/30 20:32:31,390 DEBUG [main] PropertyFileChangeMonitor - monitoring file: sql.properties
+10/06/30 20:32:31,406 DEBUG [main] MessageResourcesManager - loaded locale: zh_CN
+10/06/30 20:32:31,406 DEBUG [main] DirChangeMonitor - monitoring dirctory: E:\scooter-project\blog\config\locales with filter sameprefix-messages
+10/06/30 20:32:31,421 DEBUG [main] FileMonitor - Java source file change monitor started with an interval of 1000 milliseconds.
+10/06/30 20:32:33,171 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:32:33,187 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:32:33,187 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:32:33,187 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:32:33,187 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 20:32:33,203 ERROR [18687346@qtp-2112561-7] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.common.exception.ExecutionException: Failed to invoke class "blog.controllers.InitController" for method "index"
+Details: Please annotate your JPA model with @javax.persistence.Entity annotation.
+10/06/30 20:32:33,218 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 20:32:33,343  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/init/index": 172 ms
+10/06/30 20:32:33,375 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/06/30 20:32:33,375  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/06/30 20:32:33,375 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/06/30 20:32:33,390  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 15 ms
+10/06/30 20:32:48,296 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/init/index"
+10/06/30 20:32:48,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/06/30 20:32:48,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2
+10/06/30 20:32:48,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = init, routeType = default_route, resourceName = null, controller = init, controllerClassName = blog.controllers.InitController, model = init, modelClassName = blog.models.Init, action = index, id = null, format = null, requiredFieldValues = {action=index, controller=init}, requestInfo {requestPath = /init/index, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/06/30 20:32:48,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /init, controller = init, controllerClassName = blog.controllers.InitController, resource = null, action = index, model = init, format = null
+10/06/30 21:34:07,562 ERROR [18687346@qtp-2112561-7] RestfulRequestProcessor - Error in "GET /blog/init/index": com.scooterframework.common.exception.ExecutionException: Failed to invoke class "blog.controllers.InitController" for method "index"
+Details: Please annotate your JPA model with @javax.persistence.Entity annotation.
+10/06/30 21:34:07,562 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/06/30 21:34:07,640  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/init/index": 3679344 ms

@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Class-Path: servers/jetty-embedded/lib/jetty-6.1.21.jar servers/jetty-
+ embedded/lib/jetty-util-6.1.21.jar servers/jetty-embedded/lib/servlet
+ -api-2.5-20081211.jar servers/jetty-embedded/lib/annotations/geronimo
+ -annotation_1.0_spec-1.0.jar servers/jetty-embedded/lib/annotations/j
+ etty-annotations-6.1.21.jar servers/jetty-embedded/lib/ext/jetty-ajp-
+ 6.1.21.jar servers/jetty-embedded/lib/ext/jetty-client-6.1.21.jar ser
+ vers/jetty-embedded/lib/ext/jetty-html-6.1.21.jar servers/jetty-embed
+ ded/lib/ext/jetty-java5-stats-6.1.21.jar servers/jetty-embedded/lib/e
+ xt/jetty-java5-threadpool-6.1.21.jar servers/jetty-embedded/lib/ext/j
+ etty-ldap-jaas-6.1.21.jar servers/jetty-embedded/lib/ext/jetty-rewrit
+ e-handler-6.1.21.jar servers/jetty-embedded/lib/ext/jetty-servlet-tes
+ ter-6.1.21.jar servers/jetty-embedded/lib/ext/jetty-setuid-6.1.21.jar
+  servers/jetty-embedded/lib/ext/jetty-sslengine-6.1.21.jar servers/je
+ tty-embedded/lib/jre1.5/jetty-util5-6.1.21.jar servers/jetty-embedded
+ /lib/jsp-2.1/ant-1.6.5.jar servers/jetty-embedded/lib/jsp-2.1/core-3.
+ 1.1.jar servers/jetty-embedded/lib/jsp-2.1/jsp-2.1-glassfish-9.1.1.B6
+ 0.25.p2.jar servers/jetty-embedded/lib/jsp-2.1/jsp-2.1-jetty-6.1.21.j
+ ar servers/jetty-embedded/lib/jsp-2.1/jsp-api-2.1-glassfish-9.1.1.B60
+ .25.p2.jar servers/jetty-embedded/lib/management/jetty-management-6.1
+ .21.jar servers/jetty-embedded/lib/management/mx4j/mx4j-3.0.1.jar ser
+ vers/jetty-embedded/lib/management/mx4j/mx4j-tools-3.0.1.jar servers/
+ jetty-embedded/lib/naming/activation-1.1.jar servers/jetty-embedded/l
+ ib/naming/jetty-naming-6.1.21.jar servers/jetty-embedded/lib/naming/m
+ ail-1.4.jar servers/jetty-embedded/lib/plus/jetty-plus-6.1.21.jar ser
+ vers/jetty-embedded/lib/terracotta/jetty-terracotta-sessions-6.1.21.j
+ ar servers/jetty-embedded/lib/win32/jetty-win32-service-java-6.1.21.j
+ ar servers/jetty-embedded/lib/win32/wrapper.jar servers/jetty-embedde
+ d/lib/xbean/jetty-xbean-6.1.21.jar servers/helper/tools-1.5/tools.jar
+  ../references/jdbc-clients/c3p0-0.9.1.2.jar ../references/jdbc-clien
+ ts/c3p0-oracle-thin-extras-0.9.1.2.jar ../references/jdbc-clients/mys
+ ql.jar ../references/jdbc-clients/oracle.jar ../references/jdbc-clien
+ ts/mydb.jar 
+Created-By: 1.6.0_18 (Sun Microsystems Inc.)
+Main-Class: com.amazingforce.webserver.StartServer
+
