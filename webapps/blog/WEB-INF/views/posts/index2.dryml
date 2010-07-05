@@ -1,0 +1,10 @@
+<dummy>
+<def tag="page">
+<html>
+  <head merge-attrs="merge-attrs">
+  </head>
+</html>
+</def>
+<page s3="s3">
+</page>
+</dummy>

@@ -126,14 +126,11 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Type.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\JdbcStatementProcessorFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UnsupportedEntityInCategoryException.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/util/Spec.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileFilterSameSuffix.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Pet.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/enhancers/Enhancer.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\TestWordUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\ColumnInfo.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceImpl.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/enhancers/JPAEnhancer.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionFilterManager.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\DirChangeMonitor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RestRoute.class" afterPath="" />
@@ -167,7 +164,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\TableGateway.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileChangeNotice.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessorImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/util/FilterSpec.java" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/util/FilterSpec.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociationHelper.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\tag\TagHelper.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\config\SqlConfig.class" afterPath="" />
@@ -245,7 +241,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionManagerUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasManyThroughRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\BeanUtil.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/activerecord/ActiveRecord.java" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/activerecord/ActiveRecord.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasManyThroughRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordCRUDTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\JdbcConnectionContext.class" afterPath="" />
@@ -359,6 +354,19 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="171" class="template.DrymlTemplateHandler" package="template">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -418,10 +426,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InitController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/controllers/InitController.java">
+      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="27" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0">
+            <state line="146" column="57" selection-start="4435" selection-end="4435" vertical-scroll-proportion="0.25375375">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -429,94 +437,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
+      <file leaf-file-name="AbstractElement.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractElement.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="40" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
+            <state line="243" column="0" selection-start="10535" selection-end="10535" vertical-scroll-proportion="-3.6666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decorators.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/decorators.xml">
+      <file leaf-file-name="DefaultText.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/DefaultText.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="27" selection-start="446" selection-end="455" vertical-scroll-proportion="0.0">
+            <state line="5" column="62" selection-start="201" selection-end="201" vertical-scroll-proportion="-2.6666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/blog/static/stylesheets/main.css">
+      <file leaf-file-name="FlyweightText.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/FlyweightText.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="63" selection-start="202" selection-end="202" vertical-scroll-proportion="-2.6666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environment.properties">
+      <file leaf-file-name="AbstractText.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractText.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="3643" selection-end="3643" vertical-scroll-proportion="0.5643087">
+            <state line="5" column="80" selection-start="219" selection-end="219" vertical-scroll-proportion="-2.6666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="AbstractCharacterData.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractCharacterData.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="55" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-12.190476">
+            <state line="5" column="80" selection-start="219" selection-end="219" vertical-scroll-proportion="-2.6666667">
               <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionControl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ActionControl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="19" selection-start="7598" selection-end="7598" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CtClass.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/CtClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="21" selection-start="3615" selection-end="3615" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassPool.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/ClassPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="33" selection-start="6984" selection-end="6984" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActiveRecord.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/activerecord/ActiveRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1250" column="27" selection-start="43151" selection-end="43167" vertical-scroll-proportion="-4.4">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -534,13 +495,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/blog/controllers/CommentsController.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/blog/util/FilterSpec.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/ApplicationController.java" />
-        <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ActionControl.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/EntriesController.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/PostsController.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/SignonController.java" />
         <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/enhancers/Enhancer.java" />
         <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/enhancers/JPAEnhancer.java" />
@@ -548,8 +502,15 @@
         <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/activerecord/ActiveRecord.java" />
         <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/autoloader/LoadedClass.java" />
         <option value="$PROJECT_DIR$/src/blog/models/Post.java" />
+        <option value="$PROJECT_DIR$/src/types/Tuple1.java" />
+        <option value="$PROJECT_DIR$/src/types/Tuple5.java" />
+        <option value="$PROJECT_DIR$/src/types/Tuple2.java" />
+        <option value="$PROJECT_DIR$/src/types/operators.java" />
+        <option value="$PROJECT_DIR$/src/literal/collection.java" />
+        <option value="$PROJECT_DIR$/src/literal/Main.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/InitController.java" />
         <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/autoloader/MyClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
       </list>
     </option>
   </component>
@@ -622,6 +583,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scooter-source-1.0.RC3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -651,10 +626,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -742,11 +713,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -768,7 +743,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitemesh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,47 +847,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="references" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -867,7 +888,7 @@
       <recent name="E:\scooter-project\blog\references\jdbc-clients" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote.Unnamed">
+  <component name="RunManager" selected="Application.DrymlTemplateHandler">
     <configuration default="false" name="All in blog" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="snapshooter" />
@@ -1070,6 +1091,26 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="snapshooter" />
+      <option name="MAIN_CLASS_NAME" value="literal.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="blog" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="Unnamed" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1081,18 +1122,43 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="false" />
       </RunnerSettings>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="5005" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="DrymlTemplateHandler" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="snapshooter" />
+      <option name="MAIN_CLASS_NAME" value="template.DrymlTemplateHandler" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="blog" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="1462" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in blog" />
-      <item index="1" class="java.lang.String" itemvalue="Remote.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.Unnamed" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DrymlTemplateHandler" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1140,25 +1206,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="848" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4423631" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42507204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3904899" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24207492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11942446" sideWeight="0.64841497" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16115108" sideWeight="0.4020173" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2410072" sideWeight="0.54755044" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09208633" sideWeight="0.6167147" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37319884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1647482" sideWeight="0.5518732" order="2" side_tool="false" content_ui="combo" />
@@ -1200,130 +1266,105 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blog/models/Post.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/sitemesh/nochange.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/LoaderClassPath.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="29" selection-start="2896" selection-end="2900" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_18/src.zip!/java/lang/Class.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/sidemenu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2022" column="24" selection-start="85753" selection-end="85753" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/ClassClassPath.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="36" selection-start="2483" selection-end="2496" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/CtClassType.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/css.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1442" column="20" selection-start="44899" selection-end="44899" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/autoloader/MyClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="23" selection-start="5122" selection-end="5122" vertical-scroll-proportion="0.0">
+        <state line="163" column="14" selection-start="5113" selection-end="5113" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractText.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="80" selection-start="219" selection-end="219" vertical-scroll-proportion="-2.6666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/FlyweightText.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="63" selection-start="202" selection-end="202" vertical-scroll-proportion="-2.6666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/DefaultText.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="62" selection-start="201" selection-end="201" vertical-scroll-proportion="-2.6666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="0" selection-start="10535" selection-end="10535" vertical-scroll-proportion="-3.6666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractBranch.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="558" selection-end="558" vertical-scroll-proportion="0.6299435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="68" selection-start="203" selection-end="207" vertical-scroll-proportion="0.18879056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractCharacterData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="80" selection-start="219" selection-end="219" vertical-scroll-proportion="-2.6666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/tree/DefaultElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="159" selection-end="159" vertical-scroll-proportion="-0.09039548">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/references/dom4j-1.6.1.jar!/org/dom4j/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="27" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.2952381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="57" selection-start="4435" selection-end="4435" vertical-scroll-proportion="0.25375375">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/CtClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="21" selection-start="3615" selection-end="3615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/javassist-3.12.GA/javassist-3.12.GA/src/main/javassist/ClassPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="33" selection-start="6984" selection-end="6984" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/activerecord/ActiveRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1250" column="27" selection-start="43151" selection-end="43167" vertical-scroll-proportion="-4.4">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/controllers/InitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="27" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ActionControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="19" selection-start="7598" selection-end="7598" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="40" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/decorators.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="446" selection-end="455" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/static/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="55" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-12.190476">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="3643" selection-end="3643" vertical-scroll-proportion="0.5643087">
-          <folding />
         </state>
       </provider>
     </entry>

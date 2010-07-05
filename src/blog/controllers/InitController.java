@@ -19,6 +19,8 @@ public class InitController extends ApplicationController {
             Comment.deleteAll();
 
             Post post0 = new Post();
+
+            
             post0.setData("name", "first post");
             post0.setData("title", "this is first post");
             post0.setData("content", "this is first post");
