@@ -1,10 +1,28 @@
 <dummy>
-<def tag="page" attrs='title'>
+<def tag="do"><output>parameters.default</output></def>
+<def tag="page" attrs='title, full-title'>
 <html merge-attrs="merge-attrs">
-  <head merge-attrs="merge-attrs">
+	<scriptlet>
+		 if(full_title == null) {
+		 	 full_title ||= title + "- here";
+		 }
+		 
+  </scriptlet>
+  <head param="true">
+  	<title param="true">haha</title>
+  	<do param='stylesheets'>
+        <!-- note that this is probably overridden in your app/views/taglibs/themes/xxx/xxx.dryml --> 
+        <stylesheet name='reset, hobo-rapid'/>
+        <theme-stylesheet/>
+        <stylesheet name='application' param='app-stylesheet'/>
+      </do>
   </head>
+  <body param="true">
+      <s3></s3>
+    </body>
 </html>
 </def>
-<page s3="s3" title="title" full-title="full">
-</page>
+<page s3="s3" title="title" full-title="full"> 
+
+	</page>
 </dummy>

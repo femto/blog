@@ -1020,3 +1020,422 @@ import blog.models.Comment;
                    ^
 1 错误
 
+10/07/05 19:33:03,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:33:03,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:33:28,921 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:33:29,093 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:34:14,937 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:34:15,031 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 20:31:42,093 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 20:31:42,203 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 20:37:51,140 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 20:37:51,328 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 20:39:03,140 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 20:39:03,250 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:32:39,328 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:32:40,875 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:07,921 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:09,500 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:16,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:16,796 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:32,531 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:32,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:55,546 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:55,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:40:21,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:40:21,734 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:41:00,578 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:41:00,593 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:181: 需要 ';'
+^
+1 错误
+
+10/07/05 22:41:53,578 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:41:53,796 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:42:54,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:42:54,687 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:44:03,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:44:04,125 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:51:41,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:51:41,859 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:53:35,640 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:53:35,734 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:54:51,656 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:54:51,656 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:181: 不是语句
+                Map 
+                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:181: 需要 ';'
+                Map 
+                   ^
+2 错误
+
+10/07/05 22:55:01,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:55:01,687 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:182: 不是语句
+                Map 
+                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:182: 需要 ';'
+                Map 
+                   ^
+2 错误
+
+10/07/05 22:55:31,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:55:31,703 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:187: 需要 ';'
+                    }
+                    ^
+1 错误
+
+10/07/05 22:55:34,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:55:34,781 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:56:28,750 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:56:28,765 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:188: 非法的表达式开始
+                        parameters.put(name, );
+                                             ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:188: 需要 ')'
+                        parameters.put(name, );
+                                              ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 非法的表达式开始
+                        all_parameters.put(name, );
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 需要 ')'
+                        all_parameters.put(name, );
+                                                  ^
+4 错误
+
+10/07/05 22:56:48,750 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:56:48,750 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 非法的表达式开始
+                        all_parameters.put(name, );
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 需要 ')'
+                        all_parameters.put(name, );
+                                                  ^
+2 错误
+
+10/07/05 22:57:05,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:57:05,859 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:58:10,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:58:10,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:00:22,796 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:00:22,890 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:03:59,828 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:03:59,921 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:07:27,843 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:07:28,093 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:07:43,843 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:07:44,031 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:08:40,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:08:41,062 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:09:31,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:09:31,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:10:46,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:10:47,109 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:14:11,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:14:12,000 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:14:26,875 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:14:26,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:15:20,890 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:15:21,062 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:16:03,968 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:16:04,078 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:16:51,015 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:16:51,203 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:17:06,015 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:17:06,234 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:17:16,062 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:17:16,156 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:18:08,093 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:18:08,218 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:18:14,078 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:18:14,250 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
