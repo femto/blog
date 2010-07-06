@@ -16,8 +16,8 @@ import java.util.*;
  */
 public class DrymlTemplateHandler {
 
-    private static Map tagDefinitions = new HashMap();
-    private static Stack invocationStack = new Stack();
+    private Map tagDefinitions = new HashMap();
+    private Stack invocationStack = new Stack();
 
 
     public static Document parse(File file) throws DocumentException {
@@ -29,11 +29,11 @@ public class DrymlTemplateHandler {
 
     public static void main(String[] args) throws Exception {
         StringBuilder result = new StringBuilder();
-        handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result);
+        new DrymlTemplateHandler().handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result);
         System.out.println(result.toString());
     }
 
-    public static void handle(String f, StringBuilder result) {
+    public void handle(String f, StringBuilder result) {
         try {
             File file = new File(f);
 
@@ -58,7 +58,7 @@ public class DrymlTemplateHandler {
 
     }
 
-    private static void handleDefTag(Element tag) {
+    private void handleDefTag(Element tag) {
         Attribute attribute = tag.attribute("tag");
         tagDefinitions.put(attribute.getValue(), new TagDefinition(tag));
     }
@@ -66,7 +66,7 @@ public class DrymlTemplateHandler {
     //calling
     //preparing
 
-    private static void handleMeetingElement(Element element, StringBuilder result) {
+    private void handleMeetingElement(Element element, StringBuilder result) {
         //trying find out tagDefinition
         if ("def".equals(element.getName())) {
             handleDefTag(element);
@@ -121,12 +121,21 @@ public class DrymlTemplateHandler {
                         all_parameters.put(name, ele);
                     }
                 }
-                if (parameters.size() == 0) { //what about text?
-                    parameters.put("default", element);
-                    all_parameters.put("default", element);
+                if (all_parameters.size() == 0) { //what about text?
+                    DefaultEval defaultValue = new DefaultEval(element, this, invocationContext);
+                    parameters.put("default", defaultValue);
+                    all_parameters.put("default", defaultValue);
                 }
                 invocationContext.setParameters(parameters);
                 invocationContext.setAll_parameters(all_parameters);
+
+                Map local_variables = new HashMap();
+                local_variables.put("attributes", attributes);
+                local_variables.put("all_attributes", all_attributes);
+                local_variables.put("parameters", parameters);
+                local_variables.put("all_parameters", all_parameters);
+                invocationContext.setLocal_variables(local_variables);
+
 
                 invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
 
@@ -136,69 +145,81 @@ public class DrymlTemplateHandler {
         }
     }
 
-    private static void handleScriptlet(Element element) {
+    private void handleScriptlet(Element element) {
 
     }
 
-    private static void handleDefaultTag(Element element, StringBuilder result) { //default invocation doesn't change invocationContext's attr & params
-        if(element.getName().equals("ognl-append")) {
+    private void handleDefaultTag(Element element, StringBuilder result) { //default invocation doesn't change invocationContext's attr & params
+        if (element.getName().equals("ognl-append")) {
             try {
                 InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
 
                 //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
-                result.append(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
+                result.append(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getLocal_variables()));
             } catch (OgnlException e) {
                 throw new RuntimeException(e);
             }
             return;
-        } //other normal stuff
-        result.append("<" + element.getName() + "");
-        //handle attribute
+        } else if ("set".equals(element.getName())) {
 
 
-        for (Iterator i = element.attributeIterator(); i.hasNext();) {
-            Attribute attribute = (Attribute) i.next();
-            if ("merge-attrs".equals(attribute.getName())) {
-                //peek the invocation stack
-                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-                for (Iterator it = invocationContext.getAttributes().keySet().iterator(); it.hasNext();) {
-                    String key = (String) it.next();
-                    result.append(" " + key + "=" + invocationContext.getAttributes().get(key));
-
-                }
-            } else if ("param".equals(attribute.getName())) {
-                String paramName = attribute.getValue();
-                //System.out.println(attribute.getName() + "=" + attribute.getValue());
-                if ("true".equals(paramName)) {
-                    paramName = element.getName();
-                }
-                //System.out.println("paramName is " + paramName);
-                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-                //System.out.println(invocationContext.getParameters().get(paramName));
+            //System.out.println(element.getName());
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            for (Iterator it = element.attributeIterator(); it.hasNext();) {
+                Attribute attribute = (Attribute) it.next();
+                invocationContext.getLocal_variables().put(attribute.getName(), eval(attribute.getValue(), invocationContext.getLocal_variables(), invocationContext.getLocal_variables()));
+            }
+            return;
+        }
+        if (!"do".equals(element.getName())) {
+            result.append("<" + element.getName() + "");
+            //handle attribute
 
 
-                //result.append()
-                Object value = invocationContext.getParameters().get(paramName);
-                if (value != null) {
-                    result.append(">");
-                    for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
-                        Node node = (Node) it.next();
-                        result.append(node.getText());
+            for (Iterator i = element.attributeIterator(); i.hasNext();) {
+                Attribute attribute = (Attribute) i.next();
+                if ("merge-attrs".equals(attribute.getName())) {
+                    //peek the invocation stack
+                    InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+                    for (Iterator it = invocationContext.getAttributes().keySet().iterator(); it.hasNext();) {
+                        String key = (String) it.next();
+                        result.append(" " + key + "=" + invocationContext.getAttributes().get(key));
+
+                    }
+                } else if ("param".equals(attribute.getName())) {
+                    String paramName = attribute.getValue();
+                    //System.out.println(attribute.getName() + "=" + attribute.getValue());
+                    if ("true".equals(paramName)) {
+                        paramName = element.getName();
+                    }
+                    //System.out.println("paramName is " + paramName);
+                    InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+                    //System.out.println(invocationContext.getParameters().get(paramName));
+
+
+                    //result.append()
+                    Object value = invocationContext.getParameters().get(paramName);
+                    if (value != null) {
+                        result.append(">");
+                        for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
+                            Node node = (Node) it.next();
+                            result.append(node.getText());
+                        }
+
+                        result.append("</" + element.getName() + ">");
+                        return;
+                    } else { //normal path
+
                     }
 
-                    result.append("</" + element.getName() + ">");
-                    return;
-                } else { //normal path
-
+                } else {
+                    result.append(" " + attribute.getName() + "=" + attribute.getValue());
                 }
 
-            } else {
-                result.append(" " + attribute.getName() + "=" + attribute.getValue());
             }
 
+            result.append(">");
         }
-
-        result.append(">");
         //for element's body
         for (Iterator i = element.content().iterator(); i.hasNext();) {
             Node node = (Node) i.next();
@@ -211,12 +232,27 @@ public class DrymlTemplateHandler {
 
             // do something
         }
-        result.append("</" + element.getName() + ">");
+
+        if (!"do".equals(element.getName())) {
+            result.append("</" + element.getName() + ">");
+        }
+    }
+
+    private Object eval(String value, Map context, Object root) {
+        try {
+            if (value.startsWith("ognl:")) {
+                value = value.replace("ognl:", "");
+                return Ognl.getValue(value, context, root);
+            }
+        } catch (OgnlException e) {
+            throw new RuntimeException(e);
+        }
+        return value;
     }
 
     //really invocation
 
-    private static void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
 
         //handle tagDefinition's attrs
         TagDefinition tagDefinition = invocationContext.getTagDefinition();
@@ -234,7 +270,7 @@ public class DrymlTemplateHandler {
         }
     }
 
-    private static void handleElement1(Element element, StringBuilder result) {
+    private void handleElement1(Element element, StringBuilder result) {
         if (tagDefinitions.get(element.getName()) == null) { //handle undefined element
             result.append("<" + element.getName() + "");
             //handle attribute
@@ -264,6 +300,15 @@ public class DrymlTemplateHandler {
 
             handleInvocation(invocationContext, result); //handle attribute
             invocationStack.pop();
+        }
+
+    }
+
+    public void handleNode(Node node, StringBuilder result) {
+        if (node instanceof Text) {
+            result.append(node.getText());
+        } else {
+            handleMeetingElement((Element) node, result);
         }
 
     }

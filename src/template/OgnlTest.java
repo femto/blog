@@ -18,7 +18,7 @@ public class OgnlTest {
         Object expression = Ognl.parseExpression("a");
         //System.out.println(Ognl.getValue(expression,map, map));
         //System.out.println(Ognl.getValue("@java.lang.System@out.println(38)", new HashMap(), (Object) null));
-        System.out.println(Ognl.getValue("@template.Util@stylesheets(\"1\")", new HashMap(), (Object)null));
+        System.out.println(Ognl.getValue("#this", new HashMap(), (Object)null));
         Ognl.setValue("c", map, map, 3);
         System.out.println();
     }

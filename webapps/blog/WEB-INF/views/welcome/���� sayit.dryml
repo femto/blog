@@ -63,26 +63,7 @@
     </body>
 </html>
 </def>
-<def tag='account-nav'>
-  <do with='ongl:current_user'>
-    <ul class='navigation account-nav' param="true">
-      <li param='dev-user-changer' if="ognl:RAILS_ENV == 'development'"><dev-user-changer/></li>
-      <if test='ongl:logged_in?'>
-        <li class='nav-item' param='logged-in-as'><a to='ognl:current_user'>Logged in as <name/></a></li>
-        <li class='nav-item' param='account'><a action='account'>Account</a></li>
-        <li class='nav-item' param='log-out'><a href='ognl:logout_url'>Log out</a></li>
-      </if>
-      <else>
-        <li class='nav-item' param='log-in'><a href='ognl:login_url'>Log in</a></li>
-        <li class='nav-item' param='sign-up' if='ognl:signup_url'><a href='ognl:signup_url'>Sign up</a></li>
-      </else>
-    </ul>
-  </do>
-</def>
-<header class='page-header' param="true">
-          <account-nav param="true" if='ognl:login_url(Hobo::User.default_user_model)'/>
-          <h1 param='app-name'><a href='#{base_url}/'><app-name/></a></h1>
-          <live-search param="true" if='ognl:defined_route? :site_search'/>
-          <main-nav current='ognl:title' param="true"/>
-        </header>
+<page title="title" full-title="full"> 
+
+	</page>
 </dummy>

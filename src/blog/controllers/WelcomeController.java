@@ -18,7 +18,7 @@ public class WelcomeController extends ApplicationController {
         String uri = getViewURI("welcome", "sayit");
         System.out.println(uri);
         uri = WebConfig.getRealPath() + uri;
-        DrymlTemplateHandler.handle(uri, result);
+        new DrymlTemplateHandler().handle(uri, result);
 
         return html(result.toString());
     }
