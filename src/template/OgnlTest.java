@@ -1,6 +1,8 @@
 package template;
 
+import ognl.ClassResolver;
 import ognl.Ognl;
+import ognl.OgnlContext;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,17 +14,25 @@ import java.util.Map;
  */
 public class OgnlTest {
     public static void main(String[] args) throws Exception {
-        Map map = new HashMap();
-        map.put("a", "aaa");
-        Ognl.addDefaultContext(map, map);
-        Object expression = Ognl.parseExpression("a");
-        //System.out.println(Ognl.getValue(expression,map, map));
-        //System.out.println(Ognl.getValue("@java.lang.System@out.println(38)", new HashMap(), (Object) null));
-        System.out.println(Ognl.getValue("#this", new HashMap(), (Object)null));
+        Map map =
+
+        Ognl.createDefaultContext(null, new MyClassResolver());
+
+
+        //System.out.println(OgnlContext.DEFAULT_CLASS_RESOLVER);
+        
+        System.out.println(Ognl.getValue("@Util@_stylesheet(\"a\")", map, map));
         Ognl.setValue("c", map, map, 3);
         System.out.println();
     }
     public static void test() {
         System.out.println("test");
+    }
+
+    private static class MyClassResolver implements ClassResolver {
+        public Class classForName(String s, Map map) throws ClassNotFoundException {
+            System.out.println(s);
+            return Util.class;
+        }
     }
 }

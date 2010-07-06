@@ -18,6 +18,7 @@ public class DrymlTemplateHandler {
 
     private Map tagDefinitions = new HashMap();
     private Stack invocationStack = new Stack();
+    private boolean last_if = true;
 
 
     public static Document parse(File file) throws DocumentException {
@@ -170,20 +171,43 @@ public class DrymlTemplateHandler {
                 invocationContext.getLocal_variables().put(attribute.getName(), eval(attribute.getValue(), invocationContext.getLocal_variables(), invocationContext.getLocal_variables()));
             }
             return;
+        } else if ("if".equals(element.getName())) {
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            Object retValue = eval(element.attribute("test").getValue(), invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
+            if (!(last_if = trueValue(retValue))) {
+                return;
+            }
+        } else if ("else".equals(element.getName())) {
+            System.out.println("else");
         }
         if (!"do".equals(element.getName())) {
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            //checking attrs, to see if there is any "if", "repeat", "unless"
+            if (attrContains(element, "if")) {
+                String controlValue = element.attribute("if").getValue();
+                System.out.println("evaluating " + controlValue);
+                Object retValue = eval(controlValue, invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
+                if (!(last_if = trueValue(retValue))) {
+                    return;
+                }
+            }
+
             result.append("<" + element.getName() + "");
             //handle attribute
 
 
             for (Iterator i = element.attributeIterator(); i.hasNext();) {
                 Attribute attribute = (Attribute) i.next();
+                List skipAttributes = Arrays.asList("if", "unless", "repeat", "param");
+                if (skipAttributes.contains(attribute.getName())) {
+                    continue;
+                }
                 if ("merge-attrs".equals(attribute.getName())) {
                     //peek the invocation stack
-                    InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+                    invocationContext = (InvocationContext) invocationStack.peek();
                     for (Iterator it = invocationContext.getAttributes().keySet().iterator(); it.hasNext();) {
                         String key = (String) it.next();
-                        result.append(" " + key + "=" + invocationContext.getAttributes().get(key));
+                        result.append(nameValue(key, invocationContext.getAttributes().get(key).toString()));
 
                     }
                 } else if ("param".equals(attribute.getName())) {
@@ -193,7 +217,7 @@ public class DrymlTemplateHandler {
                         paramName = element.getName();
                     }
                     //System.out.println("paramName is " + paramName);
-                    InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+                    invocationContext = (InvocationContext) invocationStack.peek();
                     //System.out.println(invocationContext.getParameters().get(paramName));
 
 
@@ -213,7 +237,7 @@ public class DrymlTemplateHandler {
                     }
 
                 } else {
-                    result.append(" " + attribute.getName() + "=" + attribute.getValue());
+                    result.append(nameValue(attribute.getName(), attribute.getValue()));
                 }
 
             }
@@ -238,10 +262,32 @@ public class DrymlTemplateHandler {
         }
     }
 
+    private boolean trueValue(Object retValue) {
+        if(retValue == null) {
+            return false;
+        }
+        return true;
+    }
+
+    private boolean attrContains(Element element, String attrName) {
+        for (Iterator it = element.attributeIterator(); it.hasNext();) {
+            Attribute attribute = (Attribute) it.next();
+            if (attribute.getName().equals(attrName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private String nameValue(String name, String value) {
+        return " " + name + "=\"" + value + "\"";
+    }
+
     private Object eval(String value, Map context, Object root) {
         try {
             if (value.startsWith("ognl:")) {
                 value = value.replace("ognl:", "");
+                //System.out.println("getting value for " + value);
                 return Ognl.getValue(value, context, root);
             }
         } catch (OgnlException e) {
@@ -257,6 +303,20 @@ public class DrymlTemplateHandler {
         //handle tagDefinition's attrs
         TagDefinition tagDefinition = invocationContext.getTagDefinition();
         TagInvocation tagInvocation = invocationContext.getTagInvocation();
+        Map local_variables = invocationContext.getLocal_variables();
+
+        for (Iterator it = tagDefinition.getTag().attributeIterator(); it.hasNext();) {
+            Attribute attribute = (Attribute) it.next();
+            if("attrs".equals(attribute.getName())) {
+                String[] attrs = attribute.getValue().split(",");
+                for (int i = 0; i < attrs.length; i++) {
+                     String attrName = attrs[i];
+                    local_variables.put(attrName, invocationContext.getAll_attributes().get(attrName));
+                }
+
+            }
+        }
+
 
         //handle tagDefinition's body
         for (Iterator it = tagDefinition.getTag().content().iterator(); it.hasNext();) {
@@ -280,7 +340,7 @@ public class DrymlTemplateHandler {
                 if ("merge-attrs".equals(attribute.getName())) {
                     //for each attr pass in, output the attr
                 } else {
-                    result.append(" " + attribute.getName() + "=" + attribute.getValue());
+                    result.append(nameValue(attribute.getName(), attribute.getValue()));
                 }
 
             }

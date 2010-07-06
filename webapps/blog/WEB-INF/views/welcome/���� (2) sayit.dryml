@@ -6,7 +6,8 @@
 </def>
 <def attrs='name' tag='theme-stylesheet'>
 	<ognl-append>
- 	  @template.Util@themeStylesheets(name)
+  	name ? 
+  	  @template.Util@stylesheets(name) : @template.Util@stylesheets("null1")
 </ognl-append>
 </def>
 <def tag='ajax-progress'>
@@ -20,13 +21,6 @@
   <set body='ognl:parameters.default'/>
   <div class='header' merge-attrs="true" if='ognl: body? body : empty'><ognl-append>body</ognl-append></div>
 </def>
-
-<def attrs='name' tag='javascript'>
-  <ognl-append>
-    @template.Util@javascriptIncludeTag(name)
-  </ognl-append>
-</def>
-
 <def tag="page" attrs='title, full-title'>
 <html merge-attrs="merge-attrs">
 	<scriptlet>
@@ -39,9 +33,10 @@
   	<title param="true">Blog</title>
   	<do param='stylesheets'>
         <stylesheet name='reset'/>
-        
+        <stylesheet name='hobo-rapid'/>
         <theme-stylesheet/>
         <theme-stylesheet name="rapid-ui"/>
+        	<theme-stylesheet name="0"/>
         <stylesheet name='application' param='app-stylesheet'/>
       </do>
       <do param='scripts'>
