@@ -29,7 +29,7 @@
           <live-search param="true" if='ongl:defined_route("site_search")'/>
           <main-nav current='ognl:title' param="true"/>
         </header>
-        <section param='content' with-flash-messages="true"/>
+        <section param='content' href-flash-messages="true"/>
         <footer class='page-footer' param="true"/>
         <page-scripts param="true"/>
     </body>
@@ -73,14 +73,30 @@
     <ul class='navigation account-nav' param="true">
       <li param='dev-user-changer' if="ognl:@template.Util@isDevelopment()"><dev-user-changer/></li>
       <if test='ognl:logged_in'>
-        <li class='nav-item' param='logged-in-as'><a to='ognl:current_user'>Logged in as <name/></a></li>
-        <li class='nav-item' param='account'><a action='account'>Account</a></li>
-        <li class='nav-item' param='log-out'><a href='logout_url'>Log out</a></li>
+        <li class='a' param='logged-in-as'><a to='ognl:current_user'>Logged in as <name/></a></li>
+        <li class='a' param='account'><a action='account'>Account</a></li>
+        <li class='a' param='log-out'><a href='logout_url'>Log out</a></li>
       </if>
       
     </ul>
   
 </def>
+
+<def tag="main-nav">
+  <ul class='navigation' merge-attrs="true">
+    <li class="" style="float:left"><a href="ognl:@template.Util@getBaseUrl()">首页</a></li>
+    <li class="" style="float:left"><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li class="" style="float:left"><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li class="" style="float:left"><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li class="" style="float:left"><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li class="" style="float:left"><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li class="" style="float:left"><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li class="" style="float:left"><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li class="" style="float:left"><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li class="" style="float:left"><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+</def>
+
 <page>
 </page>
 </dummy>

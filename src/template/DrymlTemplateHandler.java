@@ -88,8 +88,8 @@ public class DrymlTemplateHandler {
 
                 InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
                 if (invocationContext.getAll_parameters().containsKey(paramName)) {
-                    ProcEval procEval = (ProcEval) invocationContext.getAll_parameters().get(paramName);
-                    result.append(procEval.toString());
+                    Object object =  invocationContext.getAll_parameters().get(paramName);
+                    result.append(object.toString());
                     return;
                 }
             }
