@@ -316,6 +316,19 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="312" class="template.DrymlTemplateHandler" package="template">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="value == null" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -375,22 +388,49 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/config/WebConfig.java">
+      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.0">
+            <state line="266" column="0" selection-start="11817" selection-end="11817" vertical-scroll-proportion="0.36956522">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OgnlTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/OgnlTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+      <file leaf-file-name="InvocationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="22" selection-start="6768" selection-end="6768" vertical-scroll-proportion="0.52786887">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="67" column="0" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlyweightAttribute.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/FlyweightAttribute.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractAttribute.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/AbstractAttribute.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="0" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -424,15 +464,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropertyReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/admin/PropertyReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProcEval.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/ProcEval.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -444,28 +475,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/admin/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="36" selection-start="6834" selection-end="6834" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="34" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/config/RouteConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="16" selection-start="8975" selection-end="8975" vertical-scroll-proportion="0.0">
+            <state line="7" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -495,10 +508,10 @@
         <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/welcome/sayit.dryml" />
         <option value="$PROJECT_DIR$/src/template/InvocationContext.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/WelcomeController.java" />
-        <option value="$PROJECT_DIR$/src/template/OgnlTest.java" />
         <option value="$PROJECT_DIR$/src/template/Util.java" />
         <option value="$PROJECT_DIR$/src/template/ProcEval.java" />
         <option value="$PROJECT_DIR$/src/template/DefaultEval.java" />
+        <option value="$PROJECT_DIR$/src/template/OgnlTest.java" />
         <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
       </list>
     </option>
@@ -845,7 +858,7 @@
       <recent name="E:\scooter-project\blog\references\jdbc-clients" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DrymlTemplateHandler">
+  <component name="RunManager" selected="Application.OgnlTest">
     <configuration default="false" name="All in blog" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="snapshooter" />
@@ -1241,21 +1254,21 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4034582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29827088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42507204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4668588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47982708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19280575" sideWeight="0.42507204" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07122302" sideWeight="0.3170029" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12086331" sideWeight="0.5648415" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07122302" sideWeight="0.19596542" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5461095" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37175792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1647482" sideWeight="0.5518732" order="2" side_tool="false" content_ui="combo" />
@@ -1297,34 +1310,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="7" selection-start="2025" selection-end="2032" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_18/src.zip!/java/util/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/common/util/WordUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="537" column="27" selection-start="20831" selection-end="20831" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/admin/FileObservable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="11" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
@@ -1374,13 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="34" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/Element.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="538" column="14" selection-start="16848" selection-end="16848" vertical-scroll-proportion="0.0">
@@ -1406,9 +1384,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/AbstractAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/FlyweightAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/OgnlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="22" selection-start="6768" selection-end="6768" vertical-scroll-proportion="0.52786887">
+        <state line="266" column="0" selection-start="11817" selection-end="11817" vertical-scroll-proportion="0.36956522">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

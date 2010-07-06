@@ -25,8 +25,8 @@
       <ajax-progress param="true"/>
       	<header class='page-header' param="true">
           <account-nav param="true" if='ognl:login_url(Hobo::User.default_user_model)'/>
-          <h1 param='app-name'><a href='#{base_url}/'><app-name/></a></h1>
-          
+          <h1 param='app-name'><a href='ognl:@template.Util@getBaseUrl()'><app-name/></a></h1>
+          <live-search param="true" if='ongl:defined_route("site_search")'/>
           <main-nav current='ognl:title' param="true"/>
         </header>
         <section param='content' with-flash-messages="true"/>
@@ -82,7 +82,5 @@
   
 </def>
 <page>
-<param-app-name>ha</param-app-name>
-<param-html>html</param-html>
 </page>
 </dummy>

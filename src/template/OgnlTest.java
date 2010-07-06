@@ -13,7 +13,10 @@ import java.util.Map;
  * @author: femto
  */
 public class OgnlTest {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+        System.out.println("a" + null + "c");
+    }
+    public static void main2(String[] args) throws Exception {
         Map map =
 
         Ognl.createDefaultContext(null, new MyClassResolver());
