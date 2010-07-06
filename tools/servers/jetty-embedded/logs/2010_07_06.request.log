@@ -332,3 +332,5 @@
 127.0.0.1 -  -  [06/七月/2010:14:26:04 +0000] "GET /blog/static/javascripts/application.js HTTP/1.1" 304 0 
 127.0.0.1 -  -  [06/七月/2010:14:26:04 +0000] "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png HTTP/1.1" 304 0 
 127.0.0.1 -  -  [06/七月/2010:14:26:04 +0000] "GET /blog/static/themes/clean/images/spinner.gif HTTP/1.1" 304 0 
+125.224.207.58 -  -  [06/七月/2010:14:38:07 +0000] "CONNECT 203.188.201.253:25 HTTP/1.1" 404 1269 
+127.0.0.1 -  -  [06/七月/2010:14:50:36 +0000] "GET /blog/welcome/sayit HTTP/1.1" 200 4540 

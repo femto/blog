@@ -118,8 +118,9 @@ public class DrymlTemplateHandler {
                     if (ele.getName().indexOf("param-") != -1) {
                         String name = ele.getName().replace("param-", "");
                         //System.out.println(name);
-                        parameters.put(name, ele); //or ele's content?
-                        all_parameters.put(name, ele);
+                        ProcEval procEval = new ProcEval(ele, this, invocationContext);
+                        parameters.put(name, procEval); //or ele's content?
+                        all_parameters.put(name, procEval);
                     }
                 }
                 if (all_parameters.size() == 0) { //what about text?
@@ -151,6 +152,21 @@ public class DrymlTemplateHandler {
     }
 
     private void handleDefaultTag(Element element, StringBuilder result) { //default invocation doesn't change invocationContext's attr & params
+        //first examine whether we merge with param
+        if(attrContains(element, "param")) {
+            Attribute attribute = element.attribute("param");
+            String paramName = attribute.getValue();
+            if("true".equals(attribute.getValue()) || "param".equals(attribute.getValue())) {
+                paramName = element.getName();
+            }
+            element.remove(attribute);
+
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            if(invocationContext.getAll_parameters().containsKey(paramName)) {
+               ProcEval procEval = (ProcEval) invocationContext.getAll_parameters().get(paramName);
+               result.append(procEval.toString());
+            }
+        }
         if (element.getName().equals("ognl-append")) {
             try {
                 InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
@@ -178,14 +194,14 @@ public class DrymlTemplateHandler {
                 return;
             }
         } else if ("else".equals(element.getName())) {
-            //System.out.println("else");
+            System.out.println("else");
         }
         if (!"do".equals(element.getName())) {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             //checking attrs, to see if there is any "if", "repeat", "unless"
             if (attrContains(element, "if")) {
                 String controlValue = element.attribute("if").getValue();
-                //System.out.println("evaluating " + controlValue);
+                System.out.println("evaluating " + controlValue);
                 Object retValue = eval(controlValue, invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;

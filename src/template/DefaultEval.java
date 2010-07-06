@@ -11,24 +11,29 @@ import java.util.Iterator;
  *
  * @author: femto
  */
-public class DefaultEval {
+public class DefaultEval extends ProcEval {
     private Element element;
     private DrymlTemplateHandler drymlTemplateHandler;
     private InvocationContext invocationContext;
 
     public DefaultEval(Element element, DrymlTemplateHandler drymlTemplateHandler, InvocationContext invocationContext) {
+        super(element, drymlTemplateHandler, invocationContext);
         this.element = element;
         this.drymlTemplateHandler = drymlTemplateHandler;
         this.invocationContext = invocationContext;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder result = new StringBuilder();
+    public String call() {
+       StringBuilder result = new StringBuilder();
         for (Iterator iterator = element.content().iterator(); iterator.hasNext();) {
             Node node = (Node) iterator.next();
             drymlTemplateHandler.handleNode(node, result);
         }
         return result.toString();
+    }
+
+    @Override
+    public String toString() {
+        return call();
     }
 }

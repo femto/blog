@@ -1,40 +1,7 @@
 <dummy>
-<def attrs='name' tag='stylesheet'>
-  <ognl-append>
-  	@template.Util@stylesheets(name)
-</ognl-append>
-</def>
-<def attrs='name' tag='theme-stylesheet'>
-	<ognl-append>
- 	  @template.Util@themeStylesheets(name)
-</ognl-append>
-</def>
-<def tag='ajax-progress'>
-  <div id='ajax-progress' merge-attrs="true" style="display:none">
-    <div>
-      <span id='ajax-progress-text'/>
-    </div>
-  </div>
-</def>
-<def attrs='empty' tag='header'>
-  <set body='ognl:parameters.default'/>
-  <div class='header' merge-attrs="true" if='ognl: body? body : empty'><ognl-append>body</ognl-append></div>
-</def>
-
-<def attrs='name' tag='javascript'>
-  <ognl-append>
-    @template.Util@javascriptIncludeTag(name)
-  </ognl-append>
-</def>
-
 <def tag="page" attrs='title, full-title'>
-<html merge-attrs="merge-attrs">
-	<scriptlet>
-		 if(full_title == null) {
-		 	 full_title ||= title + "- here";
-		 }
-		 
-  </scriptlet>
+<html merge-attrs="merge-attrs" param="true">
+	
   <head param="true">
   	<title param="true">Blog</title>
   	<do param='stylesheets'>
@@ -68,12 +35,41 @@
     </body>
 </html>
 </def>
+<def attrs='name' tag='stylesheet'>
+  <ognl-append>
+  	@template.Util@stylesheets(name)
+</ognl-append>
+</def>
+<def attrs='name' tag='theme-stylesheet'>
+	<ognl-append>
+ 	  @template.Util@themeStylesheets(name)
+</ognl-append>
+</def>
+<def tag='ajax-progress'>
+  <div id='ajax-progress' merge-attrs="true" style="display:none">
+    <div>
+      <span id='ajax-progress-text'/>
+    </div>
+  </div>
+</def>
+<def attrs='empty' tag='header'>
+  <set body='ognl:parameters.default'/>
+  <div class='header' merge-attrs="true" if='ognl: body? body : empty'><ognl-append>body</ognl-append></div>
+</def>
+
+<def attrs='name' tag='javascript'>
+  <ognl-append>
+    @template.Util@javascriptIncludeTag(name)
+  </ognl-append>
+</def>
+
+
 <def attrs='version' tag='if-ie'>
   <ognl-append>"<!--[if #{version || 'IE'}]>"</ognl-append><do param='default'/><ognl-append>"<![endif]-->"</ognl-append>
 </def>
 <def tag="app-name">Blog</def>
 <def tag='account-nav'>
-  <do with='ongl:current_user'>
+  
     <ul class='navigation account-nav' param="true">
       <li param='dev-user-changer' if="ognl:@template.Util@isDevelopment()"><dev-user-changer/></li>
       <if test='ognl:logged_in'>
@@ -81,14 +77,12 @@
         <li class='nav-item' param='account'><a action='account'>Account</a></li>
         <li class='nav-item' param='log-out'><a href='logout_url'>Log out</a></li>
       </if>
-      <else>
-        <li class='nav-item' param='log-in'><a href='login_url'>Log in</a></li>
-        <li class='nav-item' param='sign-up' if='signup_url'><a href='ognl:signup_url'>Sign up</a></li>
-      </else>
+      
     </ul>
-  </do>
+  
 </def>
 <page>
 <param-app-name>ha</param-app-name>
+<param-html>html</param-html>
 </page>
 </dummy>
