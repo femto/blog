@@ -10,7 +10,7 @@
 </ognl-append>
 </def>
 <def tag='ajax-progress'>
-  <div id='ajax-progress' merge-attrs="true">
+  <div id='ajax-progress' merge-attrs="true" style="display:none">
     <div>
       <span id='ajax-progress-text'/>
     </div>
@@ -68,6 +68,10 @@
     </body>
 </html>
 </def>
+<def attrs='version' tag='if-ie'>
+  <ognl-append>"<!--[if #{version || 'IE'}]>"</ognl-append><do param='default'/><ognl-append>"<![endif]-->"</ognl-append>
+</def>
+<def tag="app-name">Blog</def>
 <def tag='account-nav'>
   <do with='ongl:current_user'>
     <ul class='navigation account-nav' param="true">
@@ -84,5 +88,7 @@
     </ul>
   </do>
 </def>
-<page/>
+<page>
+<param-app-name>ha</param-app-name>
+</page>
 </dummy>

@@ -178,14 +178,14 @@ public class DrymlTemplateHandler {
                 return;
             }
         } else if ("else".equals(element.getName())) {
-            System.out.println("else");
+            //System.out.println("else");
         }
         if (!"do".equals(element.getName())) {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             //checking attrs, to see if there is any "if", "repeat", "unless"
             if (attrContains(element, "if")) {
                 String controlValue = element.attribute("if").getValue();
-                System.out.println("evaluating " + controlValue);
+                //System.out.println("evaluating " + controlValue);
                 Object retValue = eval(controlValue, invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;

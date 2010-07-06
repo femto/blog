@@ -11604,3 +11604,1489 @@ Details: ognl.MethodFailedException: Method "javascriptIncludeTag" failed for ob
 </html>
 
 10/07/06 21:31:40,921  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/welcome/sayit": 15 ms
+10/07/06 21:46:13,875 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 21:46:13,875 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 21:46:13,875 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 21:46:13,875 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 21:46:13,875 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 21:46:13,890 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        <if-ie version="lt IE 7">
+          
+  <script src="/blog/static/javascripts/IE7.js" type="text/javascript"></script>
+
+          
+  <script src="/blog/static/javascripts/ie7-recalc.js" type="text/javascript"></script>
+
+        </if-ie>
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 21:46:13,890  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/welcome/sayit": 15 ms
+10/07/06 21:46:14,718 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 21:46:14,718 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 21:46:14,718 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 21:46:14,718 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 21:46:14,718 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 21:46:14,734 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        <if-ie version="lt IE 7">
+          
+  <script src="/blog/static/javascripts/IE7.js" type="text/javascript"></script>
+
+          
+  <script src="/blog/static/javascripts/ie7-recalc.js" type="text/javascript"></script>
+
+        </if-ie>
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 21:46:14,734  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 21:46:14,750 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 21:46:14,750  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/06 21:46:14,765 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 21:46:14,765 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 21:46:14,765  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/06 21:46:14,765  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/06 21:46:14,781 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 21:46:14,781 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 21:46:14,781 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 21:46:14,781 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 21:46:14,781 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 21:46:14,781 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 21:46:14,781  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/06 21:46:14,781  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/06 21:46:14,781  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 21:46:14,781  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/06 21:46:14,781  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/06 21:46:14,796  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 15 ms
+10/07/06 21:46:14,796 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 21:46:14,796 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 21:46:14,796  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 21:46:14,796  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 21:46:14,796 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/IE7.js"
+10/07/06 21:46:14,796 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ie7-recalc.js"
+10/07/06 21:46:14,796  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/IE7.js": 0 ms
+10/07/06 21:46:14,796  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/ie7-recalc.js": 0 ms
+10/07/06 21:46:14,828 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 21:46:14,828  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/06 21:46:14,875 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 21:46:14,875  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/06 21:48:28,609 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/login_url"
+10/07/06 21:48:28,609 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 21:48:28,609 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/login_url, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 21:48:28,609 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = login_url, id = null, format = null, requiredFieldValues = {action=login_url, controller=welcome}, requestInfo {requestPath = /welcome/login_url, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 21:48:28,609 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = login_url, model = welcome, format = null
+10/07/06 21:48:28,609  WARN [8140933@qtp-15091334-5] RestfulRequestProcessor - Failed to create action method instance: Failed to create method "login_url" of class "blog.controllers.WelcomeController".
+Details: java.lang.NoSuchMethodException: blog.controllers.WelcomeController.login_url().
+10/07/06 21:48:28,609  WARN [8140933@qtp-15091334-5] RestfulRequestProcessor - Action method "login_url", forward to view "login_url".
+10/07/06 21:48:28,625 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: null
+10/07/06 21:48:28,625  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/login_url": 16 ms
+10/07/06 21:54:22,875 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/login_url"
+10/07/06 21:54:22,875 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 21:54:22,875 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/login_url, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 21:54:22,875 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = login_url, id = null, format = null, requiredFieldValues = {action=login_url, controller=welcome}, requestInfo {requestPath = /welcome/login_url, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 21:54:22,875 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = login_url, model = welcome, format = null
+10/07/06 21:54:22,875  WARN [8140933@qtp-15091334-5] RestfulRequestProcessor - Failed to create action method instance: Failed to create method "login_url" of class "blog.controllers.WelcomeController".
+Details: java.lang.NoSuchMethodException: blog.controllers.WelcomeController.login_url().
+10/07/06 21:54:22,875  WARN [8140933@qtp-15091334-5] RestfulRequestProcessor - Action method "login_url", forward to view "login_url".
+10/07/06 21:54:22,875 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: null
+10/07/06 21:54:22,875  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/login_url": 0 ms
+10/07/06 22:02:59,000 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/login_url"
+10/07/06 22:02:59,000 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:02:59,000 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/login_url, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:02:59,000 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = login_url, id = null, format = null, requiredFieldValues = {action=login_url, controller=welcome}, requestInfo {requestPath = /welcome/login_url, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:02:59,000 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = login_url, model = welcome, format = null
+10/07/06 22:02:59,000  WARN [8140933@qtp-15091334-5] RestfulRequestProcessor - Failed to create action method instance: Failed to create method "login_url" of class "blog.controllers.WelcomeController".
+Details: java.lang.NoSuchMethodException: blog.controllers.WelcomeController.login_url().
+10/07/06 22:02:59,000  WARN [8140933@qtp-15091334-5] RestfulRequestProcessor - Action method "login_url", forward to view "login_url".
+10/07/06 22:02:59,000 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: null
+10/07/06 22:02:59,000  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/login_url": 0 ms
+10/07/06 22:06:41,062 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\Util.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/06 22:06:41,203 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:301: 无法访问 template.InvocationContext
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\template\InvocationContext.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+                                  ^
+1 错误
+
+10/07/06 22:09:45,921 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:09:45,921 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:09:45,921 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:09:45,921 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:09:45,921 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:09:45,953 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        <if-ie version="lt IE 7">
+          
+  <script src="/blog/static/javascripts/IE7.js" type="text/javascript"></script>
+
+          
+  <script src="/blog/static/javascripts/ie7-recalc.js" type="text/javascript"></script>
+
+        </if-ie>
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:09:45,953  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 32 ms
+10/07/06 22:09:45,984 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:09:45,984  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/06 22:09:46,187 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:09:46,187  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/06 22:22:28,578 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:22:28,578 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:22:28,578 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:22:28,578 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:22:28,578 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:22:28,593 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:22:28,593  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 15 ms
+10/07/06 22:22:29,812 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:22:29,812 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:22:29,812 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:22:29,812 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:22:29,812 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:22:29,828 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:22:29,828  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:22:29,843 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 22:22:29,843  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/06 22:22:29,859 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 22:22:29,859 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:22:29,859  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/06 22:22:29,859 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 22:22:29,859 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 22:22:29,859 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 22:22:29,859  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/06 22:22:29,859 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:22:29,859 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 22:22:29,875  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 16 ms
+10/07/06 22:22:29,875 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 22:22:29,875 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 22:22:29,875  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 16 ms
+10/07/06 22:22:29,875  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 22:22:29,875  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/06 22:22:29,875  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 16 ms
+10/07/06 22:22:29,875  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 22:22:29,875  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/06 22:22:29,890 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 22:22:29,890  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 22:22:29,937 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 22:22:29,937  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/06 22:22:29,953 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 22:22:29,953  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/06 22:23:49,984 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:23:49,984 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:23:49,984 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:23:49,984 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:23:49,984 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:23:50,000 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:23:50,000  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:23:50,796 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:23:50,796 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:23:50,796 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:23:50,796 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:23:50,796 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:23:50,812 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:23:50,812  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:23:51,671 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:23:51,687 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:23:51,687 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:23:51,687 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:23:51,687 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:23:51,687 DEBUG [20843194@qtp-15091334-7] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:23:51,687  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:23:51,703 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 22:23:51,718  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 15 ms
+10/07/06 22:23:51,734 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 22:23:51,734 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 22:23:51,734  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/06 22:23:51,734  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/06 22:23:51,734 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:23:51,734 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 22:23:51,734 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:23:51,734 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 22:23:51,734 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 22:23:51,734 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 22:23:51,734  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 22:23:51,734  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/06 22:23:51,734  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/06 22:23:51,750  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/06 22:23:51,750  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 16 ms
+10/07/06 22:23:51,750 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 22:23:51,750  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 16 ms
+10/07/06 22:23:51,750 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 22:23:51,750  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 22:23:51,750  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 22:23:51,796 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 22:23:51,796  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/06 22:23:51,812 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 22:23:51,812  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/06 22:23:52,484 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:23:52,484 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:23:52,484 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:23:52,484 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:23:52,484 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:23:52,500 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/"><app-name></app-name></a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:23:52,500  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:24:55,687 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:24:55,687 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:24:55,687 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:24:55,687 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:24:55,687 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:24:55,703 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Ad</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:24:55,703  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:24:59,515 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:24:59,515 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:24:59,515 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:24:59,515 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:24:59,515 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:24:59,531 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Ad</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:24:59,531  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:24:59,546 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 22:24:59,546  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/06 22:24:59,578 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 22:24:59,578 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 22:24:59,578  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/06 22:24:59,578 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:24:59,593 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 22:24:59,593 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 22:24:59,578 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 22:24:59,578  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/06 22:24:59,593  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 15 ms
+10/07/06 22:24:59,593  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 0 ms
+10/07/06 22:24:59,593 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 22:24:59,578 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:24:59,593  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 22:24:59,593 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 22:24:59,593  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 15 ms
+10/07/06 22:24:59,593  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/06 22:24:59,593  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 22:24:59,609 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 22:24:59,609  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 22:24:59,609  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 31 ms
+10/07/06 22:24:59,656 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 22:24:59,656 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 22:24:59,656  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/06 22:24:59,656  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/06 22:25:09,812 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:25:09,812 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:25:09,812 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:25:09,812 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:25:09,812 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:25:09,828 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Blog</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:25:09,828  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:25:10,562 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:25:10,562 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:25:10,562 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:25:10,562 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:25:10,562 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:25:10,578 DEBUG [17815542@qtp-15091334-3] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Blog</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:25:10,578  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:25:10,578 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 22:25:10,578 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 22:25:10,578  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/06 22:25:10,578  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/06 22:25:10,593 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:25:10,593 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:25:10,593 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 22:25:10,593  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 22:25:10,593 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 22:25:10,593  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/06 22:25:10,593  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/06 22:25:10,593  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/06 22:25:10,593 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 22:25:10,593 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 22:25:10,593  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 0 ms
+10/07/06 22:25:10,593  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/06 22:25:10,609 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 22:25:10,609 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 22:25:10,609 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 22:25:10,609  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 22:25:10,609  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 22:25:10,609  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 16 ms
+10/07/06 22:25:10,625 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 22:25:10,625  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/06 22:25:10,640 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 22:25:10,640  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/06 22:26:00,828 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:26:00,828 DEBUG [31637242@qtp-15091334-4] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:26:00,828 DEBUG [31637242@qtp-15091334-4] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:26:00,828 DEBUG [31637242@qtp-15091334-4] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:26:00,828 DEBUG [31637242@qtp-15091334-4] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:26:00,843 DEBUG [31637242@qtp-15091334-4] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Blog</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:26:00,843  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/welcome/sayit": 15 ms
+10/07/06 22:26:00,859 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 22:26:00,859  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/06 22:26:00,875 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 22:26:00,875 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 22:26:00,875 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 22:26:00,875 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:26:00,875  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 22:26:00,875 DEBUG [1635615@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:26:00,875  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/06 22:26:00,875 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 22:26:00,875  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/06 22:26:00,875 DEBUG [17815542@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 22:26:00,875  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/06 22:26:00,875  INFO [1635615@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/06 22:26:00,890 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 22:26:00,875  INFO [17815542@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 22:26:00,875  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/06 22:26:00,890 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 22:26:00,890 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 22:26:00,890  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 22:26:00,890  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 0 ms
+10/07/06 22:26:00,890  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/06 22:26:00,890 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 22:26:00,906  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 16 ms
+10/07/06 22:26:00,906 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 22:26:00,906  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/06 22:26:01,718 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:26:01,718 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:26:01,718 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:26:01,718 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:26:01,718 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:26:01,734 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Blog</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:26:01,734  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:26:02,750 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:26:02,750 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:26:02,750 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:26:02,750 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:26:02,750 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:26:02,781 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Blog</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:26:02,781  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 31 ms
+10/07/06 22:26:04,187 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/welcome/sayit"
+10/07/06 22:26:04,187 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/06 22:26:04,187 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - requestInfo: requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/06 22:26:04,187 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor -   routeInfo: index = 35, routeName = 0, viewPath = welcome, routeType = default_route, resourceName = null, controller = welcome, controllerClassName = blog.controllers.WelcomeController, model = welcome, modelClassName = blog.models.Welcome, action = sayit, id = null, format = null, requiredFieldValues = {action=sayit, controller=welcome}, requestInfo {requestPath = /welcome/sayit, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/06 22:26:04,187 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - aps: controllerPath = /welcome, controller = welcome, controllerClassName = blog.controllers.WelcomeController, resource = null, action = sayit, model = welcome, format = null
+10/07/06 22:26:04,203 DEBUG [8140933@qtp-15091334-5] RestfulRequestProcessor - execution result: html=>
+<html>
+	
+  <head>
+  	<title>Blog</title>
+  	
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+        
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+      
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+  </head>
+  <body>
+      
+  <div id="ajax-progress" param="true" style="display:none">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div class="header" param="true" class="page-header">
+          
+  
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+      <else>
+        <li class="nav-item"><a href="login_url">Log in</a></li>
+        <li class="nav-item"><a href="ognl:signup_url">Sign up</a></li>
+      </else>
+    </ul>
+  
+
+          <h1><a href="#{base_url}/">Blog</a></h1>
+          
+          <main-nav current="ognl:title"></main-nav>
+        </div>
+
+        <section with-flash-messages="true"></section>
+        <footer class="page-footer"></footer>
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/06 22:26:04,203  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/welcome/sayit": 16 ms
+10/07/06 22:26:04,203 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/06 22:26:04,203 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/06 22:26:04,218  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 15 ms
+10/07/06 22:26:04,218  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 15 ms
+10/07/06 22:26:04,218 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/06 22:26:04,218 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/06 22:26:04,218 DEBUG [17423963@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/06 22:26:04,218  INFO [17423963@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/06 22:26:04,218 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/06 22:26:04,218  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/06 22:26:04,218  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/06 22:26:04,218  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/06 22:26:04,234 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/06 22:26:04,234 DEBUG [31637242@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/06 22:26:04,234 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/06 22:26:04,234  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/06 22:26:04,234  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/06 22:26:04,234 DEBUG [8140933@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/06 22:26:04,234  INFO [31637242@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 0 ms
+10/07/06 22:26:04,234 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/06 22:26:04,234  INFO [8140933@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/06 22:26:04,234  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 0 ms
+10/07/06 22:26:04,250 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/06 22:26:04,250  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/06 22:26:04,265 DEBUG [20843194@qtp-15091334-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/06 22:26:04,265  INFO [20843194@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
