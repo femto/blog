@@ -90,6 +90,7 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/references/dom4j-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/references/ognl-2.6.11.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>

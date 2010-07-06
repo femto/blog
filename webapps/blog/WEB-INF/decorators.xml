@@ -3,6 +3,7 @@
 <decorators defaultdir="/WEB-INF/views/layouts/sitemesh">
     <excludes>
         <pattern>/static/*</pattern>
+        <pattern>/*</pattern>
     </excludes>
 
     <decorator name="main" page="twoColumnsLayout.jsp">

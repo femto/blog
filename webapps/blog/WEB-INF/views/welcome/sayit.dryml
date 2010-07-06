@@ -1,0 +1,42 @@
+<dummy>
+<def attrs='name' tag='stylesheet'>
+  <ognl-append>
+  	@template.Util@stylesheets(name)
+</ognl-append>
+</def>
+<def attrs='name' tag='theme-stylesheet'>
+
+	<ognl-append>
+  	name ? 
+  	  @template.Util@stylesheets(name) : @template.Util@stylesheets("null1")
+
+</ognl-append>
+</def>
+<def tag="page" attrs='title, full-title'>
+<html merge-attrs="merge-attrs">
+	<scriptlet>
+		 if(full_title == null) {
+		 	 full_title ||= title + "- here";
+		 }
+		 
+  </scriptlet>
+  <head param="true">
+  	<title param="true">Blog</title>
+  	<do param='stylesheets'>
+        <stylesheet name='reset'/>
+        <stylesheet name='hobo-rapid'/>
+        <theme-stylesheet/>
+        <theme-stylesheet name="rapid-ui"/>
+        	<theme-stylesheet name="0"/>
+        <stylesheet name='application' param='app-stylesheet'/>
+      </do>
+  </head>
+  <body param="true">
+      <s3></s3>
+    </body>
+</html>
+</def>
+<page s3="s3" title="title" full-title="full"> 
+
+	</page>
+</dummy>

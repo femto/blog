@@ -1,5 +1,7 @@
 package template;
 
+import ognl.Ognl;
+import ognl.OgnlException;
 import org.dom4j.*;
 import org.dom4j.io.SAXReader;
 import org.dom4j.tree.DefaultText;
@@ -17,86 +19,6 @@ public class DrymlTemplateHandler {
     private static Map tagDefinitions = new HashMap();
     private static Stack invocationStack = new Stack();
 
-    static class TagDefinition {
-        private Element tag;
-
-
-        TagDefinition(Element tag) {
-            this.tag = tag;
-        }
-
-        public Element getTag() {
-            return tag;
-        }
-    }
-
-    static class TagInvocation {
-        private Element tag;
-
-        TagInvocation(Element tag) {
-            this.tag = tag;
-        }
-
-        public Element getTag() {
-            return tag;
-        }
-    }
-
-    static class InvocationContext {
-        private TagDefinition tagDefinition;
-        private TagInvocation tagInvocation;
-        private Map attributes = new HashMap();
-        private Map all_attributes = new HashMap();
-
-        private Map parameters = new HashMap();
-        private Map all_parameters = new HashMap();
-
-        InvocationContext(TagDefinition tagDefinition, TagInvocation tagInvocation) {
-            this.tagDefinition = tagDefinition;
-            this.tagInvocation = tagInvocation;
-        }
-
-        public TagDefinition getTagDefinition() {
-            return tagDefinition;
-        }
-
-        public TagInvocation getTagInvocation() {
-            return tagInvocation;
-        }
-
-        public Map getAttributes() {
-            return attributes;
-        }
-
-        public void setAttributes(Map attributes) {
-            this.attributes = attributes;
-        }
-
-        public Map getAll_attributes() {
-            return all_attributes;
-        }
-
-        public void setAll_attributes(Map all_attributes) {
-            this.all_attributes = all_attributes;
-        }
-
-        public Map getParameters() {
-            return parameters;
-        }
-
-        public void setParameters(Map parameters) {
-            this.parameters = parameters;
-        }
-
-        public Map getAll_parameters() {
-            return all_parameters;
-        }
-
-        public void setAll_parameters(Map all_parameters) {
-            this.all_parameters = all_parameters;
-        }
-    }
-
 
     public static Document parse(File file) throws DocumentException {
         SAXReader reader = new SAXReader();
@@ -106,19 +28,29 @@ public class DrymlTemplateHandler {
 
 
     public static void main(String[] args) throws Exception {
-        File file = new File("webapps\\blog\\WEB-INF\\views\\posts\\index3.dryml");
         StringBuilder result = new StringBuilder();
-        Document document = parse(file);
-        Element root = document.getRootElement();
-        //System.out.println(document.selectNodes("//foo/bar"));
-
-
-        for (Iterator i = root.elementIterator(); i.hasNext();) {
-            Element tag = (Element) i.next();
-            handleMeetingElement(tag, result);
-            // do something
-        }
+        handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result);
         System.out.println(result.toString());
+    }
+
+    public static void handle(String f, StringBuilder result) {
+        try {
+            File file = new File(f);
+
+            Document document = parse(file);
+            Element root = document.getRootElement();
+            //System.out.println(document.selectNodes("//foo/bar"));
+
+
+            for (Iterator i = root.elementIterator(); i.hasNext();) {
+                Element tag = (Element) i.next();
+                handleMeetingElement(tag, result);
+                // do something
+            }
+
+        } catch (DocumentException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
@@ -209,6 +141,17 @@ public class DrymlTemplateHandler {
     }
 
     private static void handleDefaultTag(Element element, StringBuilder result) { //default invocation doesn't change invocationContext's attr & params
+        if(element.getName().equals("ognl-append")) {
+            try {
+                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+
+                //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
+                result.append(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
+            } catch (OgnlException e) {
+                throw new RuntimeException(e);
+            }
+            return;
+        } //other normal stuff
         result.append("<" + element.getName() + "");
         //handle attribute
 
@@ -257,9 +200,15 @@ public class DrymlTemplateHandler {
 
         result.append(">");
         //for element's body
-        for (Iterator i = element.elementIterator(); i.hasNext();) {
-            Element tag = (Element) i.next();
-            handleMeetingElement(tag, result);
+        for (Iterator i = element.content().iterator(); i.hasNext();) {
+            Node node = (Node) i.next();
+            if (node instanceof Element) {
+                //System.out.println(node);
+                handleMeetingElement((Element) node, result);
+            } else { //text
+                result.append(node.getText());
+            }
+
             // do something
         }
         result.append("</" + element.getName() + ">");
@@ -274,7 +223,7 @@ public class DrymlTemplateHandler {
         TagInvocation tagInvocation = invocationContext.getTagInvocation();
 
         //handle tagDefinition's body
-        for (Iterator it = tagDefinition.tag.content().iterator(); it.hasNext();) {
+        for (Iterator it = tagDefinition.getTag().content().iterator(); it.hasNext();) {
             Node node = (Node) it.next();
             if (node instanceof DefaultText) {
                 result.append(((Text) node).getText());

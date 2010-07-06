@@ -1,0 +1,1441 @@
+10/07/05 14:05:06,312 DEBUG [main] PropertyFileChangeMonitor - monitoring file: environment.properties
+10/07/05 14:05:06,718 DEBUG [main] DatabaseConfig - created ds for blog_development with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/07/05 14:05:06,734 DEBUG [main] DatabaseConfig - created ds for blog_production with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/07/05 14:05:06,734 DEBUG [main] DatabaseConfig - created ds for blog_test with properties: {acquireIncrement=3, maxPoolSize=10, maxIdleTime=0, minPoolSize=10, initialPoolSize=3}
+10/07/05 14:05:06,734 DEBUG [main] PropertyFileChangeMonitor - monitoring file: database.properties
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: named_route, name: routesinfo
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = routesinfo, routeType = named_route, url = /routes, controller = builtin/siteinfo, controllerClass = com.scooterframework.builtin.SiteInfoController, dynamicController = false, action = routes, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index databases
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = index databases, routeType = rest_route, url = /databases, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = database, resourceName = databases
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = show database, routeType = rest_route, url = /databases/$id, controller = builtin/databrowser/databases, controllerClass = com.scooterframework.builtin.databrowser.DatabasesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = database, resourceName = databases
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-tables
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = index database-tables, routeType = rest_route, url = /databases/$database_id/tables, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = table, resourceName = tables
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = show database-table, routeType = rest_route, url = /databases/$database_id/tables/$id, controller = builtin/databrowser/tables, controllerClass = com.scooterframework.builtin.databrowser.TablesController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = table, resourceName = tables
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-table-records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = index database-table-records, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add database-table-record
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = add database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/add, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create database-table-record
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = create database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, table_id=3}, segmentCount = 5, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-table-record
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = show database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit database-table-record
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = edit database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id/edit, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 7, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update database-table-record
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = update database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete database-table-record
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = delete database-table-record, routeType = rest_route, url = /databases/$database_id/tables/$table_id/records/$id, controller = builtin/databrowser/records, controllerClass = com.scooterframework.builtin.databrowser.RecordsController, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=5, database_id=1, table_id=3}, segmentCount = 6, model = record, resourceName = records
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-views
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = index database-views, routeType = rest_route, url = /databases/$database_id/views, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1}, segmentCount = 3, model = view, resourceName = views
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show database-view
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = show database-view, routeType = rest_route, url = /databases/$database_id/views/$id, controller = builtin/databrowser/views, controllerClass = com.scooterframework.builtin.databrowser.ViewsController, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, database_id=1}, segmentCount = 4, model = view, resourceName = views
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index database-view-vrecords
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = index database-view-vrecords, routeType = rest_route, url = /databases/$database_id/views/$view_id/vrecords, controller = builtin/databrowser/vrecords, controllerClass = com.scooterframework.builtin.databrowser.VrecordsController, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {database_id=1, view_id=3}, segmentCount = 5, model = vrecord, resourceName = vrecords
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = index posts, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = add post, routeType = rest_route, url = /posts/add, controller = posts, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = post, resourceName = posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = create post, routeType = rest_route, url = /posts, controller = posts, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = post, resourceName = posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = show post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = edit post, routeType = rest_route, url = /posts/$id/edit, controller = posts, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 3, model = post, resourceName = posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = update post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post
+10/07/05 14:05:06,828 DEBUG [main] RouteConfig - ==> name = delete post, routeType = rest_route, url = /posts/$id, controller = posts, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=1}, segmentCount = 2, model = post, resourceName = posts
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ========== route type: rest_route, name: index post-comments
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ==> name = index post-comments, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = index, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add post-comment
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ==> name = add post-comment, routeType = rest_route, url = /posts/$post_id/comments/add, controller = comments, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create post-comment
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ==> name = create post-comment, routeType = rest_route, url = /posts/$post_id/comments, controller = comments, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {post_id=1}, segmentCount = 3, model = comment, resourceName = comments
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show post-comment
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ==> name = show post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit post-comment
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ==> name = edit post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id/edit, controller = comments, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 5, model = comment, resourceName = comments
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,859 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update post-comment
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = update post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete post-comment
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = delete post-comment, routeType = rest_route, url = /posts/$post_id/comments/$id, controller = comments, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {id=3, post_id=1}, segmentCount = 4, model = comment, resourceName = comments
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: add entry
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = add entry, routeType = rest_route, url = /feedbacks/add, controller = entries, controllerClass = null, dynamicController = false, action = add, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: create entry
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = create entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = create, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = POST, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: show entry
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = show entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = show, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: edit entry
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = edit entry, routeType = rest_route, url = /feedbacks/edit, controller = entries, controllerClass = null, dynamicController = false, action = edit, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = GET, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 2, model = entry, resourceName = entries
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: update entry
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = update entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = update, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = PUT, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: rest_route, name: delete entry
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = delete entry, routeType = rest_route, url = /feedbacks, controller = entries, controllerClass = null, dynamicController = false, action = delete, dynamicAction = false, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = DELETE, singular = null, namespace = null, pathPrefix = null, requirements = null, requiredFieldPositions = {}, segmentCount = 1, model = entry, resourceName = entries
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: default_route, name: 0
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = 0, routeType = default_route, url = $controller/$action, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {action=1, controller=0}, segmentCount = 2
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: default_route, name: 1
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = 1, routeType = default_route, url = $controller/$action/$id, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = null, dynamicFormat = false, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ========== route type: default_route, name: 2
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - ==> name = 2, routeType = default_route, url = $controller/$action/$id.$format, controller = null, controllerClass = null, dynamicController = true, action = null, dynamicAction = true, id = null, format = $format, dynamicFormat = true, allowed_formats = null, allowed_methods = ANY, singular = null, namespace = null, pathPrefix = null, requirements = controller => /\D+/, action => /\D+/, requiredFieldPositions = {id=2, action=1, controller=0}, segmentCount = 3
+10/07/05 14:05:06,875 DEBUG [main] RouteConfig - 
+10/07/05 14:05:06,875  INFO [main] RouteConfig - total routes = 38
+10/07/05 14:05:06,875 DEBUG [main] PropertyFileChangeMonitor - monitoring file: routes.properties
+10/07/05 14:05:06,875 DEBUG [main] PropertyFileChangeMonitor - monitoring file: log4j.properties
+10/07/05 14:05:06,921  INFO [main] AutoLoaderConfig - output class location: E:\scooter-project\blog\webapps\blog\WEB-INF\classes
+10/07/05 14:05:06,921  INFO [main] AutoLoaderConfig - references location: E:\scooter-project\blog\references
+10/07/05 14:05:06,921  INFO [main] AutoLoaderConfig - class path: E:\scooter-project\blog\webapps\blog\WEB-INF\classes;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\c3p0-oracle-thin-extras-0.9.1.2.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\dom4j-1.6.1.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\javassist.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\log4j-1.2.15.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\markdownj-1.0.2b4-0.3.0.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\mysql.jar;E:\scooter-project\blog\webapps\blog\WEB-INF\lib\sitemesh-2.3.jar;E:\scooter-project\blog\references\j2ee\jta.jar;E:\scooter-project\blog\references\j2ee\servlet-api.jar;E:\scooter-project\blog\references\junit\junit-3.8.2.jar;
+10/07/05 14:05:06,921  INFO [main] AutoLoaderConfig - source file location: E:\scooter-project\blog\src
+10/07/05 14:05:06,921  INFO [main] AutoLoaderConfig - compiler forbidden files: [java., com.sun., org.apache., com.scooterframework., javax.]
+10/07/05 14:05:06,921 DEBUG [main] PropertyFileChangeMonitor - monitoring file: autoloader.properties
+10/07/05 14:05:06,953 DEBUG [main] PropertyFileChangeMonitor - monitoring file: sql.properties
+10/07/05 14:05:07,000 DEBUG [main] MessageResourcesManager - loaded locale: zh_CN
+10/07/05 14:05:07,046 DEBUG [main] DirChangeMonitor - monitoring dirctory: E:\scooter-project\blog\config\locales with filter sameprefix-messages
+10/07/05 14:05:07,125 DEBUG [main] FileMonitor - Java source file change monitor started with an interval of 1000 milliseconds.
+10/07/05 14:05:07,125 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java]
+10/07/05 14:05:08,375 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:06:42,296 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/05 14:06:42,390 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:06:42,406 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/05 14:06:42,421 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/05 14:06:42,421 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/05 14:06:42,640  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:06:42,640  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\index".
+10/07/05 14:06:42,640 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:06:42,640 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/posts/index.jsp
+10/07/05 14:06:43,234  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts": 938 ms
+10/07/05 14:06:45,625 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts/add"
+10/07/05 14:06:45,625 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:06:45,625 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/05 14:06:45,625 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 16, routeName = add post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = add, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/05 14:06:45,625 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = add, model = post, format = null
+10/07/05 14:06:45,625  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:06:45,625  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\add".
+10/07/05 14:06:45,640 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:06:45,640 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/posts/add.jsp
+10/07/05 14:06:45,671  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts/add": 46 ms
+10/07/05 14:06:48,734 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"POST /blog/posts"
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[content] values=[y]
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[title] values=[y]
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[commit] values=[Create]
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[name] values=[y]
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = POST, format = null, segmentCount = 1
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 17, routeName = create post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = create, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = POST, format = null, segmentCount = 1}
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = create, model = post, format = null
+10/07/05 14:06:48,750  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:06:48,750  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\create".
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:06:48,750 ERROR [15020576@qtp-2112561-7] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/posts/create.jsp" does not exist.
+10/07/05 14:06:48,750 ERROR [15020576@qtp-2112561-7] RestfulRequestProcessor - Error in "POST /blog/posts": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/posts/create.jsp" does not exist.
+10/07/05 14:06:48,750 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/05 14:06:48,812  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "POST /blog/posts": 78 ms
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/05 14:06:56,343  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:06:56,343  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\index".
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:06:56,343 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/posts/index.jsp
+10/07/05 14:06:56,343  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts": 0 ms
+10/07/05 14:06:56,375 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/07/05 14:06:56,375 DEBUG [23257749@qtp-2112561-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/07/05 14:06:56,421  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 46 ms
+10/07/05 14:06:56,421  INFO [23257749@qtp-2112561-6] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 46 ms
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/05 14:06:58,765  INFO [23257749@qtp-2112561-6] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:06:58,765  WARN [23257749@qtp-2112561-6] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\index".
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] RestfulRequestProcessor - execution result: null
+10/07/05 14:06:58,765 DEBUG [23257749@qtp-2112561-6] RestfulRequestProcessor - doForward: /WEB-INF/views/posts/index.jsp
+10/07/05 14:06:58,781  INFO [23257749@qtp-2112561-6] ScooterRequestFilter - "GET /blog/posts": 16 ms
+10/07/05 14:06:58,796 DEBUG [23257749@qtp-2112561-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/main.css"
+10/07/05 14:06:58,796 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/ajax.js"
+10/07/05 14:06:58,796  INFO [23257749@qtp-2112561-6] ScooterRequestFilter - "GET /blog/static/stylesheets/main.css": 0 ms
+10/07/05 14:06:58,796  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/javascripts/ajax.js": 0 ms
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts?paged=true"
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/05 14:07:01,031  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:07:01,031  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\index".
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:07:01,031 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/posts/index.jsp
+10/07/05 14:07:01,031  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts?paged=true": 0 ms
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts/add"
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 16, routeName = add post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = add, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = add, model = post, format = null
+10/07/05 14:07:01,890  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:07:01,890  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\add".
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:07:01,890 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/posts/add.jsp
+10/07/05 14:07:01,906  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts/add": 16 ms
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] ScooterRequestFilter - ============>>"POST /blog/posts"
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[content] values=[y]
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[title] values=[y]
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[commit] values=[Create]
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - name=[name] values=[y]
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = POST, format = null, segmentCount = 1
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 17, routeName = create post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = create, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = POST, format = null, segmentCount = 1}
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = create, model = post, format = null
+10/07/05 14:07:35,265  INFO [15020576@qtp-2112561-7] ControllerFactory - Failed to create instance of "blog.controllers.PostsController";
+10/07/05 14:07:35,265  WARN [15020576@qtp-2112561-7] RestfulRequestProcessor - Controller instance for "posts" does not exist, forward to view "posts\create".
+10/07/05 14:07:35,265 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/05 14:07:35,265 ERROR [15020576@qtp-2112561-7] WebConfig - View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/posts/create.jsp" does not exist.
+10/07/05 14:07:35,265 ERROR [15020576@qtp-2112561-7] RestfulRequestProcessor - Error in "POST /blog/posts": com.scooterframework.web.controller.ViewFileNotFoundException: View file "E:\scooter-project\blog\webapps\blog/WEB-INF/views/posts/create.jsp" does not exist.
+10/07/05 14:07:35,281 DEBUG [15020576@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/05 14:07:35,281  INFO [15020576@qtp-2112561-7] ScooterRequestFilter - "POST /blog/posts": 16 ms
+10/07/05 14:10:51,375 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:10:51,468 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:10:59,390 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:10:59,484 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:14:37,390 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:14:37,484 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:15:20,406 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:15:20,484 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:15: 需要 ';'
+        System.out.println(file.exists());
+              ^
+1 错误
+
+10/07/05 14:17:48,390 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:17:48,406 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:21: 需要 ';'
+        System.out.println(file.exists());
+              ^
+1 错误
+
+10/07/05 14:19:22,406 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:19:22,500 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:19:42,406 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:19:42,500 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:19:54,406 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:19:54,500 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:20:14,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:20:14,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:20:43,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:20:43,531 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:22:03,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:22:03,515 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:22:21,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:22:21,578 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:22:39,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:22:39,531 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:23:36,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:23:36,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:24:36,421 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:24:36,515 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:25:43,468 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:25:43,562 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:26:24,468 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:26:24,468 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:19: 非法的类型开始
+    }
+    ^
+1 错误
+
+10/07/05 14:26:34,468 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:26:34,656 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:28:33,484 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:28:33,484 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:37: 需要 ';'
+                System.out.println(tag.getText());
+                ^
+1 错误
+
+10/07/05 14:28:37,484 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:28:37,484 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:37: 需要 ';'
+                System.out.println(tag.getText());
+                ^
+1 错误
+
+10/07/05 14:29:02,484 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:29:02,562 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:30:00,500 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:30:00,593 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:30:35,531 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:30:35,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:33:15,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:33:15,609 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:36:10,531 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:36:10,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:36:47,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:36:47,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:37:10,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:37:10,609 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:37:56,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:37:56,609 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:39:21,578 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:39:21,671 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:40:15,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:40:15,687 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:40:55,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:40:55,750 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:54:41,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:54:41,703 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:57:02,671 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:57:02,765 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 14:59:24,671 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 14:59:24,812 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:00:56,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:00:56,859 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:03:14,796 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:03:14,968 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:04:21,875 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:04:21,968 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:04:37,890 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:04:37,968 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:04:46,875 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:04:47,046 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:05:45,921 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:05:46,000 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 15:55:38,906 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 15:55:39,000 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:00:41,937 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:00:42,015 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:01:19,937 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:01:20,031 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:05:20,000 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:05:20,015 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:52: 非法的表达式开始
+                tagDefinitions.put(attribute.getValue(),  new TagDefinition(tag.content(), ));
+                                                                                           ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:52: 需要 ')'
+                tagDefinitions.put(attribute.getValue(),  new TagDefinition(tag.content(), ));
+                                                                                             ^
+2 错误
+
+10/07/05 16:09:34,015 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:09:34,109 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:11:35,046 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:11:35,140 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:17:03,078 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:17:03,234 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:17:28,078 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:17:28,296 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:18:06,078 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:18:06,171 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:19:28,109 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:19:28,296 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:19:50,109 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:19:50,187 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:22:50,109 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:22:50,203 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:25:07,156 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:25:07,328 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:25:54,140 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:25:54,234 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 16:26:42,140 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 16:26:42,265 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:30:02,203 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:30:02,375 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:32:40,265 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:32:40,281 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:105: 需要 ';'
+            } else {
+            ^
+1 错误
+
+10/07/05 18:34:32,312 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:34:32,406 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:40:24,468 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:40:24,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:40:48,484 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:40:48,656 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:43:04,531 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:43:04,625 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:47:08,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:47:08,765 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:47:54,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:47:54,687 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:48:30,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:48:30,781 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:49:54,609 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:49:54,703 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:51:00,609 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:51:00,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:52:27,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:52:27,812 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:53:54,609 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:53:54,734 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:57:06,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:57:06,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 18:58:05,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 18:58:05,843 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:01:32,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:01:32,734 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:01:39,656 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:01:39,750 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:19:10,671 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:19:10,812 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:19:57,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:19:57,781 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:20:40,703 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:20:40,703 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:139: 不是语句
+            Map 
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:139: 需要 ';'
+            Map 
+               ^
+2 错误
+
+10/07/05 19:20:48,718 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:20:48,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:140: 不是语句
+            Map 
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:140: 需要 ';'
+            Map 
+               ^
+2 错误
+
+10/07/05 19:21:33,781 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:21:33,781 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:146: 非法的表达式开始
+            }
+            ^
+1 错误
+
+10/07/05 19:23:56,812 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:23:56,921 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:25:37,828 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:25:38,015 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:28:00,843 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:28:00,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:33:03,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:33:03,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:33:28,921 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:33:29,093 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 19:34:14,937 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 19:34:15,031 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 20:31:42,093 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 20:31:42,203 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 20:37:51,140 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 20:37:51,328 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 20:39:03,140 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 20:39:03,250 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:32:39,328 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:32:40,875 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:07,921 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:09,500 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:16,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:16,796 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:32,531 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:32,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:33:55,546 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:33:55,718 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:40:21,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:40:21,734 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:41:00,578 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:41:00,593 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:181: 需要 ';'
+^
+1 错误
+
+10/07/05 22:41:53,578 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:41:53,796 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:42:54,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:42:54,687 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:44:03,593 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:44:04,125 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:51:41,625 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:51:41,859 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:53:35,640 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:53:35,734 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:54:51,656 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:54:51,656 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:181: 不是语句
+                Map 
+                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:181: 需要 ';'
+                Map 
+                   ^
+2 错误
+
+10/07/05 22:55:01,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:55:01,687 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:182: 不是语句
+                Map 
+                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:182: 需要 ';'
+                Map 
+                   ^
+2 错误
+
+10/07/05 22:55:31,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:55:31,703 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:187: 需要 ';'
+                    }
+                    ^
+1 错误
+
+10/07/05 22:55:34,687 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:55:34,781 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:56:28,750 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:56:28,765 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:188: 非法的表达式开始
+                        parameters.put(name, );
+                                             ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:188: 需要 ')'
+                        parameters.put(name, );
+                                              ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 非法的表达式开始
+                        all_parameters.put(name, );
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 需要 ')'
+                        all_parameters.put(name, );
+                                                  ^
+4 错误
+
+10/07/05 22:56:48,750 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:56:48,750 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 非法的表达式开始
+                        all_parameters.put(name, );
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:189: 需要 ')'
+                        all_parameters.put(name, );
+                                                  ^
+2 错误
+
+10/07/05 22:57:05,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:57:05,859 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 22:58:10,765 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 22:58:10,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:00:22,796 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:00:22,890 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:03:59,828 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:03:59,921 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:07:27,843 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:07:28,093 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:07:43,843 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:07:44,031 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:08:40,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:08:41,062 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:09:31,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:09:31,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:10:46,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:10:47,109 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:14:11,859 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:14:12,000 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:14:26,875 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:14:26,953 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:15:20,890 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:15:21,062 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:16:03,968 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:16:04,078 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:16:51,015 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:16:51,203 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:17:06,015 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:17:06,234 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:17:16,062 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:17:16,156 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:18:08,093 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:18:08,218 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+
+10/07/05 23:18:14,078 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\InitController.java, E:\scooter-project\blog\src\literal\Main.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/05 23:18:14,250 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\blog\controllers\InitController.java:3: 无法访问 blog.models.Comment
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\blog\models\Comment.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+import blog.models.Comment;
+                   ^
+1 错误
+

@@ -1,6 +1,8 @@
 package blog.controllers;
 
 import blog.models.Post;
+import com.scooterframework.web.config.WebConfig;
+import template.DrymlTemplateHandler;
 
 /**
  * WelcomeController class handles welcome related access.
@@ -10,10 +12,15 @@ public class WelcomeController extends ApplicationController {
      * sayit method
      */
     public String sayit() {
-        log.info("sayit:" + this.getClass().getClassLoader());
         flash("notice", "succesfully saved!");
         storeToRequest("@content", "fun1");
-        return null;
+        StringBuilder result = new StringBuilder();
+        String uri = getViewURI("welcome", "sayit");
+        System.out.println(uri);
+        uri = WebConfig.getRealPath() + uri;
+        DrymlTemplateHandler.handle(uri, result);
+
+        return html(result.toString());
     }
 
     public String sayone() {
