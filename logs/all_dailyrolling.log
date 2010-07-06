@@ -8,3 +8,13 @@
             ^
 1 错误
 
+10/07/07 00:00:53,812 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\Util.java, E:\scooter-project\blog\src\template\DefaultEval.java, E:\scooter-project\blog\src\template\ProcEval.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/07 00:00:53,984 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DefaultEval.java:17: 无法访问 template.InvocationContext
+错误的类文件： E:\scooter-project\blog\webapps\blog\WEB-INF\classes\template\InvocationContext.class
+类文件具有错误的版本 50.0，应为 49.0
+请删除该文件或确保该文件位于正确的类路径子目录中。
+    private InvocationContext invocationContext;
+            ^
+1 错误
+

@@ -165,6 +165,7 @@ public class DrymlTemplateHandler {
             if(invocationContext.getAll_parameters().containsKey(paramName)) {
                ProcEval procEval = (ProcEval) invocationContext.getAll_parameters().get(paramName);
                result.append(procEval.toString());
+               return;
             }
         }
         if (element.getName().equals("ognl-append")) {
