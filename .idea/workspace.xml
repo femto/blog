@@ -316,7 +316,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="312" class="template.DrymlTemplateHandler" package="template">
+      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="363" class="template.DrymlTemplateHandler" package="template">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -329,7 +329,7 @@
         <option name="CONDITION" value="value == null" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java" line="23" class="blog.controllers.PostsController" package="blog.controllers">
+      <breakpoint url="file://$PROJECT_DIR$/src/template/OgnlTest.java" line="31" class="template.OgnlTest" package="template">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -401,30 +401,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+      <file leaf-file-name="show.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="27" selection-start="2904" selection-end="2904" vertical-scroll-proportion="19.28">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OgnlTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/OgnlTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+            <state line="5" column="6" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlyweightAttribute.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/FlyweightAttribute.java">
+      <file leaf-file-name="show.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
+            <state line="0" column="61" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -433,34 +422,25 @@
       <file leaf-file-name="PostsController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+            <state line="40" column="16" selection-start="1257" selection-end="1261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignonController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/controllers/SignonController.java">
+      <file leaf-file-name="index.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+            <state line="20" column="24" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WelcomeController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/controllers/WelcomeController.java">
+      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="15" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultEval.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/DefaultEval.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="62" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
+            <state line="211" column="0" selection-start="8268" selection-end="8268" vertical-scroll-proportion="0.30379745">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -468,30 +448,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcEval.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/ProcEval.java">
+      <file leaf-file-name="DrymlConfiguration.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/DrymlConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="19" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="148" selection-end="155" vertical-scroll-proportion="0.0">
+            <state line="7" column="55" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decorators.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/decorators.xml">
+      <file leaf-file-name="InvocationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="29" selection-start="158" selection-end="179" vertical-scroll-proportion="0.18957347">
+            <state line="16" column="22" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OgnlTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/OgnlTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="52" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TagParameters.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/TagParameters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.6.0_18/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="13" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -510,22 +506,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/literal/Main.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/InitController.java" />
-        <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/autoloader/MyClassLoader.java" />
-        <option value="$PROJECT_DIR$/src/template/TagDefinition.java" />
-        <option value="$PROJECT_DIR$/src/template/TagInvocation.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/ApplicationController.java" />
-        <option value="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/welcome/sayit.dryml" />
-        <option value="$PROJECT_DIR$/src/template/InvocationContext.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" />
+        <option value="$PROJECT_DIR$/src/template/DrymlConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/template/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/WelcomeController.java" />
-        <option value="$PROJECT_DIR$/src/template/Util.java" />
-        <option value="$PROJECT_DIR$/src/template/ProcEval.java" />
-        <option value="$PROJECT_DIR$/src/template/DefaultEval.java" />
-        <option value="$PROJECT_DIR$/src/template/OgnlTest.java" />
+        <option value="$PROJECT_DIR$/src/blog/controllers/PostsController.java" />
+        <option value="$PROJECT_DIR$/src/template/MyClassResolver.java" />
+        <option value="$PROJECT_DIR$/src/blog/controllers/ApplicationController.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/welcome/sayit.dryml" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/paged_list.dryml" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" />
         <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/decorators.xml" />
+        <option value="$PROJECT_DIR$/src/template/TagParameters.java" />
+        <option value="$PROJECT_DIR$/src/template/OgnlTest.java" />
       </list>
     </option>
   </component>
@@ -737,45 +733,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sitemesh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -939,7 +897,7 @@
       <recent name="E:\scooter-project\blog\references\jdbc-clients" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote.Unnamed">
+  <component name="RunManager" selected="Application.OgnlTest">
     <configuration default="false" name="All in blog" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="snapshooter" />
@@ -1258,12 +1216,42 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
+    <configuration default="false" name="DrymlConfiguration" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="snapshooter" />
+      <option name="MAIN_CLASS_NAME" value="template.DrymlConfiguration" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="blog" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2180" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in blog" />
       <item index="1" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="Remote.Unnamed" />
       <item index="3" class="java.lang.String" itemvalue="Application.DrymlTemplateHandler" />
       <item index="4" class="java.lang.String" itemvalue="Application.OgnlTest" />
+      <item index="5" class="java.lang.String" itemvalue="Application.DrymlConfiguration" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1331,28 +1319,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="848" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29827088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38760808" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31412104" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4092219" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.389049" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17697842" sideWeight="0.41354465" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15395683" sideWeight="0.351585" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19064748" sideWeight="0.6757925" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15395683" sideWeight="0.21902017" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37175792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33669063" sideWeight="0.69884723" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45100865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1647482" sideWeight="0.5518732" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1391,121 +1379,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/config/WebConfig.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.0">
+        <state line="3" column="8" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/admin/ApplicationConfig.java">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ActionContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="36" selection-start="6834" selection-end="6834" vertical-scroll-proportion="0.0">
+        <state line="768" column="19" selection-start="22707" selection-end="22707" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/sqldataexpress/util/SqlExpressUtil.java">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/W.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="544" column="109" selection-start="19682" selection-end="19682" vertical-scroll-proportion="0.0">
+        <state line="2235" column="30" selection-start="86795" selection-end="86795" vertical-scroll-proportion="-13.4">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/Element.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="538" column="14" selection-start="16848" selection-end="16848" vertical-scroll-proportion="0.0">
+        <state line="3" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/AbstractAttribute.java">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/O.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+        <state line="43" column="40" selection-start="1442" selection-end="1457" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="710" selection-end="710" vertical-scroll-proportion="-7.5833335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_18/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="13" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
+        <state line="16" column="22" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DrymlConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="55" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/TagParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/template/OgnlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+        <state line="23" column="52" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="27" selection-start="2904" selection-end="2904" vertical-scroll-proportion="19.28">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DefaultEval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="62" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/ProcEval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="148" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/dom4j-1.6.1/src/java/org/dom4j/tree/FlyweightAttribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
+        <state line="0" column="61" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+        <state line="40" column="16" selection-start="1257" selection-end="1261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/controllers/SignonController.java">
+    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/controllers/WelcomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="15" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/decorators.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="158" selection-end="179" vertical-scroll-proportion="0.18957347">
-          <folding />
+        <state line="211" column="0" selection-start="8268" selection-end="8268" vertical-scroll-proportion="0.30379745">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -3,18 +3,17 @@ package blog.controllers;
 import com.scooterframework.orm.activerecord.ActiveRecord;
 import com.scooterframework.orm.misc.Paginator;
 import com.scooterframework.web.config.Constants;
+import com.scooterframework.web.config.WebConfig;
 import com.scooterframework.web.util.R;
 
 import blog.models.Post;
+import template.ApplicationConfig;
+import template.DrymlTemplateHandler;
 
 /**
  * PostsController class handles posts related access.
  */
 public class PostsController extends ApplicationController {
-
-    public void registerFilters() {
-       super.beforeFilter("SignonController:loginRequired");
-    }
 
     /**
      * <tt>index</tt> method returns a list of <tt>posts</tt> records.
@@ -27,7 +26,11 @@ public class PostsController extends ApplicationController {
             return forwardTo(viewPath("paged_list"));
         }
         storeToRequest("posts", findAll(Post.class));
-        return null;
+
+
+        return drymlHandle("posts", "index");
+
+
     }
     
     /**
@@ -41,7 +44,9 @@ public class PostsController extends ApplicationController {
         else {
             storeToRequest("post", post);
         }
-        return null;
+        
+        return drymlHandle("posts", "show");
+
     }
     
     /**

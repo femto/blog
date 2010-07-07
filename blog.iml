@@ -96,6 +96,7 @@
         <SOURCES>
           <root url="file://E:/toolset/dom4j-1.6.1/src/java" />
           <root url="file://E:/toolset/dom4j-1.6.1/src/java" />
+          <root url="jar://E:/toolset/ognl-2.6.11-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

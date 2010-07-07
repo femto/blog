@@ -1,6 +1,7 @@
 package template;
 
 import ognl.Ognl;
+import ognl.OgnlContext;
 import ognl.OgnlException;
 import org.dom4j.*;
 import org.dom4j.io.SAXReader;
@@ -16,9 +17,27 @@ import java.util.*;
  */
 public class DrymlTemplateHandler {
 
+    private DrymlConfiguration drymlConfiguration;
+
     private Map tagDefinitions = new HashMap();
     private Stack invocationStack = new Stack();
     private boolean last_if = true;
+
+    private Map ognlContext = null;
+
+    public DrymlTemplateHandler(DrymlConfiguration drymlConfiguration) {
+        this.drymlConfiguration = drymlConfiguration;
+
+        Map map = new OgnlContext();
+        ognlContext = Ognl.addDefaultContext(null, drymlConfiguration.getClassResolver(), map);
+    }
+
+
+//    public DrymlTemplateHandler() {
+//        Map map = new HashMap();
+//
+//        ognlContext = Ognl.addDefaultContext(null, new MyClassResolver(), map);
+//    }
 
 
     public static Document parse(File file) throws DocumentException {
@@ -29,12 +48,20 @@ public class DrymlTemplateHandler {
 
 
     public static void main(String[] args) throws Exception {
-        StringBuilder result = new StringBuilder();
-        new DrymlTemplateHandler().handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result);
-        System.out.println(result.toString());
+        //StringBuilder result = new StringBuilder();
+        //DrymlTemplateHandler templateHandler = new DrymlTemplateHandler();
+
+        //templateHandler.handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result);
+        //System.out.println(result.toString());
     }
 
     public void handle(String f, StringBuilder result) {
+        this.handleInternal("webapps\\blog\\WEB-INF\\views\\application.dryml", result);
+        this.handleInternal(f, result);
+    }
+
+    public void handleInternal(String f, StringBuilder result) {
+
         try {
             File file = new File(f);
 
@@ -88,7 +115,7 @@ public class DrymlTemplateHandler {
 
                 InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
                 if (invocationContext.getAll_parameters().containsKey(paramName)) {
-                    Object object =  invocationContext.getAll_parameters().get(paramName);
+                    Object object = invocationContext.getAll_parameters().get(paramName);
                     result.append(object.toString());
                     return;
                 }
@@ -127,8 +154,8 @@ public class DrymlTemplateHandler {
                 invocationContext.setAll_attributes(all_attributes);
 
                 //preparing parameters, all lazy evaluated
-                Map parameters = new HashMap();
-                Map all_parameters = new HashMap();
+                Map parameters = new TagParameters();
+                Map all_parameters = new TagParameters();
                 for (Iterator it = element.elementIterator(); it.hasNext();) {
                     Element ele = (Element) it.next();
                     if (ele.getName().indexOf("param-") != -1) {
@@ -141,9 +168,9 @@ public class DrymlTemplateHandler {
                 }
                 if (all_parameters.size() == 0) { //what about text?
                     DefaultEval defaultValue = new DefaultEval(element, this, invocationContext);
-                    String defaultValueResult = defaultValue.toString();
-                    parameters.put("default", defaultValueResult);
-                    all_parameters.put("default", defaultValueResult);
+                    //String defaultValueResult = defaultValue.toString();
+                    parameters.put("default", defaultValue);
+                    all_parameters.put("default", defaultValue);
                 }
                 invocationContext.setParameters(parameters);
                 invocationContext.setAll_parameters(all_parameters);
@@ -175,7 +202,18 @@ public class DrymlTemplateHandler {
                 InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
 
                 //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
-                result.append(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getLocal_variables()));
+                result.append(Ognl.getValue(element.getText(), ognlContext, invocationContext.getLocal_variables()));
+            } catch (OgnlException e) {
+                throw new RuntimeException(e);
+            }
+            return;
+        } else if ("ognl".equals(element.getName())) {
+            try {
+                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+
+                //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
+                Ognl.getValue(element.getText(), ognlContext, invocationContext.getLocal_variables());
+                System.out.println("...");
             } catch (OgnlException e) {
                 throw new RuntimeException(e);
             }
@@ -187,17 +225,30 @@ public class DrymlTemplateHandler {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             for (Iterator it = element.attributeIterator(); it.hasNext();) {
                 Attribute attribute = (Attribute) it.next();
-                invocationContext.getLocal_variables().put(attribute.getName(), eval(attribute.getValue(), invocationContext.getLocal_variables(), invocationContext.getLocal_variables()));
+                invocationContext.getLocal_variables().put(attribute.getName(), eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables()));
             }
             return;
         } else if ("if".equals(element.getName())) {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            Object retValue = eval(element.attribute("test").getValue(), invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
+            Object retValue = eval(element.attribute("test").getValue(), ognlContext, invocationContext.getLocal_variables());
             if (!(last_if = trueValue(retValue))) {
                 return;
             }
         } else if ("else".equals(element.getName())) {
-            System.out.println("else");
+            if (last_if) {
+                return;
+            }
+        } else if("repeat".equals(element.getName())) {
+            //System.out.println("repeat");
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            Object retValue = eval(element.attribute("with").getValue(), ognlContext, invocationContext.getLocal_variables());
+            if (!(last_if = trueValue(retValue))) {
+                return;
+            }
+            //  context_map do
+            //    parameters.default
+            //  end.join(join)
+
         }
         if (!"do".equals(element.getName())) {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
@@ -205,7 +256,7 @@ public class DrymlTemplateHandler {
             if (attrContains(element, "if")) {
                 String controlValue = element.attribute("if").getValue();
                 System.out.println("evaluating " + controlValue);
-                Object retValue = eval(controlValue, invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
+                Object retValue = eval(controlValue, ognlContext, invocationContext.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;
                 }
@@ -262,7 +313,7 @@ public class DrymlTemplateHandler {
 
                 } else {
                     if (attribute.getValue().startsWith("ognl:")) {
-                        Object evalResult = eval(attribute.getValue(), invocationContext.getLocal_variables(), invocationContext.getLocal_variables());
+                        Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
 
                         result.append(nameValue(attribute.getName(), evalResult));
                     } else {
@@ -317,7 +368,7 @@ public class DrymlTemplateHandler {
         if (value != null) {
             return nameValue(name, value.toString());
         } else {
-           return nameValue(name, "null");
+            return nameValue(name, "null");
         }
     }
 

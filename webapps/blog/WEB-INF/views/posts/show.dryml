@@ -1,0 +1,45 @@
+<dummy>
+<page>
+<param-content><div style="clear:both">
+<ognl>
+post = @W@request("post")
+</ognl>
+<h2>Show post</h2>
+<ognl-append>@W@errorMessage("post")</ognl-append>
+<p>
+  <b>Id:</b>
+<ognl-append>@O@hv("post.id")</ognl-append>
+</p>
+<p>
+  <b>Name:</b>
+  <ognl-append>@O@hv("post.name")</ognl-append>
+</p>
+
+<p>
+  <b>Title:</b>
+  <ognl-append>@O@hv("post.title")</ognl-append>
+</p>
+
+<p>
+  <b>Content:</b>
+  <ognl-append>@O@hv("post.content")</ognl-append>
+</p>
+
+<p>
+  <b>Created At:</b>
+  <ognl-append>@O@hv("post.created_at")</ognl-append>
+</p>
+
+<p>
+  <b>Updated At:</b>
+  <ognl-append>@O@hv("post.updated_at")</ognl-append>
+</p>
+
+<br />
+
+<ognl-append>@W@labelLink("Edit", @R@editResourceRecordPath("posts", post))</ognl-append>|
+<ognl-append>@W@labelLink("List", @R@resourcePath("posts"))</ognl-append>|
+<ognl-append>@W@labelLink("Paged List", @R@resourcePath("posts") + "?paged=true")</ognl-append>
+</div></param-content>
+</page>
+</dummy>

@@ -740,3 +740,8 @@
 127.0.0.1 -  -  [06/七月/2010:17:36:14 +0000] "GET /blog/static/javascripts/application.js HTTP/1.1" 304 0 
 127.0.0.1 -  -  [06/七月/2010:17:36:14 +0000] "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png HTTP/1.1" 304 0 
 127.0.0.1 -  -  [06/七月/2010:17:36:14 +0000] "GET /blog/static/themes/clean/images/spinner.gif HTTP/1.1" 304 0 
+127.0.0.1 -  -  [06/七月/2010:18:41:02 +0000] "CONNECT clients4.google.com:443 HTTP/1.1" 404 1270 
+127.0.0.1 -  -  [06/七月/2010:18:41:03 +0000] "CONNECT www.google.com:443 HTTP/1.0" 404 1270 
+null -  -  [06/七月/2010:18:41:08 +0000] "CONNECT talk.google.com:443 HTTP/1.0" 404 1270 
+null -  -  [06/七月/2010:18:41:09 +0000] "CONNECT talk.google.com:5222 HTTP/1.0" 404 1271 
+127.0.0.1 -  -  [07/七月/2010:06:13:08 +0000] "CONNECT clients4.google.com:443 HTTP/1.1" 404 1270 
