@@ -1,4 +1,31 @@
 <dummy>
 <page>
+<param-content>
+<div style="clear:both">
+<h2>Add post</h2>
+<ognl-append>@W@errorMessage("post")</ognl-append>
+
+<ognl-append>@F@formForOpen("posts", "post")</ognl-append>
+  <p>
+    <ognl-append>@F@label("name")</ognl-append><br />
+    <input type="text" id="post_name" name="name" value='ognl:@O@hv("post.name")' size="80" />
+  </p>
+  <p>
+    <ognl-append>@F@label("title")</ognl-append><br />
+    <input type="text" id="post_title" name="title" value='ognl:@O@hv("post.title")' size="80" />
+  </p>
+  <p>
+    <ognl-append>@F@label("content")</ognl-append><br />
+    <textarea id="post_content" name="content" cols="60" rows="10"><ognl-append>@O@hv("post.content")</ognl-append></textarea>
+  </p>
+  <input id="post_submit" name="commit" type="submit" value="Create" /><![CDATA[&nbsp;&nbsp;&nbsp;]]><input type="reset"/>
+<ognl-append>@F@formForClose("posts")</ognl-append>
+
+<br />
+
+<ognl-append>@W@labelLink("List", @R@resourcePath("posts"))</ognl-append>|
+<ognl-append>@W@labelLink("Paged List", @R@resourcePath("posts") + "?paged=true")</ognl-append>
+</div>
+</param-content>
 </page>
 </dummy>

@@ -54,7 +54,7 @@ public class PostsController extends ApplicationController {
      */
     public String add() {
         storeToRequest("post", homeInstance(Post.class));
-        return null;
+        return drymlHandle("posts", "add");
     }
     
     /**
@@ -82,7 +82,8 @@ public class PostsController extends ApplicationController {
      * <tt>edit</tt> method prepares data for editing an existing <tt>post</tt> record.
      */
     public String edit() {
-        return show();
+        storeToRequest("post", findRecordByPrimaryKey(Post.class, pkparams(Post.class)));
+        return drymlHandle("posts", "edit");
     }
     
     /**

@@ -25,7 +25,7 @@ public class CommentsController extends ApplicationController {
             newComment.save();
             flash("notice", "Comment was successfully created.");
             
-            return redirectTo(R.resourcePath("comments"));
+            return redirectTo(R.resourcePath("posts"));
         }
         catch(Exception ex) {
             log.error("Error in create() caused by " + ex.getMessage());

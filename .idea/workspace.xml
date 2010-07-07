@@ -316,7 +316,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="363" class="template.DrymlTemplateHandler" package="template">
+      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="402" class="template.DrymlTemplateHandler" package="template">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -404,7 +404,16 @@
       <file leaf-file-name="show.dryml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="6" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="55" selection-end="96" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentsController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blog/controllers/CommentsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="51" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -413,16 +422,16 @@
       <file leaf-file-name="show.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="61" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0">
+            <state line="81" column="31" selection-start="1206" selection-end="1739" vertical-scroll-proportion="-19.416666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PostsController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="16" selection-start="1257" selection-end="1261" vertical-scroll-proportion="0.0">
+            <state line="85" column="0" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.33235294">
               <folding />
             </state>
           </provider>
@@ -431,16 +440,16 @@
       <file leaf-file-name="index.dryml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="24" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+            <state line="3" column="24" selection-start="15" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="0" selection-start="8268" selection-end="8268" vertical-scroll-proportion="0.30379745">
+            <state line="151" column="62" selection-start="5045" selection-end="5309" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -448,46 +457,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrymlConfiguration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/DrymlConfiguration.java">
+      <file leaf-file-name="edit.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="55" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvocationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
+      <file leaf-file-name="add.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+            <state line="24" column="17" selection-start="816" selection-end="828" vertical-scroll-proportion="-16.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OgnlTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/OgnlTest.java">
+      <file leaf-file-name="add.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="52" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+            <state line="25" column="34" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TagParameters.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/TagParameters.java">
+      <file leaf-file-name="edit.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.6.0_18/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="13" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.0">
+            <state line="35" column="71" selection-start="271" selection-end="1272" vertical-scroll-proportion="-23.333334">
               <folding />
             </state>
           </provider>
@@ -506,22 +506,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" />
         <option value="$PROJECT_DIR$/src/template/DrymlConfiguration.java" />
         <option value="$PROJECT_DIR$/src/template/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/WelcomeController.java" />
-        <option value="$PROJECT_DIR$/src/blog/controllers/PostsController.java" />
         <option value="$PROJECT_DIR$/src/template/MyClassResolver.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/ApplicationController.java" />
         <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/welcome/sayit.dryml" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml" />
         <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/paged_list.dryml" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" />
-        <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
         <option value="$PROJECT_DIR$/src/template/TagParameters.java" />
         <option value="$PROJECT_DIR$/src/template/OgnlTest.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml" />
+        <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" />
+        <option value="$PROJECT_DIR$/src/blog/controllers/CommentsController.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml" />
+        <option value="$PROJECT_DIR$/src/blog/controllers/PostsController.java" />
       </list>
     </option>
   </component>
@@ -897,7 +897,7 @@
       <recent name="E:\scooter-project\blog\references\jdbc-clients" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OgnlTest">
+  <component name="RunManager" selected="Remote.Unnamed">
     <configuration default="false" name="All in blog" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="snapshooter" />
@@ -1319,23 +1319,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="848" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38760808" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25792506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4092219" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43227667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.389049" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37896255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15395683" sideWeight="0.351585" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15827338" sideWeight="0.3429395" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15395683" sideWeight="0.21902017" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15971223" sideWeight="0.5576369" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33669063" sideWeight="0.69884723" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45100865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1379,48 +1379,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ActionContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="768" column="19" selection-start="22707" selection-end="22707" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/W.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2235" column="30" selection-start="86795" selection-end="86795" vertical-scroll-proportion="-13.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/O.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="40" selection-start="1442" selection-end="1457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="710" selection-end="710" vertical-scroll-proportion="-7.5833335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.6.0_18/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="13" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.0">
@@ -1431,20 +1389,6 @@
     <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="22" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1470,26 +1414,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.jsp">
+    <entry file="jar://E:/toolset/ognl-2.6.11-sources.jar!/ognl/Ognl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="61" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1257" selection-end="1261" vertical-scroll-proportion="0.0">
+        <state line="473" column="40" selection-start="21463" selection-end="21463" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="0" selection-start="8268" selection-end="8268" vertical-scroll-proportion="0.30379745">
+        <state line="151" column="62" selection-start="5045" selection-end="5309" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="31" selection-start="1206" selection-end="1739" vertical-scroll-proportion="-19.416666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blog/controllers/CommentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="51" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="15" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="816" selection-end="828" vertical-scroll-proportion="-16.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="71" selection-start="271" selection-end="1272" vertical-scroll-proportion="-23.333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="55" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.33235294">
+          <folding />
         </state>
       </provider>
     </entry>

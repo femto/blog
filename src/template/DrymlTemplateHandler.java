@@ -124,71 +124,82 @@ public class DrymlTemplateHandler {
             if (tagDefinitions.get(element.getName()) == null) { //default tag
                 handleDefaultTag(element, result); //nothing changed invocationContext
             } else { //handle defined element
-                Object tagDefinition = tagDefinitions.get(element.getName());
-                TagInvocation tagInvocation = new TagInvocation(element);
-                InvocationContext invocationContext = new InvocationContext((TagDefinition) tagDefinition, tagInvocation);
-
-                //preparing attributes
-                Map attributes = new HashMap();
-                Map all_attributes = new HashMap();
-
-                for (Iterator iterator = tagInvocation.getTag().attributeIterator(); iterator.hasNext();) {
-                    Attribute attr = (Attribute) iterator.next();
-                    all_attributes.put(attr.getName(), attr.getValue());
-                    Attribute attributeAttrs = ((TagDefinition) tagDefinition).getTag().attribute("attrs");
-                    if (attributeAttrs != null) {
-                        String attrs = attributeAttrs.getValue();
-                        String[] attrs1 = attrs.split(",");
-                        for (int i = 0; i < attrs1.length; i++) {
-                            attrs1[i] = attrs1[i].trim();
-                        }
-                        if (!Arrays.asList(attrs1).contains(attr.getName())) {
-                            attributes.put(attr.getName(), attr.getValue());
-                        }
-                    } else {
-                        attributes.put(attr.getName(), attr.getValue());
-                    }
-                }
-
-                invocationContext.setAttributes(attributes);
-                invocationContext.setAll_attributes(all_attributes);
-
-                //preparing parameters, all lazy evaluated
-                Map parameters = new TagParameters();
-                Map all_parameters = new TagParameters();
-                for (Iterator it = element.elementIterator(); it.hasNext();) {
-                    Element ele = (Element) it.next();
-                    if (ele.getName().indexOf("param-") != -1) {
-                        String name = ele.getName().replace("param-", "");
-                        //System.out.println(name);
-                        ProcEval procEval = new ProcEval(ele, this, invocationContext);
-                        parameters.put(name, procEval); //or ele's content?
-                        all_parameters.put(name, procEval);
-                    }
-                }
-                if (all_parameters.size() == 0) { //what about text?
-                    DefaultEval defaultValue = new DefaultEval(element, this, invocationContext);
-                    //String defaultValueResult = defaultValue.toString();
-                    parameters.put("default", defaultValue);
-                    all_parameters.put("default", defaultValue);
-                }
-                invocationContext.setParameters(parameters);
-                invocationContext.setAll_parameters(all_parameters);
-
-                Map local_variables = new HashMap();
-                local_variables.put("attributes", attributes);
-                local_variables.put("all_attributes", all_attributes);
-                local_variables.put("parameters", parameters);
-                local_variables.put("all_parameters", all_parameters);
-                invocationContext.setLocal_variables(local_variables);
-
-
-                invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
+                InvocationContext invocationContext = prelude(element);
 
                 handleInvocation(invocationContext, result); //handle attribute
-                invocationStack.pop();
+                postlude();
             }
         }
+    }
+
+    private void postlude() {
+        invocationStack.pop();
+    }
+
+    private InvocationContext prelude(Element element) {
+        Object tagDefinition = tagDefinitions.get(element.getName());
+        TagInvocation tagInvocation = new TagInvocation(element);
+        InvocationContext invocationContext = new InvocationContext((TagDefinition) tagDefinition, tagInvocation);
+
+        //preparing attributes
+        Map attributes = new HashMap();
+        Map all_attributes = new HashMap();
+
+        for (Iterator iterator = tagInvocation.getTag().attributeIterator(); iterator.hasNext();) {
+            Attribute attr = (Attribute) iterator.next();
+            all_attributes.put(attr.getName(), attr.getValue());
+            if (tagDefinition != null) { //or else, maybe <repeat>TagDefinition?
+                Attribute attributeAttrs = ((TagDefinition) tagDefinition).getTag().attribute("attrs");
+                if (attributeAttrs != null) {
+                    String attrs = attributeAttrs.getValue();
+                    String[] attrs1 = attrs.split(",");
+                    for (int i = 0; i < attrs1.length; i++) {
+                        attrs1[i] = attrs1[i].trim();
+                    }
+                    if (!Arrays.asList(attrs1).contains(attr.getName())) {
+                        attributes.put(attr.getName(), attr.getValue());
+                    }
+                } else {
+                    attributes.put(attr.getName(), attr.getValue());
+                }
+            }
+        }
+
+        invocationContext.setAttributes(attributes);
+        invocationContext.setAll_attributes(all_attributes);
+
+        //preparing parameters, all lazy evaluated
+        Map parameters = new TagParameters();
+        Map all_parameters = new TagParameters();
+        for (Iterator it = element.elementIterator(); it.hasNext();) {
+            Element ele = (Element) it.next();
+            if (ele.getName().indexOf("param-") != -1) {
+                String name = ele.getName().replace("param-", "");
+                //System.out.println(name);
+                ProcEval procEval = new ProcEval(ele, this, invocationContext);
+                parameters.put(name, procEval); //or ele's content?
+                all_parameters.put(name, procEval);
+            }
+        }
+        if (all_parameters.size() == 0) { //what about text?
+            DefaultEval defaultValue = new DefaultEval(element, this, invocationContext);
+            //String defaultValueResult = defaultValue.toString();
+            parameters.put("default", defaultValue);
+            all_parameters.put("default", defaultValue);
+        }
+        invocationContext.setParameters(parameters);
+        invocationContext.setAll_parameters(all_parameters);
+
+        Map local_variables = new HashMap();
+        local_variables.put("attributes", attributes);
+        local_variables.put("all_attributes", all_attributes);
+        local_variables.put("parameters", parameters);
+        local_variables.put("all_parameters", all_parameters);
+        invocationContext.setLocal_variables(local_variables);
+
+
+        invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
+        return invocationContext;
     }
 
     private void handleScriptlet(Element element) {
@@ -213,7 +224,7 @@ public class DrymlTemplateHandler {
 
                 //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
                 Ognl.getValue(element.getText(), ognlContext, invocationContext.getLocal_variables());
-                System.out.println("...");
+                //System.out.println("...");
             } catch (OgnlException e) {
                 throw new RuntimeException(e);
             }
@@ -238,13 +249,19 @@ public class DrymlTemplateHandler {
             if (last_if) {
                 return;
             }
-        } else if("repeat".equals(element.getName())) {
+        } else if ("repeat".equals(element.getName())) {
+
+            prelude(element);
             //System.out.println("repeat");
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             Object retValue = eval(element.attribute("with").getValue(), ognlContext, invocationContext.getLocal_variables());
             if (!(last_if = trueValue(retValue))) {
+                postlude();
                 return;
             }
+            repeat(retValue, element, ognlContext, invocationContext.getLocal_variables(), result);
+            postlude();
+            return;
             //  context_map do
             //    parameters.default
             //  end.join(join)
@@ -340,6 +357,28 @@ public class DrymlTemplateHandler {
 
         if (!"do".equals(element.getName())) {
             result.append("</" + element.getName() + ">");
+        }
+    }
+
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+        //we already test retValue outside of this
+        try {
+            if (retValue instanceof Collection) {
+                int i = 0;
+                for (Iterator it = ((Collection) retValue).iterator(); it.hasNext();) {
+                    Object o = it.next();
+
+                    Ognl.setValue(element.attribute("var").getValue(), ognlContext, root, o);
+                    Ognl.setValue(element.attribute("var").getValue() + "_index", ognlContext, root, i);
+                    //yields to body
+                    result.append(Ognl.getValue("parameters.default", ognlContext, root));
+
+                    i++;
+
+                }
+            }
+        } catch (OgnlException e) {
+            throw new RuntimeException(e);
         }
     }
 

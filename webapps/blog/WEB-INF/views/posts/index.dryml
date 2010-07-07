@@ -15,19 +15,19 @@
         <th></th>
     </tr>
 
-    <repeat with='ognl:@O@getObjectForKey("posts")'>
+    <repeat with='ognl:@O@getObjectForKey("posts")' var="post">
 
         <tr class='ognl:@W@cycle("odd, even")'>
-        <td><ognl-append>@O@hp(#this, "id")</ognl-append></td>
-        <td><ognl-append>@O@hp(#this, "name")</ognl-append></td>
-        <td><ognl-append>@O@hp(#this, "title")</ognl-append></td>
-        <td><ognl-append>@O@hp(#this, "content")</ognl-append></td>
-        <td><ognl-append>@O@hp(#this, "created_at")</ognl-append></td>
-        <td><ognl-append>@O@hp(#this, "updated_at")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "id")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "name")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "title")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "content")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "created_at")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "updated_at")</ognl-append></td>
         <td nowrap="nowrap">
-            <ognl-append>@W@labelLink("show", @R@resourceRecordPath("posts", #this))</ognl-append>
-            <ognl-append>@W@labelLink("edit", @R@editResourceRecordPath("posts", #this))</ognl-append>
-            <ognl-append>@W@labelLink("delete", @R@resourceRecordPath("posts", #this), "confirm:'Are you sure?'; method:delete")</ognl-append>
+            <ognl-append>@W@labelLink("show", @R@resourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>@W@labelLink("edit", @R@editResourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>@W@labelLink("delete", @R@resourceRecordPath("posts", post), "confirm:'Are you sure?'; method:delete")</ognl-append>
         </td>
     </tr>
     </repeat>
