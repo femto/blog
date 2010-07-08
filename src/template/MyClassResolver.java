@@ -11,7 +11,7 @@ import java.util.Map;
 */
 class MyClassResolver implements ClassResolver {
     public Class classForName(String s, Map map) throws ClassNotFoundException {
-        System.out.println("resovling for class " + s);
+        //System.out.println("resovling for class " + s);
         if(s.length() == 1 && 'A' <= s.charAt(0) && 'Z' >= s.charAt(0)) {
             return Class.forName("com.scooterframework.web.util." + s);
         }

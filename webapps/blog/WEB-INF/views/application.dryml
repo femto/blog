@@ -81,9 +81,13 @@
     </ul>
 
 </def>
+<def tag="do">
+<ognl-append>parameters.default
+</ognl-append>
+</def>
 
 <def tag="main-nav">
-  <ul class='navigation' merge-attrs="true">
+  <ul class='navigation main-nav'>
     <li class="" style="float:left"><a href="ognl:@template.Util@getBaseUrl()">首页</a></li>
     <li class="" style="float:left"><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
     <li class="" style="float:left"><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>

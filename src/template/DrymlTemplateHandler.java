@@ -267,81 +267,80 @@ public class DrymlTemplateHandler {
             //  end.join(join)
 
         }
-        if (!"do".equals(element.getName())) {
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            //checking attrs, to see if there is any "if", "repeat", "unless"
-            if (attrContains(element, "if")) {
-                String controlValue = element.attribute("if").getValue();
-                System.out.println("evaluating " + controlValue);
-                Object retValue = eval(controlValue, ognlContext, invocationContext.getLocal_variables());
-                if (!(last_if = trueValue(retValue))) {
-                    return;
-                }
+
+        InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+        //checking attrs, to see if there is any "if", "repeat", "unless"
+        if (attrContains(element, "if")) {
+            String controlValue = element.attribute("if").getValue();
+            //System.out.println("evaluating " + controlValue);
+            Object retValue = eval(controlValue, ognlContext, invocationContext.getLocal_variables());
+            if (!(last_if = trueValue(retValue))) {
+                return;
             }
-
-            result.append("<" + element.getName() + "");
-
-            for (Iterator i = element.attributeIterator(); i.hasNext();) {
-                Attribute attribute = (Attribute) i.next();
-                List skipAttributes = Arrays.asList("if", "unless", "repeat");
-                if (skipAttributes.contains(attribute.getName())) {
-                    continue;
-                }
-                if ("param".equals(attribute.getName())) {
-                    String paramName = attribute.getValue();
-                    if ("true".equals(paramName) || "param".equals(paramName)) {
-                        paramName = element.getName();
-                    }
-                    result.append(nameValue("class", paramName));
-                }
-                if ("merge-attrs".equals(attribute.getName())) {
-                    //peek the invocation stack
-                    invocationContext = (InvocationContext) invocationStack.peek();
-                    for (Iterator it = invocationContext.getAttributes().keySet().iterator(); it.hasNext();) {
-                        String key = (String) it.next();
-                        result.append(nameValue(key, invocationContext.getAttributes().get(key).toString()));
-
-                    }
-                } else if ("param".equals(attribute.getName())) {
-                    String paramName = attribute.getValue();
-                    //System.out.println(attribute.getName() + "=" + attribute.getValue());
-                    if ("true".equals(paramName)) {
-                        paramName = element.getName();
-                    }
-                    //System.out.println("paramName is " + paramName);
-                    invocationContext = (InvocationContext) invocationStack.peek();
-                    //System.out.println(invocationContext.getParameters().get(paramName));
-
-
-                    //result.append()
-                    Object value = invocationContext.getParameters().get(paramName);
-                    if (value != null) {
-                        result.append(">");
-                        for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
-                            Node node = (Node) it.next();
-                            result.append(node.getText());
-                        }
-
-                        result.append("</" + element.getName() + ">");
-                        return;
-                    } else { //normal path
-
-                    }
-
-                } else {
-                    if (attribute.getValue().startsWith("ognl:")) {
-                        Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
-
-                        result.append(nameValue(attribute.getName(), evalResult));
-                    } else {
-                        result.append(nameValue(attribute.getName(), attribute.getValue()));
-                    }
-                }
-
-            }
-
-            result.append(">");
         }
+
+        //passing if, repeat, unless test
+        //see if we have param attr defined
+        //because we are predefined html tag, so we output all <start-tag> of this
+        result.append("<" + element.getName() + "");
+
+        //todo: handle proper attributes handling
+        Map attrs = new HashMap();
+        for (Iterator i = element.attributeIterator(); i.hasNext();) {
+            Attribute attribute = (Attribute) i.next();
+            List skipAttributes = Arrays.asList("if", "unless", "repeat", "merge-attrs");
+            if (skipAttributes.contains(attribute.getName())) {
+                continue;
+            } //skip if, repeat, unless, already tested
+
+            if ("param".equals(attribute.getName())) {
+                String paramName = attribute.getValue();
+                //System.out.println(attribute.getName() + "=" + attribute.getValue());
+                if ("true".equals(paramName)) {
+                    paramName = element.getName();
+                }
+                //System.out.println("paramName is " + paramName);
+                invocationContext = (InvocationContext) invocationStack.peek();
+                //System.out.println(invocationContext.getParameters().get(paramName));
+
+
+                //result.append()
+                Object value = invocationContext.getParameters().get(paramName);
+                if (value != null) {
+                    result.append(">");
+                    for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
+                        Node node = (Node) it.next();
+                        result.append(node.getText());
+                    }
+
+                    result.append("</" + element.getName() + ">");
+                    return;
+                } else { //normal path
+
+                }
+
+            } else {
+                if (attribute.getValue().startsWith("ognl:")) {
+                    Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
+                    attrs.put(attribute.getName(), evalResult);
+                } else {
+                    attrs.put(attribute.getName(), attribute.getValue());
+                }
+            }
+        }
+
+        if(attrContains(element, "merge-attrs") || attrContains(element, "merge")) { //merging attrs
+            attrs = mergeAttributes(attrs, invocationContext.getAttributes());
+        }
+
+        for (Iterator it = attrs.keySet().iterator(); it.hasNext();) {
+            String key = (String) it.next();
+            result.append(nameValue(key, attrs.get(key)));
+        }
+
+
+        result.append(">");
+
         //for element's body
         for (Iterator i = element.content().iterator(); i.hasNext();) {
             Node node = (Node) i.next();
@@ -355,9 +354,23 @@ public class DrymlTemplateHandler {
             // do something
         }
 
-        if (!"do".equals(element.getName())) {
-            result.append("</" + element.getName() + ">");
+        result.append("</" + element.getName() + ">");
+
+    }
+
+    private Map mergeAttributes(Map attrs, Map map2) {
+//        InvocationContext invocationContext;
+//        invocationContext = (InvocationContext) invocationStack.peek();
+        for (Iterator it = map2.keySet().iterator(); it.hasNext();) {
+            String key = (String) it.next();
+            if ("class".equals(key)) { //merging
+                attrs.put(key, attrs.get("class") + " " + map2.get(key));
+            } else { //overriding
+                attrs.put(key, map2.get(key).toString());
+            }
+
         }
+        return attrs;
     }
 
     private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {

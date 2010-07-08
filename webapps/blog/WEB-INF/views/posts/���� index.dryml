@@ -1,0 +1,43 @@
+<dummy>
+<page>
+<param-content>
+<div style="clear:both">
+<h2><ognl-append>@T@pluralize(@O@count("posts"), "post")</ognl-append></h2>
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+    </tr>
+
+    <repeat with='ognl:@O@getObjectForKey("posts")' var="post">
+
+        <tr class='ognl:@W@cycle("odd, even")'>
+        <td><ognl-append>@O@hp(post, "id")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "name")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "title")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "content")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "created_at")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "updated_at")</ognl-append></td>
+        <td nowrap="nowrap">
+            <ognl-append>@W@labelLink("show", @R@resourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>@W@labelLink("edit", @R@editResourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>@W@labelLink("delete", @R@resourceRecordPath("posts", post), "confirm:'Are you sure?'; method:delete")</ognl-append>
+        </td>
+    </tr>
+    </repeat>
+
+    </table>
+    <br />
+<ognl-append>@W@labelLink("Add post", @R@addResourcePath("posts"))</ognl-append>|
+<ognl-append>@W@labelLink("Paged List", @R@resourcePath("posts") + "?paged=true")</ognl-append>
+
+</div>
+</param-content>
+</page>
+</dummy>
