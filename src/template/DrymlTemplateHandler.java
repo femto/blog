@@ -190,11 +190,14 @@ public class DrymlTemplateHandler {
         invocationContext.setParameters(parameters);
         invocationContext.setAll_parameters(all_parameters);
 
-        Map local_variables = new HashMap();
+        LocalVariables local_variables = new LocalVariables();
         local_variables.put("attributes", attributes);
         local_variables.put("all_attributes", all_attributes);
         local_variables.put("parameters", parameters);
         local_variables.put("all_parameters", all_parameters);
+        if (invocationStack.size() > 0) {
+            local_variables.setParent(((InvocationContext)invocationStack.peek()).getLocal_variables());
+        }
         invocationContext.setLocal_variables(local_variables);
 
 
@@ -408,7 +411,7 @@ public class DrymlTemplateHandler {
         if (retValue == null) {
             return false;
         }
-        if(retValue == Boolean.FALSE) {
+        if (retValue == Boolean.FALSE) {
             return false;
         }
         return true;

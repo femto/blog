@@ -16,4 +16,24 @@ public class LocalVariables extends HashMap {
     public LocalVariables(LocalVariables parent) {
         this.parent = parent;
     }
+
+    public LocalVariables getParent() {
+        return parent;
+    }
+
+    public void setParent(LocalVariables parent) {
+        this.parent = parent;
+    }
+
+    @Override
+    public Object get(Object key) {
+        Object result = super.get(key);
+        if (result == null) { //delegate to parent
+            if(parent != null) {
+                 return parent.get(key);
+            }
+            return result;
+        }
+        return result;
+    }
 }

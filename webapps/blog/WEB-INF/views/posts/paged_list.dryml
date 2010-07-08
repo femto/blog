@@ -42,7 +42,7 @@ records = paginator.getRecordList()
         
     </tr>
 <repeat with="ognl:records" var="post">
-    <tr class='ognl:@W@cycle("odd, even")%>'>
+    <tr class='ognl:@W@cycle("odd, even")'>
         <td><ognl-append>@O@hp(post, "id")</ognl-append></td>
         <td><ognl-append>@O@hp(post, "name")</ognl-append></td>
         <td><ognl-append>@O@hp(post, "title")</ognl-append></td>
@@ -50,9 +50,9 @@ records = paginator.getRecordList()
         <td><ognl-append>@O@hp(post, "created_at")</ognl-append></td>
         <td><ognl-append>@O@hp(post, "updated_at")</ognl-append></td>
         <td class="multilink" nowrap="nowrap">
-            <ognl-append>W.labelLink("show", @R@resourceRecordPath("posts", post))</ognl-append>
-            <ognl-append>W.labelLink("edit", @R@editResourceRecordPath("posts", post))</ognl-append>
-            <ognl-append>W.labelLink("delete", @R@resourceRecordPath("posts", post), "confirm:'Are you sure?'; method:delete")</ognl-append>
+            <ognl-append>@W@labelLink("show", @R@resourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>@W@labelLink("edit", @R@editResourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>@W@labelLink("delete", @R@resourceRecordPath("posts", post), "confirm:'Are you sure?'; method:delete")</ognl-append>
         </td>
     </tr>
 </repeat>
@@ -60,7 +60,35 @@ records = paginator.getRecordList()
 
     </td>
     </tr>
+    <tr>
+        <td align="left">
+        Page <ognl-append>paginator.getCurrentPage()</ognl-append>/<ognl-append>paginator.getPageCount()</ognl-append>. </td>
+        <td align="right" class="multilink">
+            Showing <ognl-append>paginator.getStartIndex()</ognl-append> - <ognl-append>paginator.getEndIndex()</ognl-append> of <ognl-append>paginator.getTotalCount()</ognl-append><![CDATA[&nbsp;
+            ]]>
+            <ognl-append>@W@pageLink("First",    @R@resourcePath("posts"), paginator.getQueryStringFirst())</ognl-append><![CDATA[&nbsp;|&nbsp;
+            ]]>
+            <ognl-append>@W@pageLink("Previous", @R@resourcePath("posts"), paginator.getQueryStringPrevious())</ognl-append><![CDATA[&nbsp;|&nbsp;
+            ]]>
+            <ognl-append>@W@pageLink("Next",     @R@resourcePath("posts"), paginator.getQueryStringNext())</ognl-append><![CDATA[&nbsp;|&nbsp;
+            ]]>
+            <ognl-append>@W@pageLink("Last",     @R@resourcePath("posts"), paginator.getQueryStringLast())</ognl-append>
+        </td>
+    </tr>
+
 </table>
+<br />
+
+                <ognl-append>@W@diggStylePageLinks(paginator, @R@resourcePath("posts"), 4, 11)</ognl-append>
+                <form action='ognl:@W@getURL(@R@resourcePath("posts"))' method="GET">
+<input type="hidden" name="r" value="page" />
+<input type="hidden" name="limit" value='ognl:@W@get("limit", "10")' />
+<input type="hidden" name="paged" value="true" />
+Go to page <input type="text" id="npage" name="npage" size="2" /><input type="submit" value="Go" />
+</form>
+
+<ognl-append>@W@labelLink("Add post", @R@addResourcePath("posts"))</ognl-append>|
+<ognl-append>@W@labelLink("List", @R@resourcePath("posts"))</ognl-append>
             </div>
         </param-content>
 

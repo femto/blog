@@ -1,18 +1,5 @@
 <dryml>
-<def tag="s1">
-<if test="ognl:false">
-<div>
-xxx
-</div>
-</if>
-<else>
-<div>
-yyy
-</div>
-</else>
-</def>
-
-<s1 />
+<page />
 
 
 </dryml>
