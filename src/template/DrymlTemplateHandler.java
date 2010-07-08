@@ -8,6 +8,7 @@ import org.dom4j.io.SAXReader;
 import org.dom4j.tree.DefaultText;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -22,6 +23,8 @@ public class DrymlTemplateHandler {
     private Map tagDefinitions = new HashMap();
     private Stack invocationStack = new Stack();
     private boolean last_if = true;
+    private File current_file = null;
+    private Stack fileStack = new Stack();
 
     private Map ognlContext = null;
 
@@ -61,9 +64,11 @@ public class DrymlTemplateHandler {
     }
 
     public void handleInternal(String f, StringBuilder result) {
-
+        File originalFile = current_file;
         try {
             File file = new File(f);
+
+            current_file = file;
 
             Document document = parse(file);
             Element root = document.getRootElement();
@@ -78,11 +83,21 @@ public class DrymlTemplateHandler {
 
         } catch (DocumentException e) {
             throw new RuntimeException(e);
+        } finally {
+         current_file = originalFile;
         }
     }
 
 
-    private static void handleInclude(Element tag) {
+    private void handleInclude(Element element, StringBuilder result) {
+        try {
+            String src = element.attributeValue("src");
+            String file = current_file.getParentFile().getCanonicalPath() + File.separator + src + ".dryml";
+            //current_file = new File(file);
+            handleInternal(file, result);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
@@ -100,7 +115,7 @@ public class DrymlTemplateHandler {
             handleDefTag(element);
 
         } else if ("include".equals(element.getName())) {
-            handleInclude(element);
+            handleInclude(element, result);
         } else if ("scriptlet".equals(element.getName())) {
             handleScriptlet(element);
         } else { //calling
@@ -196,7 +211,7 @@ public class DrymlTemplateHandler {
         local_variables.put("parameters", parameters);
         local_variables.put("all_parameters", all_parameters);
         if (invocationStack.size() > 0) {
-            local_variables.setParent(((InvocationContext)invocationStack.peek()).getLocal_variables());
+            local_variables.setParent(((InvocationContext) invocationStack.peek()).getLocal_variables());
         }
         invocationContext.setLocal_variables(local_variables);
 
@@ -271,6 +286,8 @@ public class DrymlTemplateHandler {
 
         }
 
+        //if (!"else".equals(element.getName())) {
+
         InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
         //checking attrs, to see if there is any "if", "repeat", "unless"
         if (attrContains(element, "if")) {
@@ -285,6 +302,7 @@ public class DrymlTemplateHandler {
         //passing if, repeat, unless test
         //see if we have param attr defined
         //because we are predefined html tag, so we output all <start-tag> of this
+        //if(!"else".equals(element.getName())) {
         result.append("<" + element.getName() + "");
 
         //todo: handle proper attributes handling
@@ -344,6 +362,8 @@ public class DrymlTemplateHandler {
 
         result.append(">");
 
+        //} //"else"
+
         //for element's body
         for (Iterator i = element.content().iterator(); i.hasNext();) {
             Node node = (Node) i.next();
@@ -357,7 +377,9 @@ public class DrymlTemplateHandler {
             // do something
         }
 
-        result.append("</" + element.getName() + ">");
+        //if (!"else".equals(element.getName())) {
+            result.append("</" + element.getName() + ">");
+        //}
 
     }
 

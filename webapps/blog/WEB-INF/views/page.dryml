@@ -1,0 +1,104 @@
+<dryml>
+<def tag="page" attrs='title, full-title'>
+<html merge-attrs="merge-attrs" param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	<do param='stylesheets'>
+        <stylesheet name='reset'/>
+
+        <theme-stylesheet/>
+        <theme-stylesheet name="rapid-ui"/>
+        <stylesheet name='application' param='app-stylesheet'/>
+      </do>
+      <do param='scripts'>
+        <javascript name='prototype, effects, dragdrop, controls, lowpro, hobo-rapid' param="true"/>
+        <if-ie version='lt IE 7' param='fix-ie6'>
+          <javascript name='IE7'/>
+          <javascript name='ie7-recalc'/>
+        </if-ie>
+        <do param='custom-scripts'/>
+        <javascript name='application' param='application-javascript'/>
+      </do>
+  </head>
+  <body param="true">
+      <ajax-progress param="true"/>
+      	<header class='page-header' param="true">
+          <account-nav param="true" if='ognl:login_url(Hobo::User.default_user_model)'/>
+          <h1 param='app-name'><a href='ognl:@template.Util@getBaseUrl()'><app-name/></a></h1>
+          <live-search param="true" if='ongl:defined_route("site_search")'/>
+          <main-nav current='ognl:title' param="true"/>
+        </header>
+        <section param='content' with-flash-messages="true"/>
+        <footer class='page-footer' param="true"/>
+        <page-scripts param="true"/>
+    </body>
+</html>
+</def>
+<def attrs='empty, with-flash-messages' tag='section'>
+  <set body='ognl:parameters.default' flash='ognl:with_flash_messages and !scope.flash_rendered'/>
+  <div class='section #{"with-flash" if flash}' merge-attrs="true" if='ognl: body || empty || flash'>
+    <flash-messages if='ognl:flash'/>
+    <ognl-append>body</ognl-append>
+  </div>
+</def>
+<def attrs='empty' tag='footer'>
+  <set body='ognl:parameters.default'/>
+  <div class='footer' merge-attrs="true" if='ognl:body ? body : empty'><ognl-append>body</ognl-append></div>
+</def>
+
+<def attrs='name' tag='stylesheet'>
+  <ognl-append>
+  	@template.Util@stylesheets(name)
+</ognl-append>
+</def>
+<def attrs='name' tag='theme-stylesheet'>
+	<ognl-append>
+ 	  @template.Util@themeStylesheets(name)
+</ognl-append>
+</def>
+<def tag='ajax-progress'>
+  <div id='ajax-progress' merge-attrs="true" style="display:none">
+    <div>
+      <span id='ajax-progress-text'/>
+    </div>
+  </div>
+</def>
+<def attrs='empty' tag='header'>
+  <set body='ognl:parameters.default'/>
+  <div class='header' merge-attrs="true" if='ognl: body? body : empty'><ognl-append>body</ognl-append></div>
+</def>
+
+<def attrs='name' tag='javascript'>
+  <ognl-append>
+    @template.Util@javascriptIncludeTag(name)
+  </ognl-append>
+</def>
+
+
+<def attrs='version' tag='if-ie'>
+  <ognl-append>"<!--[if #{version || 'IE'}]>"</ognl-append><do param='default'/><ognl-append>"<![endif]-->"</ognl-append>
+</def>
+<def tag="app-name">Blog</def>
+<def tag='account-nav'>
+
+    <ul class='navigation account-nav' param="true">
+      <li param='dev-user-changer' if="ognl:@template.Util@isDevelopment()"><dev-user-changer/></li>
+      <if test='ognl:logged_in'>
+        <li class='a' param='logged-in-as'><a to='ognl:current_user'>Logged in as <name/></a></li>
+        <li class='a' param='account'><a action='account'>Account</a></li>
+        <li class='a' param='log-out'><a href='logout_url'>Log out</a></li>
+      </if>
+
+    </ul>
+
+</def>
+<def tag="do">
+<ognl-append>parameters.default
+</ognl-append>
+</def>
+<def tag='else'><ognl-append>parameters.default
+</ognl-append></def>
+
+
+</dryml>
