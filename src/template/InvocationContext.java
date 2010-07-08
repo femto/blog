@@ -17,7 +17,7 @@ public class InvocationContext {
     private Map parameters = new HashMap();
     private Map all_parameters = new HashMap();
 
-    private Map local_variables = new HashMap();
+    private LocalVariables local_variables = null;
 
     public InvocationContext(TagDefinition tagDefinition, TagInvocation tagInvocation) {
         this.tagDefinition = tagDefinition;
@@ -64,11 +64,11 @@ public class InvocationContext {
         this.all_parameters = all_parameters;
     }
 
-    public Map getLocal_variables() {
+    public LocalVariables getLocal_variables() {
         return local_variables;
     }
 
-    public void setLocal_variables(Map local_variables) {
+    public void setLocal_variables(LocalVariables local_variables) {
         this.local_variables = local_variables;
     }
 }

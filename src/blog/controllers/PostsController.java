@@ -23,7 +23,8 @@ public class PostsController extends ApplicationController {
         if ("true".equals(params(Constants.PAGED))) {
             Paginator page = jdbcPaginator(Post.class, params());
             storeToRequest("post_page", page);
-            return forwardTo(viewPath("paged_list"));
+
+            return drymlHandle("posts", "paged_list");
         }
         storeToRequest("posts", findAll(Post.class));
 

@@ -42,6 +42,10 @@
     <ognl-append>body</ognl-append>
   </div>
 </def>
+<def attrs='empty' tag='footer'>
+  <set body='ognl:parameters.default'/>
+  <div class='footer' merge-attrs="true" if='ognl:body ? body : empty'><ognl-append>body</ognl-append></div>
+</def>
 
 <def attrs='name' tag='stylesheet'>
   <ognl-append>

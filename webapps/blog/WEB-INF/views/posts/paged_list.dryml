@@ -1,4 +1,68 @@
 <dryml>
-<page>
-</page>
+    <page>
+        <param-content>
+            <div style="clear:both">
+                <ognl>
+paginator = @W@request("post_page"),
+records = paginator.getRecordList()
+</ognl>
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page <ognl-append>paginator.getCurrentPage()</ognl-append>/<ognl-append>paginator.getPageCount()</ognl-append>. </td>
+        <td align="right" class="multilink">
+            Showing <ognl-append>paginator.getStartIndex()</ognl-append> - <ognl-append>paginator.getEndIndex()</ognl-append> of <ognl-append>paginator.getTotalCount()</ognl-append><![CDATA[&nbsp
+            ]]>;
+            <ognl-append>@W@pageLink("First",    @R@resourcePath("posts"), paginator.getQueryStringFirst())</ognl-append><![CDATA[&nbsp;|&nbsp
+            ]]>;
+            <ognl-append>@W@pageLink("Previous", @R@resourcePath("posts"), paginator.getQueryStringPrevious())</ognl-append><![CDATA[&nbsp;|&nbsp;
+            ]]>
+            <ognl-append>@W@pageLink("Next",     @R@resourcePath("posts"), paginator.getQueryStringNext())</ognl-append><![CDATA[&nbsp;|&nbsp;
+            ]]>
+            <ognl-append>@W@pageLink("Last",     @R@resourcePath("posts"), paginator.getQueryStringLast())</ognl-append>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th><![CDATA[&nbsp;
+        ]]></th>
+        
+    </tr>
+<repeat with="ognl:records" var="post">
+    <tr class='ognl:@W@cycle("odd, even")%>'>
+        <td><ognl-append>@O@hp(post, "id")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "name")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "title")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "content")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "created_at")</ognl-append></td>
+        <td><ognl-append>@O@hp(post, "updated_at")</ognl-append></td>
+        <td class="multilink" nowrap="nowrap">
+            <ognl-append>W.labelLink("show", @R@resourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>W.labelLink("edit", @R@editResourceRecordPath("posts", post))</ognl-append>
+            <ognl-append>W.labelLink("delete", @R@resourceRecordPath("posts", post), "confirm:'Are you sure?'; method:delete")</ognl-append>
+        </td>
+    </tr>
+</repeat>
+</table>
+
+    </td>
+    </tr>
+</table>
+            </div>
+        </param-content>
+
+    </page>
 </dryml>
