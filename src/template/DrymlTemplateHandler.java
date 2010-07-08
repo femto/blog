@@ -408,6 +408,9 @@ public class DrymlTemplateHandler {
         if (retValue == null) {
             return false;
         }
+        if(retValue == Boolean.FALSE) {
+            return false;
+        }
         return true;
     }
 

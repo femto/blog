@@ -35,6 +35,14 @@
     </body>
 </html>
 </def>
+<def attrs='empty, with-flash-messages' tag='section'>
+  <set body='ognl:parameters.default' flash='ognl:with_flash_messages and !scope.flash_rendered'/>
+  <div class='section #{"with-flash" if flash}' merge-attrs="true" if='ognl:!body.blank? || empty || flash'>
+    <flash-messages if='ognl:flash'/>
+    <ognl-append>body</ognl-append>
+  </div>
+</def>
+
 <def attrs='name' tag='stylesheet'>
   <ognl-append>
   	@template.Util@stylesheets(name)
