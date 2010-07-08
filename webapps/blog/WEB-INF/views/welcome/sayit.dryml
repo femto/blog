@@ -1,3 +1,17 @@
 <dryml>
-<page/>
+<def tag="t3" attrs="a1">
+<div   t1="t1"  a1="#{foo('s3')}" a2="#{foo('s4')}" param="content1" merge-attrs="true">
+</div>
+</def>
+
+<def tag="t2">
+<t3 param="true">
+</t3>
+</def>
+
+<t3 class="ok">
+very
+</t3>
+
+
 </dryml>

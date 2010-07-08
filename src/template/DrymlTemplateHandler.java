@@ -293,45 +293,45 @@ public class DrymlTemplateHandler {
                 continue;
             } //skip if, repeat, unless, already tested
 
-            if ("param".equals(attribute.getName())) {
-                String paramName = attribute.getValue();
-                //System.out.println(attribute.getName() + "=" + attribute.getValue());
-                if ("true".equals(paramName)) {
-                    paramName = element.getName();
-                }
-                //System.out.println("paramName is " + paramName);
-                invocationContext = (InvocationContext) invocationStack.peek();
-                //System.out.println(invocationContext.getParameters().get(paramName));
-
-
-                //result.append()
-                Object value = invocationContext.getParameters().get(paramName);
-                if (value != null) {
-                    result.append(">");
-                    for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
-                        Node node = (Node) it.next();
-                        result.append(node.getText());
-                    }
-
-                    result.append("</" + element.getName() + ">");
-                    return;
-                } else { //normal path
-
-                }
-
+            if (attribute.getValue().startsWith("ognl:")) {
+                Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
+                attrs.put(attribute.getName(), evalResult);
             } else {
-                if (attribute.getValue().startsWith("ognl:")) {
-                    Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
-                    attrs.put(attribute.getName(), evalResult);
-                } else {
-                    attrs.put(attribute.getName(), attribute.getValue());
-                }
+                attrs.put(attribute.getName(), attribute.getValue());
             }
+
         }
 
-        if(attrContains(element, "merge-attrs") || attrContains(element, "merge")) { //merging attrs
+        if (attrContains(element, "param")) {
+
+            String paramName = getParamName(element);
+            //System.out.println("paramName is " + paramName);
+            invocationContext = (InvocationContext) invocationStack.peek();
+            //System.out.println(invocationContext.getParameters().get(paramName));
+
+
+            //result.append()
+            Object value = invocationContext.getParameters().get(paramName);
+            if (value != null) {
+                result.append(">");
+                for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
+                    Node node = (Node) it.next();
+                    result.append(node.getText());
+                }
+
+                result.append("</" + element.getName() + ">");
+                return;
+            } else { //normal path
+
+            }
+
+
+        }
+
+        if (attrContains(element, "merge-attrs") || attrContains(element, "merge")) { //merging attrs
             attrs = mergeAttributes(attrs, invocationContext.getAttributes());
         }
+
 
         for (Iterator it = attrs.keySet().iterator(); it.hasNext();) {
             String key = (String) it.next();
@@ -358,12 +358,21 @@ public class DrymlTemplateHandler {
 
     }
 
+    private String getParamName(Element element) {
+        String paramName = element.attributeValue("param");
+        //System.out.println(attribute.getName() + "=" + attribute.getValue());
+        if ("true".equals(paramName) || "param".equals(paramName)) {
+            paramName = element.getName();
+        }
+        return paramName;
+    }
+
     private Map mergeAttributes(Map attrs, Map map2) {
 //        InvocationContext invocationContext;
 //        invocationContext = (InvocationContext) invocationStack.peek();
         for (Iterator it = map2.keySet().iterator(); it.hasNext();) {
             String key = (String) it.next();
-            if ("class".equals(key)) { //merging
+            if ("class".equals(key)) { //merging, todo suppress null handling
                 attrs.put(key, attrs.get("class") + " " + map2.get(key));
             } else { //overriding
                 attrs.put(key, map2.get(key).toString());
