@@ -12,7 +12,7 @@ public class ApplicationConfig {
     public static void init() {
         drymlConfiguration = new DrymlConfiguration();
         drymlConfiguration.setClassResolver(new MyClassResolver());
-        DrymlTemplateHandler templateHandler = drymlConfiguration.getDrymlTemplateHandler();
+        //DrymlTemplateHandler templateHandler = drymlConfiguration.getDrymlTemplateHandler();
     }
 
     public static DrymlConfiguration getDrymlConfiguration() {

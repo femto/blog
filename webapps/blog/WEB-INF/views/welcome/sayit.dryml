@@ -1,4 +1,6 @@
-<dryml>
-<page/>
-
-</dryml>
+<dummy>
+<linked-card>
+<param-heading param="true">heading
+</param-heading>
+</linked-card>
+</dummy>

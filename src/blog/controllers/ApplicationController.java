@@ -51,7 +51,7 @@ public class ApplicationController extends ActionControl {
         String uri = getViewURI(controller, action);
         uri = WebConfig.getRealPath() + uri;
 
-        ApplicationConfig.getDrymlConfiguration().getDrymlTemplateHandler().handle(uri, result);
+        ApplicationConfig.getDrymlConfiguration().getDrymlTemplateHandler().handle(uri, result, null);
 
         return html(result.toString());
     }

@@ -58,7 +58,10 @@ public class DrymlTemplateHandler {
         //System.out.println(result.toString());
     }
 
-    public void handle(String f, StringBuilder result) {
+    public void handle(String f, StringBuilder result, Object root) {
+
+        
+
         this.handleInternal("webapps\\blog\\WEB-INF\\views\\application.dryml", result);
         this.handleInternal(f, result);
     }
@@ -513,6 +516,8 @@ public class DrymlTemplateHandler {
 
     public void handleNode(Node node, StringBuilder result) {
         if (node instanceof Text) {
+            result.append(node.getText());
+        } else if(node instanceof CDATA) {
             result.append(node.getText());
         } else {
             handleMeetingElement((Element) node, result);

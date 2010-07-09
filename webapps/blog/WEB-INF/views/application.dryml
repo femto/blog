@@ -1,4 +1,6 @@
 <dryml>
+<include src="card" />
+<include src="form" />
 <include src="page" />
 
 <def tag="main-nav">

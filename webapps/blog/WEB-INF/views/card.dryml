@@ -1,0 +1,19 @@
+<dummy>
+<def tag="h">
+<ognl-append>
+@W@htmlEsacpe(parameters.default)
+</ognl-append>
+</def>
+<def tag="card">
+<div class="card" merge-attrs="true">
+<h3 param="heading"><h>this</h></h3>
+<div param="body"></div>
+</div>
+</def>
+<def tag="linked-card">
+<card merge-attrs="true" merge-params="true">
+<param-heading param="true"><a href="abc"><h>this.to_s</h></a>
+</param-heading>
+</card>
+</def>
+</dummy>

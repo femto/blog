@@ -25,7 +25,7 @@ public class DrymlConfiguration {
         DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
 
         StringBuilder result = new StringBuilder();
-        templateHandler.handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result);
+        templateHandler.handle("webapps\\blog\\WEB-INF\\views\\welcome\\sayit.dryml", result, null);
         System.out.println(result.toString());
     }
 

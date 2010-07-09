@@ -1,5 +1,6 @@
 <dummy>
 <page>
+<param-app-stylesheet>app-stylesheet</param-app-stylesheet>
 <param-content><div style="clear:both">
 <ognl>
 post = @W@request("post")
