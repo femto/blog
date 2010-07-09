@@ -1,0 +1,56 @@
+Dryml
+=================
+
+----------
+What is it
+----------
+This is a port from hobo's dryml engine written in java.
+It comprises the experience that java's default template solution jsp is not good.
+(Other parts is based on scooter framework, scooter is a java framework that resembles rails, please do a google to find out).
+
+The dryml:
+when you define a tag:
+<dummy>
+<def tag="page" attrs='title, full-title'>
+(see the source for how page is defined).
+</def>
+</dummy>
+
+you can call it:
+
+<page>
+</page>
+or customting a bit:
+<page>
+<param-content><div style="clear:both">
+blah blah blah
+</div>
+</param-content>
+</page>
+or customting different parts:
+<page>
+<param-body>body</param-body>
+</page>
+(most can be see from hobo's dryml documentation,
+only some difference:
+I don't use <content:> for parameteration because that's
+illegal in xml parsing(I using dom4j for parsing), besides,
+the xml document needs a root, so I add a <dummy> node, the root
+node can be arbitrary named.
+
+------------
+How to Run
+------------
+1. make sure your database is up
+2. the sql file is under docs\db\mysql
+3. make sure the configuration in database.properties is correct
+default.database.connection.name=blog_development
+
+database.connection.blog_development=\
+        driver=com.mysql.jdbc.Driver,\
+        url=jdbc:mysql://localhost/blog_development?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull,\
+        username=root,\
+        password=,\
+        max_pool_size=10,\
+        min_pool_size=1
+4.Running java -jar tools\server.jar [port] to start the server
