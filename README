@@ -54,3 +54,5 @@ database.connection.blog_development=\
         max_pool_size=10,\
         min_pool_size=1
 4.Running java -jar tools\server.jar [port] to start the server
+
+*see http://localhost:8080/blog/posts to see etc pages

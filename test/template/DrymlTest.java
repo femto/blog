@@ -18,13 +18,13 @@ public class DrymlTest extends TestCase {
         System.out.println(result.toString());
     }
 
-//    public void testMergeAttrs() throws Exception {
-//        DrymlConfiguration configuration = new DrymlConfiguration();
-//        configuration.setClassResolver(new MyClassResolver());
-//        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
-//
-//        StringBuilder result = new StringBuilder();
-//        templateHandler.handle("test\\template\\test-merge-attrs.dryml", result, null);
-//        System.out.println(result.toString());
-//    }
+    public void testMergeAttrs() throws Exception {
+        DrymlConfiguration configuration = new DrymlConfiguration();
+        configuration.setClassResolver(new MyClassResolver());
+        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
+
+        StringBuilder result = new StringBuilder();
+        templateHandler.handle("test\\template\\test-merge-attrs.dryml", result, null);
+        System.out.println(result.toString());
+    }
 }

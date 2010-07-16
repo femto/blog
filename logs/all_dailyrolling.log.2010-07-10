@@ -1,0 +1,2891 @@
+10/07/09 14:27:16,296 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/"
+10/07/09 14:27:16,312 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:27:16,312 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/index.jsp
+10/07/09 14:27:16,328  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/": 32 ms
+10/07/09 14:27:21,593 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/09 14:27:21,593 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:27:21,593 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:27:21,593 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:27:21,593 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:27:21,609 DEBUG [18687346@qtp-2112561-7] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:27:22,000 ERROR [18687346@qtp-2112561-7] RestfulRequestProcessor - Error in "GET /blog/posts": com.scooterframework.common.exception.ExecutionException: Failed to invoke class "blog.controllers.PostsController" for method "index"
+Details: Failed to instantiate class "blog.models.Post".
+Details: java.lang.NullPointerException.
+10/07/09 14:27:22,046 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/09 14:27:22,171  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts": 578 ms
+10/07/09 14:28:03,718 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/"
+10/07/09 14:28:03,718 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:28:03,718 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - doForward: /WEB-INF/views/index.jsp
+10/07/09 14:28:03,718  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/": 0 ms
+10/07/09 14:28:05,343 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/routes"
+10/07/09 14:28:05,343 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:28:05,343 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /routes, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:28:05,343 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 0, routeName = routesinfo, viewPath = builtin/siteinfo, routeType = named_route, resourceName = null, controller = builtin/siteinfo, controllerClassName = com.scooterframework.builtin.SiteInfoController, model = siteinfo, modelClassName = blog.models.Siteinfo, action = routes, id = null, format = null, requiredFieldValues = null, requestInfo {requestPath = /routes, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:28:05,343 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /routes, controller = builtin/siteinfo, controllerClassName = com.scooterframework.builtin.SiteInfoController, resource = null, action = routes, model = siteinfo, format = null
+10/07/09 14:28:05,359 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - execution result: null
+10/07/09 14:28:05,359  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/routes": 16 ms
+10/07/09 14:28:08,890 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/09 14:28:08,890 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:28:08,890 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:28:08,890 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:28:08,890 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:28:08,890 DEBUG [18687346@qtp-2112561-7] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:08,968 DEBUG [18687346@qtp-2112561-7] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:08,968 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS
+10/07/09 14:28:08,968 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:28:08,968 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 14:28:08,968 DEBUG [18687346@qtp-2112561-7] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS
+parameters size = 0
+coursors size = 0
+
+10/07/09 14:28:08,968 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - parameters: []
+10/07/09 14:28:08,984 DEBUG [18687346@qtp-2112561-7] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:28:08,984 DEBUG [18687346@qtp-2112561-7] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:28:08,984 DEBUG [18687346@qtp-2112561-7] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:28:09,093 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	title
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+<h2>3 posts</h2>
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+    </tr>
+
+    
+
+        <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+    </table>
+    <br></br>
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:28:09,093  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts": 203 ms
+10/07/09 14:28:09,156 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/09 14:28:09,156  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 0 ms
+10/07/09 14:28:09,468 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:28:09,468 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:28:09,468  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 14:28:09,468  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 14:28:12,078 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts/add"
+10/07/09 14:28:12,078 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:28:12,078 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/09 14:28:12,078 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 16, routeName = add post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = add, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/09 14:28:12,078 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = add, model = post, format = null
+10/07/09 14:28:12,078 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:12,203 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+<h2>Add post</h2>
+
+
+<form action="/blog/posts" class="add_post" id="add_post" method="POST">
+  <p>
+    <label for="post_name" >Name</label><br></br>
+    <input id="post_name" name="name" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_title" >Title</label><br></br>
+    <input id="post_title" name="title" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_content" >Content</label><br></br>
+    <textarea id="post_content" cols="60" name="content" rows="10"></textarea>
+  </p>
+  <input id="post_submit" name="commit" value="Create" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<br></br>
+
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:28:12,203  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts/add": 125 ms
+10/07/09 14:28:12,234 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:28:12,234 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:28:12,234  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 14:28:12,234  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 14:28:16,171 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts/12"
+10/07/09 14:28:16,171 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:28:16,171 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts/12, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/09 14:28:16,171 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 18, routeName = show post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = show, id = 12, format = null, requiredFieldValues = {id=12, post_id=12}, requestInfo {requestPath = /posts/12, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/09 14:28:16,171 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = show, model = post, format = null
+10/07/09 14:28:16,171 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:16,187 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:16,187 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS WHERE ID = ? 
+10/07/09 14:28:16,187 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, FINDER_SQL=SELECT POSTS.* FROM POSTS WHERE id = ? , SCOOTER.RECORDS_LIMIT=-1, ID=12, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:28:16,203 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 14:28:16,203 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - Leave getTableName: found table name POSTS for column ID
+10/07/09 14:28:16,203 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS WHERE id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:28:16,203 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false]
+10/07/09 14:28:16,218 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:28:16,218 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:28:16,218 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:28:16,265 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COMMENTS.* FROM COMMENTS WHERE POST_ID = ? 
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, POST_ID=12, FINDER_SQL=SELECT COMMENTS.* FROM COMMENTS WHERE post_id = ? , SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - Leave getTableName: found table name COMMENTS for column POST_ID
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT COMMENTS.* FROM COMMENTS WHERE post_id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = COMMENTS, columnName = POST_ID, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:28:16,312 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = COMMENTS, columnName = POST_ID, bUsedByCount = false]
+10/07/09 14:28:16,328 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:28:16,328 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:28:16,328 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:28:16,328 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        <div style="clear:both">
+
+<h2>Show post</h2>
+
+<p>
+  <b>Id:</b>
+12
+</p>
+<p>
+  <b>Name:</b>
+  first post
+</p>
+
+<p>
+  <b>Title:</b>
+  this is first post
+</p>
+
+<p>
+  <b>Content:</b>
+  this is first post
+</p>
+
+<p>
+  <b>Created At:</b>
+  2010-07-01 18:46:51
+</p>
+
+<p>
+  <b>Updated At:</b>
+  2010-07-01 18:46:51
+</p>
+
+<br></br>
+<h2>Comments</h2>
+<div id="comments">
+
+</div>
+
+<h2>Add comment</h2>
+
+
+<form action="/blog/posts/12/comments" class="add_comment" id="add_comment" method="POST">
+  <p>
+    <label for="comment_commenter" >Commenter</label><br></br>
+    <input id="comment_commenter" name="commenter" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="comment_body" >Body</label><br></br>
+    <textarea id="comment_body" cols="60" name="body" rows="10"></textarea>
+  </p>
+  <input id="comment_submit" name="commit" value="Create" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<a href="/blog/posts/12/edit" >Edit</a>|
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:28:16,343  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts/12": 172 ms
+10/07/09 14:28:16,359 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:28:16,359 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:28:16,359  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 14:28:16,359  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 14:46:46,296 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/09 14:46:46,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:46:46,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:46:46,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:46:46,296 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post10/07/09 15:30:58,968 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\ApplicationConfig.java]
+_development
+10/07/09 14:46:46,328 DEBUG [18687346@qtp-2112561-7] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:46:46,328 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS
+10/07/09 14:46:46,328 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:46:46,328 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 14:46:46,328 DEBUG [18687346@qtp-2112561-7] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS
+parameters size = 0
+coursors size = 0
+
+10/07/09 14:46:46,328 DEBUG [18687346@qtp-2112561-7] MySQLJdbcStatementProcessor - execute - parameters: []
+10/07/09 14:46:46,359 DEBUG [18687346@qtp-2112561-7] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:46:46,359 DEBUG [18687346@qtp-2112561-7] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:46:46,359 DEBUG [18687346@qtp-2112561-7] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:46:46,437 DEBUG [18687346@qtp-2112561-7] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	title
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+<h2>3 posts</h2>
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+    </tr>
+
+    
+
+        <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+    </table>
+    <br></br>
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:46:46,437  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/posts": 141 ms
+10/07/09 14:46:46,453 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/09 14:46:46,453  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/09 14:46:46,468 DEBUG [17423963@qtp-2112561-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/09 14:46:46,468 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:46:46,468 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:46:46,468  INFO [17423963@qtp-2112561-5] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/09 14:46:46,484  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 16 ms
+10/07/09 14:46:46,484 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/09 14:46:46,484  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 0 ms
+10/07/09 14:46:46,484 DEBUG [17423963@qtp-2112561-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/09 14:46:46,484  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/09 14:46:46,484 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/09 14:46:46,500  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 16 ms
+10/07/09 14:46:46,500  INFO [17423963@qtp-2112561-5] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 16 ms
+10/07/09 14:46:46,718 DEBUG [17423963@qtp-2112561-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/09 14:46:46,718 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/09 14:46:46,718  INFO [17423963@qtp-2112561-5] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 0 ms
+10/07/09 14:46:46,718  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/09 14:46:46,937 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/09 14:46:46,953  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 16 ms
+10/07/09 14:46:46,968 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/09 14:46:46,968  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 0 ms
+10/07/09 14:46:47,031 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/09 14:46:47,031 DEBUG [17423963@qtp-2112561-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/101-3B5F87-ACD3E6.png"
+10/07/09 14:46:47,031 DEBUG [18687346@qtp-2112561-7] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/30-3E547A-242E42.png"
+10/07/09 14:46:47,031  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 0 ms
+10/07/09 14:46:47,031  INFO [18687346@qtp-2112561-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/30-3E547A-242E42.png": 0 ms
+10/07/09 14:46:47,046  INFO [17423963@qtp-2112561-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/101-3B5F87-ACD3E6.png": 15 ms
+10/07/09 14:48:44,312 DEBUG [17423963@qtp-2112561-5] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/09 14:48:44,312 DEBUG [17423963@qtp-2112561-5] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:48:44,312 DEBUG [17423963@qtp-2112561-5] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:48:44,312 DEBUG [17423963@qtp-2112561-5] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:48:44,312 DEBUG [17423963@qtp-2112561-5] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:48:44,312 DEBUG [17423963@qtp-2112561-5] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:44,343 DEBUG [17423963@qtp-2112561-5] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:44,343 DEBUG [17423963@qtp-2112561-5] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS
+10/07/09 14:48:44,343 DEBUG [17423963@qtp-2112561-5] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:48:44,343 DEBUG [17423963@qtp-2112561-5] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 14:48:44,343 DEBUG [17423963@qtp-2112561-5] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS
+parameters size = 0
+coursors size = 0
+
+10/07/09 14:48:44,343 DEBUG [17423963@qtp-2112561-5] MySQLJdbcStatementProcessor - execute - parameters: []
+10/07/09 14:48:44,359 DEBUG [17423963@qtp-2112561-5] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:48:44,359 DEBUG [17423963@qtp-2112561-5] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:48:44,359 DEBUG [17423963@qtp-2112561-5] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:48:44,468 DEBUG [17423963@qtp-2112561-5] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	title
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+<h2>3 posts</h2>
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+    </tr>
+
+    
+
+        <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+    </table>
+    <br></br>
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:48:44,468  INFO [17423963@qtp-2112561-5] ScooterRequestFilter - "GET /blog/posts": 156 ms
+10/07/09 14:48:44,484 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:48:44,484 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:48:44,500  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/09 14:48:44,500  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 16 ms
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts?paged=true"
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:48:46,390 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?                             
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {SCOOTER.RECORDS_LIMIT=10, FINDER_SQL=SELECT POSTS.* FROM POSTS, PAGED=true, SCOOTER.USE_PAGINATION=Y}
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:48:46,421 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:46,437 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS LIMIT ?                             
+10/07/09 14:48:46,437 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=10, PAGED=true, SCOOTER.USE_PAGINATION=Y, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:48:46,437 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:48:46,437 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:48:46,437 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:48:46,453 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:48:46,453 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:48:46,453 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:48:46,562 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+            <div style="clear:both">
+                
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp
+            ;
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp
+            ;
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>&nbsp;
+        </th>
+        
+    </tr>
+
+    <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+</table>
+
+    </td>
+    </tr>
+    <tr>
+        <td align="left">
+        Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp;
+            
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+
+</table>
+<br></br>
+
+                <span class="nextprev">&#171; Previous</span> <span class="current">1</span> <span class="nextprev">Next &#187;</span>
+                <form action="/blog/posts" method="GET">
+<input name="r" value="page" type="hidden"></input>
+<input name="limit" value="10" type="hidden"></input>
+<input name="paged" value="true" type="hidden"></input>
+Go to page <input id="npage" name="npage" type="text" size="2"></input><input value="Go" type="submit"></input>
+</form>
+
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts" >List</a>
+            </div>
+        
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:48:46,562  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts?paged=true": 172 ms
+10/07/09 14:48:46,593 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:48:46,593 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:48:46,593  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 14:48:46,593  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/posts?r=page&limit=10&paged=true&npage=55"
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - name=[limit] values=[10]
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - name=[r] values=[page]
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - name=[npage] values=[55]
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:48:53,812 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?                             
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {NPAGE=55, SCOOTER.RECORDS_LIMIT=10, FINDER_SQL=SELECT POSTS.* FROM POSTS, PAGED=true, R=page, SCOOTER.USE_PAGINATION=Y, LIMIT=10}
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS LIMIT ?                             
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {NPAGE=55, FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=10, PAGED=true, R=page, SCOOTER.USE_PAGINATION=Y, LIMIT=10, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:48:53,843 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:48:53,875 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:48:53,875 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:48:53,875 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:48:53,953 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+            <div style="clear:both">
+                
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page 55/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp
+            ;
+            <a href="/blog/posts?r=first&npage=1&limit=10&cpage=55&paged=true" >First</a>&nbsp;|&nbsp
+            ;
+            <a href="/blog/posts?r=previous&npage=54&limit=10&cpage=55&paged=true" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>&nbsp;
+        </th>
+        
+    </tr>
+
+    <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+</table>
+
+    </td>
+    </tr>
+    <tr>
+        <td align="left">
+        Page 55/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp;
+            
+            <a href="/blog/posts?r=first&npage=1&limit=10&cpage=55&paged=true" >First</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?r=previous&npage=54&limit=10&cpage=55&paged=true" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+
+</table>
+<br></br>
+
+                <a href="/blog/posts?r=previous&npage=54&limit=10&cpage=55&paged=true" >&#171; Previous</a> <a href="/blog/posts?r=page&npage=1&limit=10&cpage=55&paged=true" >1</a> <a href="/blog/posts?" >2</a> <a href="/blog/posts?" >3</a> <a href="/blog/posts?" >4</a> <span>&#8230;.</span> <span class="nextprev">Next &#187;</span>
+                <form action="/blog/posts" method="GET">
+<input name="r" value="page" type="hidden"></input>
+<input name="limit" value="10" type="hidden"></input>
+<input name="paged" value="true" type="hidden"></input>
+Go to page <input id="npage" name="npage" type="text" size="2"></input><input value="Go" type="submit"></input>
+</form>
+
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts" >List</a>
+            </div>
+        
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:48:53,953  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/posts?r=page&limit=10&paged=true&npage=55": 141 ms
+10/07/09 14:48:53,968 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:48:53,968 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:48:53,968  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 14:48:53,968  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts?r=first&npage=1&limit=10&cpage=55&paged=true"
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[limit] values=[10]
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[r] values=[first]
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[npage] values=[1]
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[cpage] values=[55]
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:49:03,578 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:03,609 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:03,609 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?                             
+10/07/09 14:49:03,609 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {NPAGE=1, SCOOTER.RECORDS_LIMIT=10, FINDER_SQL=SELECT POSTS.* FROM POSTS, PAGED=true, R=first, SCOOTER.USE_PAGINATION=Y, LIMIT=10, CPAGE=55}
+10/07/09 14:49:03,609 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:49:03,609 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:49:03,609 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS LIMIT ?                             
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {NPAGE=1, FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=10, PAGED=true, R=first, SCOOTER.USE_PAGINATION=Y, LIMIT=10, CPAGE=55, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:49:03,625 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:49:03,640 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:49:03,640 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:49:03,640 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:49:03,734 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+            <div style="clear:both">
+                
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp
+            ;
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp
+            ;
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>&nbsp;
+        </th>
+        
+    </tr>
+
+    <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+</table>
+
+    </td>
+    </tr>
+    <tr>
+        <td align="left">
+        Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp;
+            
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+
+</table>
+<br></br>
+
+                <span class="nextprev">&#171; Previous</span> <span class="current">1</span> <span class="nextprev">Next &#187;</span>
+                <form action="/blog/posts" method="GET">
+<input name="r" value="page" type="hidden"></input>
+<input name="limit" value="10" type="hidden"></input>
+<input name="paged" value="true" type="hidden"></input>
+Go to page <input id="npage" name="npage" type="text" size="2"></input><input value="Go" type="submit"></input>
+</form>
+
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts" >List</a>
+            </div>
+        
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:49:03,750  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts?r=first&npage=1&limit=10&cpage=55&paged=true": 156 ms
+10/07/09 14:49:03,750 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:49:03,750 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:49:03,765  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 15 ms
+10/07/09 14:49:03,765  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 15 ms
+10/07/09 14:49:04,390 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/posts?"
+10/07/09 14:49:04,390 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:49:04,390 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:49:04,390 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:49:04,390 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:49:04,406 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:04,421 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:04,421 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS
+10/07/09 14:49:04,421 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:49:04,421 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 14:49:04,421 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS
+parameters size = 0
+coursors size = 0
+
+10/07/09 14:49:04,421 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: []
+10/07/09 14:49:04,437 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:49:04,437 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:49:04,437 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:49:04,515 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	title
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+<h2>3 posts</h2>
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+    </tr>
+
+    
+
+        <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+    </table>
+    <br></br>
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:49:04,531  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/posts?": 141 ms
+10/07/09 14:49:04,546 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:49:04,546 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:49:04,546  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 15 ms
+10/07/09 14:49:04,546  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts?paged=true"
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 14:49:05,921 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:05,953 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:05,953 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?                             
+10/07/09 14:49:05,953 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {SCOOTER.RECORDS_LIMIT=10, FINDER_SQL=SELECT POSTS.* FROM POSTS, PAGED=true, SCOOTER.USE_PAGINATION=Y}
+10/07/09 14:49:05,953 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:49:05,968 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:49:05,968 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS LIMIT ?                             
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=10, PAGED=true, SCOOTER.USE_PAGINATION=Y, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 14:49:05,984 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 14:49:06,000 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 14:49:06,000 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 14:49:06,000 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 14:49:06,078 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+            <div style="clear:both">
+                
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp
+            ;
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp
+            ;
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>&nbsp;
+        </th>
+        
+    </tr>
+
+    <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+</table>
+
+    </td>
+    </tr>
+    <tr>
+        <td align="left">
+        Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp;
+            
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+
+</table>
+<br></br>
+
+                <span class="nextprev">&#171; Previous</span> <span class="current">1</span> <span class="nextprev">Next &#187;</span>
+                <form action="/blog/posts" method="GET">
+<input name="r" value="page" type="hidden"></input>
+<input name="limit" value="10" type="hidden"></input>
+<input name="paged" value="true" type="hidden"></input>
+Go to page <input id="npage" name="npage" type="text" size="2"></input><input value="Go" type="submit"></input>
+</form>
+
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts" >List</a>
+            </div>
+        
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 14:49:06,078  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts?paged=true": 157 ms
+10/07/09 14:49:06,093 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 14:49:06,093 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 14:49:06,093  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 14:49:06,109  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/09 15:30:59,156 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\blog\controllers\ApplicationController.java, E:\scooter-project\blog\src\template\DrymlConfiguration.java, E:\scooter-project\blog\src\template\ApplicationConfig.java, E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/09 16:15:27,453 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/News"
+10/07/09 16:15:27,453 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:27,453 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /News, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 16:15:27,484 ERROR [31637242@qtp-2112561-3] RestfulRequestProcessor - No route is found for "GET /News"
+10/07/09 16:15:27,515 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/09 16:15:27,562  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/News": 125 ms
+10/07/09 16:15:30,046 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/Forum"
+10/07/09 16:15:30,046 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:30,046 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /Forum, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 16:15:30,046 ERROR [31637242@qtp-2112561-3] RestfulRequestProcessor - No route is found for "GET /Forum"
+10/07/09 16:15:30,078 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/09 16:15:30,078  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/Forum": 32 ms
+10/07/09 16:15:31,687 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/Ask"
+10/07/09 16:15:31,687 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:31,687 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /Ask, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 16:15:31,687 ERROR [31637242@qtp-2112561-3] RestfulRequestProcessor - No route is found for "GET /Ask"
+10/07/09 16:15:31,703 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/09 16:15:31,703  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/Ask": 16 ms
+10/07/09 16:15:33,484 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/Service"
+10/07/09 16:15:33,484 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:33,484 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /Service, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 16:15:33,484 ERROR [31637242@qtp-2112561-3] RestfulRequestProcessor - No route is found for "GET /Service"
+10/07/09 16:15:33,484 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - doForward: /WEB-INF/views/error.jsp
+10/07/09 16:15:33,531  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/Service": 47 ms
+10/07/09 16:15:36,468 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/posts/12"
+10/07/09 16:15:36,468 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:36,468 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /posts/12, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/09 16:15:36,468 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor -   routeInfo: index = 18, routeName = show post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = show, id = 12, format = null, requiredFieldValues = {id=12, post_id=12}, requestInfo {requestPath = /posts/12, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/09 16:15:36,468 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = show, model = post, format = null
+10/07/09 16:15:37,015 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS WHERE ID = ? 
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, FINDER_SQL=SELECT POSTS.* FROM POSTS WHERE id = ? , SCOOTER.RECORDS_LIMIT=-1, ID=12, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - Leave getTableName: found table name POSTS for column ID
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS WHERE id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false
+coursors size = 0
+
+10/07/09 16:15:37,046 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false]
+10/07/09 16:15:37,062 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 16:15:37,062 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 16:15:37,062 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 16:15:37,359 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COMMENTS.* FROM COMMENTS WHERE POST_ID = ? 
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, POST_ID=12, FINDER_SQL=SELECT COMMENTS.* FROM COMMENTS WHERE post_id = ? , SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - Leave getTableName: found table name COMMENTS for column POST_ID
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT COMMENTS.* FROM COMMENTS WHERE post_id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = COMMENTS, columnName = POST_ID, bUsedByCount = false
+coursors size = 0
+
+10/07/09 16:15:37,406 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = COMMENTS, columnName = POST_ID, bUsedByCount = false]
+10/07/09 16:15:37,421 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 16:15:37,421 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 16:15:37,421 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 16:15:37,484 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        <div style="clear:both">
+
+<h2>Show post</h2>
+
+<p>
+  <b>Id:</b>
+12
+</p>
+<p>
+  <b>Name:</b>
+  first post
+</p>
+
+<p>
+  <b>Title:</b>
+  this is first post
+</p>
+
+<p>
+  <b>Content:</b>
+  this is first post
+</p>
+
+<p>
+  <b>Created At:</b>
+  2010-07-01 18:46:51
+</p>
+
+<p>
+  <b>Updated At:</b>
+  2010-07-01 18:46:51
+</p>
+
+<br></br>
+<h2>Comments</h2>
+<div id="comments">
+
+</div>
+
+<h2>Add comment</h2>
+
+
+<form action="/blog/posts/12/comments" class="add_comment" id="add_comment" method="POST">
+  <p>
+    <label for="comment_commenter" >Commenter</label><br></br>
+    <input id="comment_commenter" name="commenter" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="comment_body" >Body</label><br></br>
+    <textarea id="comment_body" cols="60" name="body" rows="10"></textarea>
+  </p>
+  <input id="comment_submit" name="commit" value="Create" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<a href="/blog/posts/12/edit" >Edit</a>|
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 16:15:37,484  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/posts/12": 1016 ms
+10/07/09 16:15:37,500 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 16:15:37,500  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 16:15:37,500 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 16:15:37,515  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 15 ms
+10/07/09 16:15:37,562 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/fieldbg.gif"
+10/07/09 16:15:37,578  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/clean/images/fieldbg.gif": 16 ms
+10/07/09 16:15:39,093 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts/12/edit"
+10/07/09 16:15:39,093 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:39,093 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts/12/edit, requestHttpMethod = GET, format = null, segmentCount = 3
+10/07/09 16:15:39,093 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 19, routeName = edit post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = edit, id = 12, format = null, requiredFieldValues = {id=12}, requestInfo {requestPath = /posts/12/edit, requestHttpMethod = GET, format = null, segmentCount = 3}
+10/07/09 16:15:39,093 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts/12, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = edit, model = post, format = null
+10/07/09 16:15:39,093 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS WHERE ID = ? 
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, FINDER_SQL=SELECT POSTS.* FROM POSTS WHERE id = ? , SCOOTER.RECORDS_LIMIT=-1, ID=12, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - Leave getTableName: found table name POSTS for column ID
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS WHERE id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false
+coursors size = 0
+
+10/07/09 16:15:39,125 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false]
+10/07/09 16:15:39,140 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 16:15:39,140 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 16:15:39,140 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 16:15:39,250 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+
+
+<h2>Edit post</h2>
+
+
+<form action="/blog/posts/12" class="edit_post" id="edit_post_12" method="POST">
+<div style="margin:0;padding:0"><input name="_method" type="hidden" value="put" /></div>
+  <p>
+    <label for="post_id" >Id</label><br></br>
+    <input id="post_id" name="id" value="12" type="text" readonly="readonly" size="80"></input>
+  </p>
+  <p>
+    <label for="post_name" >Name</label><br></br>
+    <input id="post_name" name="name" value="first post" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_title" >Title</label><br></br>
+    <input id="post_title" name="title" value="this is first post" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_content" >Content</label><br></br>
+    <textarea id="post_content" cols="60" name="content" rows="10">this is first post</textarea>
+  </p>
+  <input id="post_submit" name="commit" value="Update" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<br></br>
+
+<a href="/blog/posts/12" >Show</a>|
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 16:15:39,250  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts/12/edit": 157 ms
+10/07/09 16:15:39,281 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 16:15:39,281  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 16:15:39,281 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 16:15:39,296  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 15 ms
+10/07/09 16:15:41,156 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts/15/edit"
+10/07/09 16:15:41,156 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:41,156 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts/15/edit, requestHttpMethod = GET, format = null, segmentCount = 3
+10/07/09 16:15:41,171 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 19, routeName = edit post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = edit, id = 15, format = null, requiredFieldValues = {id=15}, requestInfo {requestPath = /posts/15/edit, requestHttpMethod = GET, format = null, segmentCount = 3}
+10/07/09 16:15:41,171 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts/15, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = edit, model = post, format = null
+10/07/09 16:15:41,171 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS WHERE ID = ? 
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=15, FINDER_SQL=SELECT POSTS.* FROM POSTS WHERE id = ? , SCOOTER.RECORDS_LIMIT=-1, ID=15, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - Leave getTableName: found table name POSTS for column ID
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS WHERE id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false
+coursors size = 0
+
+10/07/09 16:15:41,203 DEBUG [17815542@qtp-2112561-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false]
+10/07/09 16:15:41,218 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 16:15:41,218 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 16:15:41,218 DEBUG [17815542@qtp-2112561-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 16:15:41,265 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+
+
+<h2>Edit post</h2>
+
+
+<form action="/blog/posts/15" class="edit_post" id="edit_post_15" method="POST">
+<div style="margin:0;padding:0"><input name="_method" type="hidden" value="put" /></div>
+  <p>
+    <label for="post_id" >Id</label><br></br>
+    <input id="post_id" name="id" value="15" type="text" readonly="readonly" size="80"></input>
+  </p>
+  <p>
+    <label for="post_name" >Name</label><br></br>
+    <input id="post_name" name="name" value="ss" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_title" >Title</label><br></br>
+    <input id="post_title" name="title" value="ss" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_content" >Content</label><br></br>
+    <textarea id="post_content" cols="60" name="content" rows="10">sss</textarea>
+  </p>
+  <input id="post_submit" name="commit" value="Update" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<br></br>
+
+<a href="/blog/posts/15" >Show</a>|
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 16:15:41,265  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts/15/edit": 109 ms
+10/07/09 16:15:41,296 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 16:15:41,296  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 16:15:41,296 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 16:15:41,296  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 16:15:45,281 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/posts/add"
+10/07/09 16:15:45,281 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:45,281 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - requestInfo: requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/09 16:15:45,281 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor -   routeInfo: index = 16, routeName = add post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = add, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/09 16:15:45,281 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = add, model = post, format = null
+10/07/09 16:15:45,281 DEBUG [17815542@qtp-2112561-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:45,375 DEBUG [17815542@qtp-2112561-2] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+<div style="clear:both">
+<h2>Add post</h2>
+
+
+<form action="/blog/posts" class="add_post" id="add_post" method="POST">
+  <p>
+    <label for="post_name" >Name</label><br></br>
+    <input id="post_name" name="name" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_title" >Title</label><br></br>
+    <input id="post_title" name="title" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_content" >Content</label><br></br>
+    <textarea id="post_content" cols="60" name="content" rows="10"></textarea>
+  </p>
+  <input id="post_submit" name="commit" value="Create" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<br></br>
+
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 16:15:45,375  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/posts/add": 94 ms
+10/07/09 16:15:45,390 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 16:15:45,390 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 16:15:45,390  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 16:15:45,390  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/posts?paged=true"
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor -   routeInfo: index = 15, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/09 16:15:47,140 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:47,171 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:47,171 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?                             
+10/07/09 16:15:47,171 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {SCOOTER.RECORDS_LIMIT=10, FINDER_SQL=SELECT POSTS.* FROM POSTS, PAGED=true, SCOOTER.USE_PAGINATION=Y}
+10/07/09 16:15:47,171 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 16:15:47,171 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 16:15:47,171 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS LIMIT ?                             
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=10, PAGED=true, SCOOTER.USE_PAGINATION=Y, SCOOTER.RECORDS_OFFSET=0}
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/09 16:15:47,187 DEBUG [31637242@qtp-2112561-3] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/09 16:15:47,203 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/09 16:15:47,203 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/09 16:15:47,203 DEBUG [31637242@qtp-2112561-3] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/09 16:15:47,296 DEBUG [31637242@qtp-2112561-3] RestfulRequestProcessor - execution result: html=>
+<html param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body param="true">
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul param="true" class="navigation account-nav">
+      <li param="dev-user-changer"><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1 param="app-name"><a href="/blog">Blog</a></h1>
+          <live-search param="true"></live-search>
+          
+  <ul class="navigation main-nav">
+    <li style="float:left" class=""><a href="/blog">首页</a></li>
+    <li style="float:left" class=""><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
+    <li style="float:left" class=""><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
+    <li style="float:left" class=""><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
+    <li style="float:left" class=""><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
+    <li style="float:left" class=""><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
+    <li style="float:left" class=""><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
+    <li style="float:left" class=""><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
+    <li style="float:left" class=""><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
+    <li style="float:left" class=""><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
+  </ul>
+
+        </div>
+
+        
+            <div style="clear:both">
+                
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp
+            ;
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp
+            ;
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>&nbsp;
+        </th>
+        
+    </tr>
+
+    <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>this is first post</td>
+        <td>2010-07-01 18:46:51</td>
+        <td>2010-07-01 18:46:51</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-01 18:46:52</td>
+        <td>2010-07-07 23:29:35</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-07 23:36:20</td>
+        <td>2010-07-07 23:40:28</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+</table>
+
+    </td>
+    </tr>
+    <tr>
+        <td align="left">
+        Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp;
+            
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+
+</table>
+<br></br>
+
+                <span class="nextprev">&#171; Previous</span> <span class="current">1</span> <span class="nextprev">Next &#187;</span>
+                <form action="/blog/posts" method="GET">
+<input name="r" value="page" type="hidden"></input>
+<input name="limit" value="10" type="hidden"></input>
+<input name="paged" value="true" type="hidden"></input>
+Go to page <input id="npage" name="npage" type="text" size="2"></input><input value="Go" type="submit"></input>
+</form>
+
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts" >List</a>
+            </div>
+        
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts param="true"></page-scripts>
+    </body>
+</html>
+
+10/07/09 16:15:47,296  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/posts?paged=true": 156 ms
+10/07/09 16:15:47,328 DEBUG [31637242@qtp-2112561-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/09 16:15:47,328 DEBUG [17815542@qtp-2112561-2] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/09 16:15:47,328  INFO [31637242@qtp-2112561-3] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/09 16:15:47,328  INFO [17815542@qtp-2112561-2] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
