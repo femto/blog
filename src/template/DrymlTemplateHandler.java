@@ -60,7 +60,6 @@ public class DrymlTemplateHandler {
 
     public void handle(String f, StringBuilder result, Object root) {
 
-        
 
         this.handleInternal("webapps\\blog\\WEB-INF\\views\\application.dryml", result);
         this.handleInternal(f, result);
@@ -87,7 +86,7 @@ public class DrymlTemplateHandler {
         } catch (DocumentException e) {
             throw new RuntimeException(e);
         } finally {
-         current_file = originalFile;
+            current_file = originalFile;
         }
     }
 
@@ -106,7 +105,7 @@ public class DrymlTemplateHandler {
 
     private void handleDefTag(Element tag) {
         Attribute attribute = tag.attribute("tag");
-        tagDefinitions.put(attribute.getValue(), new TagDefinition(tag));
+        tagDefinitions.put(attribute.getValue(), new XmlTagDefinition(tag));
     }
 
     //calling
@@ -155,7 +154,7 @@ public class DrymlTemplateHandler {
     }
 
     private InvocationContext prelude(Element element) {
-        Object tagDefinition = tagDefinitions.get(element.getName());
+        TagDefinition tagDefinition = (TagDefinition) tagDefinitions.get(element.getName());
         TagInvocation tagInvocation = new TagInvocation(element);
         InvocationContext invocationContext = new InvocationContext((TagDefinition) tagDefinition, tagInvocation);
 
@@ -165,22 +164,17 @@ public class DrymlTemplateHandler {
 
         for (Iterator iterator = tagInvocation.getTag().attributeIterator(); iterator.hasNext();) {
             Attribute attr = (Attribute) iterator.next();
-            all_attributes.put(attr.getName(), attr.getValue());
+
             if (tagDefinition != null) { //or else, maybe <repeat>TagDefinition?
-                Attribute attributeAttrs = ((TagDefinition) tagDefinition).getTag().attribute("attrs");
-                if (attributeAttrs != null) {
-                    String attrs = attributeAttrs.getValue();
-                    String[] attrs1 = attrs.split(",");
-                    for (int i = 0; i < attrs1.length; i++) {
-                        attrs1[i] = attrs1[i].trim();
-                    }
-                    if (!Arrays.asList(attrs1).contains(attr.getName())) {
-                        attributes.put(attr.getName(), attr.getValue());
-                    }
+                //handle different TagDefinition subclasses
+                List attrs = ((TagDefinition) tagDefinition).getAttrs();
+                if (!attrs.contains(attr.getName())) { //tagInvocation
+                    attributes.put(attr.getName(), attr.getValue());
                 } else {
                     attributes.put(attr.getName(), attr.getValue());
                 }
             }
+            all_attributes.put(attr.getName(), attr.getValue()); //always put all_attributes
         }
 
         invocationContext.setAttributes(attributes);
@@ -189,13 +183,17 @@ public class DrymlTemplateHandler {
         //preparing parameters, all lazy evaluated
         Map parameters = new TagParameters();
         Map all_parameters = new TagParameters();
+
+        //iterating over the calling tag, to see if any param-provided
         for (Iterator it = element.elementIterator(); it.hasNext();) {
             Element ele = (Element) it.next();
             if (ele.getName().indexOf("param-") != -1) {
-                String name = ele.getName().replace("param-", "");
+                String name = ele.getName().substring("param-".length());
                 //System.out.println(name);
                 ProcEval procEval = new ProcEval(ele, this, invocationContext);
-                parameters.put(name, procEval); //or ele's content?
+                if (!tagDefinition.getParams().containsKey(name)) {
+                    parameters.put(name, procEval); //or ele's content?
+                }
                 all_parameters.put(name, procEval);
             }
         }
@@ -312,7 +310,7 @@ public class DrymlTemplateHandler {
         Map attrs = new HashMap();
         for (Iterator i = element.attributeIterator(); i.hasNext();) {
             Attribute attribute = (Attribute) i.next();
-            List skipAttributes = Arrays.asList("if", "unless", "repeat", "merge-attrs");
+            List skipAttributes = Arrays.asList("if", "unless", "repeat", "merge-attrs", "param");
             if (skipAttributes.contains(attribute.getName())) {
                 continue;
             } //skip if, repeat, unless, already tested
@@ -381,7 +379,7 @@ public class DrymlTemplateHandler {
         }
 
         //if (!"else".equals(element.getName())) {
-            result.append("</" + element.getName() + ">");
+        result.append("</" + element.getName() + ">");
         //}
 
     }
@@ -489,35 +487,33 @@ public class DrymlTemplateHandler {
         TagInvocation tagInvocation = invocationContext.getTagInvocation();
         Map local_variables = invocationContext.getLocal_variables();
 
-        for (Iterator it = tagDefinition.getTag().attributeIterator(); it.hasNext();) {
-            Attribute attribute = (Attribute) it.next();
-            if ("attrs".equals(attribute.getName())) {
-                String[] attrs = attribute.getValue().split(",");
-                for (int i = 0; i < attrs.length; i++) {
-                    String attrName = attrs[i];
-                    local_variables.put(attrName, invocationContext.getAll_attributes().get(attrName));
-                }
-
-            }
+        for (Iterator it = tagDefinition.getAttrs().iterator(); it.hasNext();) {
+            String attrName = (String) it.next();
+            local_variables.put(attrName, invocationContext.getAll_attributes().get(attrName));
         }
 
 
-        //handle tagDefinition's body
-        for (Iterator it = tagDefinition.getTag().content().iterator(); it.hasNext();) {
-            Node node = (Node) it.next();
-            if (node instanceof DefaultText) {
-                result.append(((Text) node).getText());
-            } else if (node instanceof Element) {
-                handleMeetingElement((Element) node, result);
-            }
+        //handle tagDefinition's body, for different TagDefinition subclasses
+        if (tagDefinition != null) {
+            if (tagDefinition instanceof XmlTagDefinition) {
+                XmlTagDefinition xmlTagDefinition = (XmlTagDefinition) tagDefinition;
+                for (Iterator it = xmlTagDefinition.getTag().content().iterator(); it.hasNext();) {
+                    Node node = (Node) it.next();
+                    if (node instanceof DefaultText) {
+                        result.append(((Text) node).getText());
+                    } else if (node instanceof Element) {
+                        handleMeetingElement((Element) node, result);
+                    }
 
+                }
+            }
         }
     }
 
     public void handleNode(Node node, StringBuilder result) {
         if (node instanceof Text) {
             result.append(node.getText());
-        } else if(node instanceof CDATA) {
+        } else if (node instanceof CDATA) {
             result.append(node.getText());
         } else {
             handleMeetingElement((Element) node, result);
