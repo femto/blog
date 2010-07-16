@@ -27,7 +27,7 @@ public class DefaultEval extends ProcEval {
        StringBuilder result = new StringBuilder();
         for (Iterator iterator = element.content().iterator(); iterator.hasNext();) {
             Node node = (Node) iterator.next();
-            drymlTemplateHandler.handleNode(node, result);
+            drymlTemplateHandler.handleNode(node, result, invocationContext);
         }
         return result.toString();
     }

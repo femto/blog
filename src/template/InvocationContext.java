@@ -19,6 +19,9 @@ public class InvocationContext {
 
     private LocalVariables local_variables = null;
 
+    public InvocationContext() {
+    }
+
     public InvocationContext(TagDefinition tagDefinition, TagInvocation tagInvocation) {
         this.tagDefinition = tagDefinition;
         this.tagInvocation = tagInvocation;

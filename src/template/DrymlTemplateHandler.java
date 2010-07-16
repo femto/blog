@@ -33,6 +33,7 @@ public class DrymlTemplateHandler {
 
         Map map = new OgnlContext();
         ognlContext = Ognl.addDefaultContext(null, drymlConfiguration.getClassResolver(), map);
+        invocationStack.push(new TopInvocationContext());
     }
 
 
@@ -79,7 +80,7 @@ public class DrymlTemplateHandler {
 
             for (Iterator i = root.elementIterator(); i.hasNext();) {
                 Element tag = (Element) i.next();
-                handleMeetingElement(tag, result);
+                handleMeetingElement(tag, result, null);
                 // do something
             }
 
@@ -111,7 +112,7 @@ public class DrymlTemplateHandler {
     //calling
     //preparing
 
-    private void handleMeetingElement(Element element, StringBuilder result) {
+    private void handleMeetingElement(Element element, StringBuilder result, InvocationContext invocationContext) {
         //trying find out tagDefinition
         if ("def".equals(element.getName())) {
             handleDefTag(element);
@@ -121,7 +122,9 @@ public class DrymlTemplateHandler {
         } else if ("scriptlet".equals(element.getName())) {
             handleScriptlet(element);
         } else { //calling
-
+            if (invocationContext == null) {
+                invocationContext = (InvocationContext) invocationStack.peek();
+            }
             if (attrContains(element, "param")) {
                 Attribute attribute = element.attribute("param");
                 String paramName = attribute.getValue();
@@ -130,7 +133,6 @@ public class DrymlTemplateHandler {
                 }
 
 
-                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
                 if (invocationContext.getAll_parameters().containsKey(paramName)) {
                     Object object = invocationContext.getAll_parameters().get(paramName);
                     result.append(object.toString());
@@ -139,11 +141,11 @@ public class DrymlTemplateHandler {
             }
 
             if (tagDefinitions.get(element.getName()) == null) { //default tag
-                handleDefaultTag(element, result); //nothing changed invocationContext
+                handleDefaultTag(element, result, invocationContext); //nothing changed invocationContext
             } else { //handle defined element
-                InvocationContext invocationContext = prelude(element);
+                InvocationContext invocationContext2 = prelude(element, invocationContext);
 
-                handleInvocation(invocationContext, result); //handle attribute
+                handleInvocation(invocationContext2, result); //handle attribute
                 postlude();
             }
         }
@@ -153,7 +155,7 @@ public class DrymlTemplateHandler {
         invocationStack.pop();
     }
 
-    private InvocationContext prelude(Element element) {
+    private InvocationContext prelude(Element element, InvocationContext context) {
         TagDefinition tagDefinition = (TagDefinition) tagDefinitions.get(element.getName());
         TagInvocation tagInvocation = new TagInvocation(element);
         InvocationContext invocationContext = new InvocationContext((TagDefinition) tagDefinition, tagInvocation);
@@ -190,7 +192,7 @@ public class DrymlTemplateHandler {
             if (ele.getName().indexOf("param-") != -1) {
                 String name = ele.getName().substring("param-".length());
                 //System.out.println(name);
-                ProcEval procEval = new ProcEval(ele, this, invocationContext);
+                ProcEval procEval = new ProcEval(ele, this, context);
                 if (!tagDefinition.getParams().containsKey(name)) {
                     parameters.put(name, procEval); //or ele's content?
                 }
@@ -198,7 +200,7 @@ public class DrymlTemplateHandler {
             }
         }
         if (all_parameters.size() == 0) { //what about text?
-            DefaultEval defaultValue = new DefaultEval(element, this, invocationContext);
+            DefaultEval defaultValue = new DefaultEval(element, this, context);
             //String defaultValueResult = defaultValue.toString();
             parameters.put("default", defaultValue);
             all_parameters.put("default", defaultValue);
@@ -225,7 +227,7 @@ public class DrymlTemplateHandler {
 
     }
 
-    private void handleDefaultTag(Element element, StringBuilder result) { //default invocation doesn't change invocationContext's attr & params
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
 
         if (element.getName().equals("ognl-append")) {
             try {
@@ -270,7 +272,7 @@ public class DrymlTemplateHandler {
             }
         } else if ("repeat".equals(element.getName())) {
 
-            prelude(element);
+            prelude(element, context);
             //System.out.println("repeat");
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             Object retValue = eval(element.attribute("with").getValue(), ognlContext, invocationContext.getLocal_variables());
@@ -370,7 +372,7 @@ public class DrymlTemplateHandler {
             Node node = (Node) i.next();
             if (node instanceof Element) {
                 //System.out.println(node);
-                handleMeetingElement((Element) node, result);
+                handleMeetingElement((Element) node, result, invocationContext);
             } else { //text
                 result.append(node.getText());
             }
@@ -502,7 +504,7 @@ public class DrymlTemplateHandler {
                     if (node instanceof DefaultText) {
                         result.append(((Text) node).getText());
                     } else if (node instanceof Element) {
-                        handleMeetingElement((Element) node, result);
+                        handleMeetingElement((Element) node, result, invocationContext);
                     }
 
                 }
@@ -510,13 +512,13 @@ public class DrymlTemplateHandler {
         }
     }
 
-    public void handleNode(Node node, StringBuilder result) {
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
         if (node instanceof Text) {
             result.append(node.getText());
         } else if (node instanceof CDATA) {
             result.append(node.getText());
         } else {
-            handleMeetingElement((Element) node, result);
+            handleMeetingElement((Element) node, result, invocationContext);
         }
 
     }
