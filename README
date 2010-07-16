@@ -56,3 +56,9 @@ database.connection.blog_development=\
 4.Running java -jar tools\server.jar [port] to start the server
 
 *see http://localhost:8080/blog/posts to see etc pages
+
+------------
+Todo
+------------
+1.Implicit Context handling(like this in dryml/hobo) (do we need this?)
+2.Polymorphism Tag.

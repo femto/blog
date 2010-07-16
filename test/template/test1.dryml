@@ -1,0 +1,48 @@
+<dryml>
+<def tag="page1" attrs='title, full-title'>
+<html merge-attrs="merge-attrs" param="true">
+
+  <head param="true">
+  	<title param="true">Blog</title>
+  	<do param='stylesheets'>
+        <stylesheet name='reset'/>
+
+        <theme-stylesheet/>
+        <theme-stylesheet name="rapid-ui"/>
+        <stylesheet name='application' param='app-stylesheet'/>
+      </do>
+      <do param='scripts'>
+        <javascript name='prototype, effects, dragdrop, controls, lowpro, hobo-rapid' param="true"/>
+        <if-ie version='lt IE 7' param='fix-ie6'>
+          <javascript name='IE7'/>
+          <javascript name='ie7-recalc'/>
+        </if-ie>
+        <do param='custom-scripts'/>
+        <do param='application-javascript-1'>
+        <javascript name='application' param='application-javascript'/>
+        </do>
+      </do>
+  </head>
+  <body param="true">
+      <ajax-progress param="true"/>
+      	<header class='page-header' param="true">
+          <account-nav param="true" if='ognl:login_url(Hobo::User.default_user_model)'/>
+          <h1 param='app-name'><a href='ognl:@template.Util@getBaseUrl()'><app-name/></a></h1>
+          <live-search param="true" if='ongl:defined_route("site_search")'/>
+          <main-nav current='ognl:title' param="true"/>
+        </header>
+        <section param='content' with-flash-messages="true"/>
+        <footer class='page-footer' param="true"/>
+        <page-scripts param="true"/>
+    </body>
+</html>
+</def>
+<page>
+<param-custom-scripts>
+<javascript name='shitty'/>
+</param-custom-scripts>
+<param-application-javascript>
+application-javascript
+</param-application-javascript>
+</page>
+</dryml>

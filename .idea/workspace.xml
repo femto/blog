@@ -46,7 +46,6 @@
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\models\Entry.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceSpecific.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\comments\index_jsp.class" afterPath="" />
       <change type="MODIFICATION" beforePath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RouteInfo.class" afterPath="" />
@@ -111,6 +110,7 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\WebActionContext.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\welcome\sayit.jsp" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\databrowser\databases\show_jsp.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/template/test.dryml" afterPath="$PROJECT_DIR$/test/template/test.dryml" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\controllers\WelcomeController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\ClassManager.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\index.jsp.bak" afterPath="" />
@@ -175,7 +175,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\TestStringUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\JtaTransaction.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\tag\Tagging.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/references/xmlunit-1.3.jar" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\models\PostTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\lib\scooter.jar.bak" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessorTypes.class" afterPath="" />
@@ -261,7 +260,7 @@
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\comments\show_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasOneRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\ThreadLocalTransactionManager.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/template/test-merge-attrs.dryml" afterPath="$PROJECT_DIR$/test/template/test-merge-attrs.dryml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_16.request.log" afterPath="$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_16.request.log" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\posts\index3.dryml" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\ApplicationTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\controllers\PostsController.class" afterPath="" />
@@ -308,7 +307,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\BaseSQLException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\JdbcConnection.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\ViewsController.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/blog/WEB-INF/lib/xmlunit-1.3.jar" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\BelongsToRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionContext$Cycle.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\RowInfo.class" afterPath="" />
@@ -439,7 +437,7 @@
       <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="13" selection-start="4544" selection-end="4544" vertical-scroll-proportion="-13.84">
+            <state line="145" column="91" selection-start="4868" selection-end="4868" vertical-scroll-proportion="-18.32">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -474,17 +472,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TagDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/TagDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="28" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InvocationContext.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/InvocationContext.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -494,28 +481,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopInvocationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/TopInvocationContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="51" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrymlTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DrymlTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="51" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+            <state line="32" column="22" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.627907">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLTestCase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/toolset/xmlunit-1.3-src (1)/xmlunit-1.3/src/java/org/custommonkey/xmlunit/XMLTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="22" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="54" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.9010819">
+            <state line="48" column="19" selection-start="1212" selection-end="1222" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractNodeTester.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/references/xmlunit-1.3.jar!/org/custommonkey/xmlunit/AbstractNodeTester.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="29" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -557,8 +555,8 @@
         <option value="$PROJECT_DIR$/src/template/TopInvocationContext.java" />
         <option value="$PROJECT_DIR$/src/template/InvocationContext.java" />
         <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
-        <option value="$PROJECT_DIR$/test/template/DrymlTest.java" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/test/template/DrymlTest.java" />
       </list>
     </option>
   </component>
@@ -691,6 +689,24 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -716,7 +732,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="references" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -775,7 +795,7 @@
       <recent name="E:\scooter-project\blog\references\jdbc-clients" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DrymlTest">
+  <component name="RunManager" selected="JUnit.DrymlTest.testDryml1">
     <configuration default="false" name="All in blog" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="snapshooter" />
@@ -902,6 +922,34 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DrymlTest.testDryml1" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="snapshooter" />
+      <module name="blog" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="template" />
+      <option name="MAIN_CLASS_NAME" value="template.DrymlTest" />
+      <option name="METHOD_NAME" value="testDryml1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1207,7 +1255,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="9">
+    <list size="10">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in blog" />
       <item index="1" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="Remote.Unnamed" />
@@ -1217,6 +1265,7 @@
       <item index="6" class="java.lang.String" itemvalue="JUnit.DrymlTest.testDryml" />
       <item index="7" class="java.lang.String" itemvalue="JUnit.DrymlTest" />
       <item index="8" class="java.lang.String" itemvalue="JUnit.DrymlTest.testMergeAttrs" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.DrymlTest.testDryml1" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1284,13 +1333,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="848" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2651297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5878962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58645535" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39913544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1300,9 +1349,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16402878" sideWeight="0.6037464" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15107913" sideWeight="0.4855908" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16330935" sideWeight="0.3775216" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50432277" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.61239195" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597124" sideWeight="0.51729107" order="2" side_tool="false" content_ui="combo" />
@@ -1378,16 +1427,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/template/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/MyClassResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="64" selection-start="445" selection-end="475" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blog/controllers/PostsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="20" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" />
@@ -1453,15 +1492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="13" selection-start="4544" selection-end="4544" vertical-scroll-proportion="-13.84">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/template/DefaultEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="40" selection-start="806" selection-end="813" vertical-scroll-proportion="0.0">
@@ -1476,17 +1506,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+        <state line="48" column="19" selection-start="1212" selection-end="1222" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="jar://$PROJECT_DIR$/references/xmlunit-1.3.jar!/org/custommonkey/xmlunit/AbstractNodeTester.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="54" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.9010819">
+        <state line="5" column="29" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/toolset/xmlunit-1.3-src (1)/xmlunit-1.3/src/java/org/custommonkey/xmlunit/XMLTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="22" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="91" selection-start="4868" selection-end="4868" vertical-scroll-proportion="-18.32">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.627907">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
