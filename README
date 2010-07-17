@@ -60,8 +60,7 @@ database.connection.blog_development=\
 ------------
 Todo
 ------------
-1.Implicit Context handling(like this in dryml/hobo) (do we need this?)
-2.Polymorphism Tag.
+1.Polymorphism Tag.
 
 ------------
 Design Considerations

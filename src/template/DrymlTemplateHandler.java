@@ -228,6 +228,9 @@ public class DrymlTemplateHandler {
 
         //handle field, with etc
         if(element.attributeValue("field") != null) { //changing context
+            //local_variables.put("this_parent", local_variables.get("this"));
+            //local_variables.put("this_field", "xxx");
+
             local_variables.put("this", eval(element.attributeValue("field"), ognlContext, local_variables.getParent())); //evaluating in parent's context
         }
         invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
