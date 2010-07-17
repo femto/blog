@@ -17,4 +17,12 @@
     <li class="" style="float:left"><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
   </ul>
 </def>
+
+<def tag="display" attrs="post,as">
+  <div class='ognl:"post " + (as == "teaser" ?"teaser" : "")' s3="s3">
+    <h2 class="post-title">
+        <a href="@{Application.show(post.id)}"><ognl-append>post.title</ognl-append></a>
+    </h2>
+  </div>
+</def>
 </dryml>

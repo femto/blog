@@ -86,4 +86,50 @@ public class DrymlTest extends XMLTestCase {
         System.out.println(result.toString());
         //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
     }
+
+    public void testIf() throws Exception {
+        DrymlConfiguration configuration = new DrymlConfiguration();
+        configuration.setClassResolver(new MyClassResolver());
+        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
+
+        StringBuilder result = new StringBuilder();
+        Map rootContext = new HashMap();
+        rootContext.put("this", "a");
+
+        templateHandler.handle("test\\template\\testIf.dryml", result, rootContext);
+
+        System.out.println(result.toString());
+        //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
+    }
+
+    public void testIfTrue() throws Exception {
+        DrymlConfiguration configuration = new DrymlConfiguration();
+        configuration.setClassResolver(new MyClassResolver());
+        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
+
+        StringBuilder result = new StringBuilder();
+        Map rootContext = new HashMap();
+        rootContext.put("this", true);
+
+        templateHandler.handle("test\\template\\testIfTrue.dryml", result, rootContext);
+
+        assertEquals("true", result.toString().trim());
+        //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
+    }
+
+    public void testIfFalse() throws Exception {
+        DrymlConfiguration configuration = new DrymlConfiguration();
+        configuration.setClassResolver(new MyClassResolver());
+        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
+
+        StringBuilder result = new StringBuilder();
+        Map rootContext = new HashMap();
+        rootContext.put("this", false);
+
+        templateHandler.handle("test\\template\\testIfFalse.dryml", result, rootContext);
+
+        //System.out.println(result.toString());
+        assertEquals("false", result.toString().trim());
+        //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
+    }
 }

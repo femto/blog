@@ -19,4 +19,9 @@ public class TagParameters extends HashMap {
             return null;
         }
     }
+
+    //only get, not evaluated
+    public Object fetch(Object key) {
+        return super.get(key);
+    }
 }

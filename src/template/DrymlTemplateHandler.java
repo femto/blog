@@ -174,17 +174,18 @@ public class DrymlTemplateHandler {
 
         for (Iterator iterator = tagInvocation.getTag().attributeIterator(); iterator.hasNext();) {
             Attribute attr = (Attribute) iterator.next();
+            Object attrValue = getAttributeValue(attr, context);
 
             if (tagDefinition != null) { //or else, maybe <repeat>TagDefinition?
                 //handle different TagDefinition subclasses
                 List attrs = ((TagDefinition) tagDefinition).getAttrs();
                 if (!attrs.contains(attr.getName())) { //tagInvocation
-                    attributes.put(attr.getName(), attr.getValue());
+                    attributes.put(attr.getName(), attrValue);
                 } else {
-                    attributes.put(attr.getName(), attr.getValue());
+                    attributes.put(attr.getName(), attrValue);
                 }
             }
-            all_attributes.put(attr.getName(), attr.getValue()); //always put all_attributes
+            all_attributes.put(attr.getName(), attrValue); //always put all_attributes
         }
 
         invocationContext.setAttributes(attributes);
@@ -227,7 +228,7 @@ public class DrymlTemplateHandler {
         invocationContext.setLocal_variables(local_variables);
 
         //handle field, with etc
-        if(element.attributeValue("field") != null) { //changing context
+        if (element.attributeValue("field") != null) { //changing context
             //local_variables.put("this_parent", local_variables.get("this"));
             //local_variables.put("this_field", "xxx");
 
@@ -235,6 +236,16 @@ public class DrymlTemplateHandler {
         }
         invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
         return invocationContext;
+    }
+
+    /**
+     * dynamiclly evaluate attribute value
+     * @param attr
+     * @param context
+     * @return
+     */
+    private Object getAttributeValue(Attribute attr, InvocationContext invocationContext) {
+        return eval(attr.getValue(), ognlContext, invocationContext.getLocal_variables());
     }
 
     private void handleScriptlet(Element element) {
@@ -276,9 +287,16 @@ public class DrymlTemplateHandler {
             return;
         } else if ("if".equals(element.getName())) {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            Object retValue = eval(element.attribute("test").getValue(), ognlContext, invocationContext.getLocal_variables());
-            if (!(last_if = trueValue(retValue))) {
-                return;
+            if(element.attributeValue("test") != null) {
+                Object retValue = eval(element.attributeValue("test"), ognlContext, invocationContext.getLocal_variables());
+                if (!(last_if = trueValue(retValue))) {
+                    return;
+                }
+            } else {
+                Object retValue = eval("ognl:this", ognlContext, invocationContext.getLocal_variables());
+                if (!(last_if = trueValue(retValue))) {
+                    return;
+                }
             }
         } else if ("else".equals(element.getName())) {
             if (last_if) {
@@ -290,103 +308,103 @@ public class DrymlTemplateHandler {
             //System.out.println("repeat");
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             Object retValue = eval(element.attribute("with").getValue(), ognlContext, invocationContext.getLocal_variables());
-            if (!(last_if = trueValue(retValue))) {
-                postlude();
-                return;
+            last_if = trueValue(retValue);
+            if (last_if) {
+                repeat(retValue, element, ognlContext, invocationContext.getLocal_variables(), result);
+            } else { //doing nothing
             }
-            repeat(retValue, element, ognlContext, invocationContext.getLocal_variables(), result);
+            //finally
             postlude();
             return;
-            //  context_map do
-            //    parameters.default
-            //  end.join(join)
 
         }
 
-        //if (!"else".equals(element.getName())) {
+        List ifElseArray = Arrays.asList("if", "else");
 
-        InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-        //checking attrs, to see if there is any "if", "repeat", "unless"
-        if (attrContains(element, "if")) {
-            String controlValue = element.attribute("if").getValue();
-            //System.out.println("evaluating " + controlValue);
-            Object retValue = eval(controlValue, ognlContext, invocationContext.getLocal_variables());
-            if (!(last_if = trueValue(retValue))) {
-                return;
-            }
-        }
+        if (!ifElseArray.contains(element.getName())) {
 
-        //passing if, repeat, unless test
-        //see if we have param attr defined
-        //because we are predefined html tag, so we output all <start-tag> of this
-        //if(!"else".equals(element.getName())) {
-        result.append("<" + element.getName() + "");
-
-        //todo: handle proper attributes handling
-        Map attrs = new HashMap();
-        for (Iterator i = element.attributeIterator(); i.hasNext();) {
-            Attribute attribute = (Attribute) i.next();
-            List skipAttributes = Arrays.asList("if", "unless", "repeat", "merge-attrs", "param");
-            if (skipAttributes.contains(attribute.getName())) {
-                continue;
-            } //skip if, repeat, unless, already tested
-
-            if (attribute.getValue().startsWith("ognl:")) {
-                Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
-                attrs.put(attribute.getName(), evalResult);
-            } else {
-                attrs.put(attribute.getName(), attribute.getValue());
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            //checking attrs, to see if there is any "if", "repeat", "unless"
+            if (attrContains(element, "if")) {
+                String controlValue = element.attribute("if").getValue();
+                //System.out.println("evaluating " + controlValue);
+                Object retValue = eval(controlValue, ognlContext, invocationContext.getLocal_variables());
+                if (!(last_if = trueValue(retValue))) {
+                    return;
+                }
             }
 
-        }
+            //passing if, repeat, unless test
+            //see if we have param attr defined
+            //because we are predefined html tag, so we output all <start-tag> of this
+            //if(!"else".equals(element.getName())) {
+            result.append("<" + element.getName() + "");
 
-        if (attrContains(element, "param")) {
+            //todo: handle proper attributes handling
+            Map attrs = new HashMap();
+            for (Iterator i = element.attributeIterator(); i.hasNext();) {
+                Attribute attribute = (Attribute) i.next();
+                List skipAttributes = Arrays.asList("if", "unless", "repeat", "merge-attrs", "param");
+                if (skipAttributes.contains(attribute.getName())) {
+                    continue;
+                } //skip if, repeat, unless, already tested
 
-            String paramName = getParamName(element);
-            //System.out.println("paramName is " + paramName);
-            invocationContext = (InvocationContext) invocationStack.peek();
-            //System.out.println(invocationContext.getParameters().get(paramName));
-
-
-            //result.append()
-            Object value = invocationContext.getParameters().get(paramName);
-            if (value != null) {
-                result.append(">");
-                for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
-                    Node node = (Node) it.next();
-                    result.append(node.getText());
+                if (attribute.getValue().startsWith("ognl:")) {
+                    Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
+                    attrs.put(attribute.getName(), evalResult);
+                } else {
+                    attrs.put(attribute.getName(), attribute.getValue());
                 }
 
-                result.append("</" + element.getName() + ">");
-                return;
-            } else { //normal path
+            }
+
+            if (attrContains(element, "param")) {
+
+                String paramName = getParamName(element);
+                //System.out.println("paramName is " + paramName);
+                invocationContext = (InvocationContext) invocationStack.peek();
+                //System.out.println(invocationContext.getParameters().get(paramName));
+
+
+                //result.append()
+                Object value = invocationContext.getParameters().get(paramName);
+                if (value != null) {
+                    result.append(">");
+                    for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
+                        Node node = (Node) it.next();
+                        result.append(node.getText());
+                    }
+
+                    result.append("</" + element.getName() + ">");
+                    return;
+                } else { //normal path
+
+                }
+
 
             }
 
-
-        }
-
-        if (attrContains(element, "merge-attrs") || attrContains(element, "merge")) { //merging attrs
-            attrs = mergeAttributes(attrs, invocationContext.getAttributes());
-        }
+            if (attrContains(element, "merge-attrs") || attrContains(element, "merge")) { //merging attrs
+                attrs = mergeAttributes(attrs, invocationContext.getAttributes());
+            }
 
 
-        for (Iterator it = attrs.keySet().iterator(); it.hasNext();) {
-            String key = (String) it.next();
-            result.append(nameValue(key, attrs.get(key)));
-        }
+            for (Iterator it = attrs.keySet().iterator(); it.hasNext();) {
+                String key = (String) it.next();
+                result.append(nameValue(key, attrs.get(key)));
+            }
 
 
-        result.append(">");
+            result.append(">");
 
-        //} //"else"
+        } //"if","else",ifElseArray
 
         //for element's body
         for (Iterator i = element.content().iterator(); i.hasNext();) {
             Node node = (Node) i.next();
             if (node instanceof Element) {
                 //System.out.println(node);
-                handleMeetingElement((Element) node, result, invocationContext);
+                handleMeetingElement((Element) node, result, context);
             } else { //text
                 result.append(node.getText());
             }
@@ -394,9 +412,9 @@ public class DrymlTemplateHandler {
             // do something
         }
 
-        //if (!"else".equals(element.getName())) {
-        result.append("</" + element.getName() + ">");
-        //}
+        if (!ifElseArray.contains(element.getName())) {
+            result.append("</" + element.getName() + ">");
+        }
 
     }
 
@@ -434,8 +452,17 @@ public class DrymlTemplateHandler {
 
                     Ognl.setValue(element.attribute("var").getValue(), ognlContext, root, o);
                     Ognl.setValue(element.attribute("var").getValue() + "_index", ognlContext, root, i);
-                    //yields to body
-                    result.append(Ognl.getValue("parameters.default", ognlContext, root));
+
+                    //yields to body, with original context appended var etc. 
+                    ProcEval procEval = (ProcEval) Ognl.getValue("parameters.fetch(\"default\")", ognlContext, root);
+                    //wrap procEval invocationContext with some var, var_index
+                    FakeInvocationContext fakeContext = new FakeInvocationContext(procEval.getInvocationContext());
+                    fakeContext.getLocal_variables().put(element.attributeValue("var"), o);
+                    fakeContext.getLocal_variables().put(element.attributeValue("var") + "_index", i);
+                    fakeContext.getLocal_variables().put("even_odd", i % 2 == 0 ? "odd" : "even"); //because we start with i==0;...
+
+
+                    result.append(procEval.call(fakeContext));
 
                     i++;
 

@@ -1,0 +1,5 @@
+<dryml>
+<if test="ognl:true">
+now
+</if>
+</dryml>

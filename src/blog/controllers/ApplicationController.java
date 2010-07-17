@@ -46,14 +46,27 @@ public class ApplicationController extends ActionControl {
     }
 
     public String drymlHandle(String controller, String action) {
+//        ApplicationConfig.init();
+//        StringBuilder result = new StringBuilder();
+//        String uri = getViewURI(controller, action);
+//        uri = WebConfig.getRealPath() + uri;
+//
+//        ApplicationConfig.getDrymlConfiguration().getDrymlTemplateHandler().handle(uri, result, null);
+//
+//        return html(result.toString());
+        return drymlHandle(controller, action, null);
+    }
+
+    public String drymlHandle(String controller, String action, Object rootContext) {
         ApplicationConfig.init();
         StringBuilder result = new StringBuilder();
         String uri = getViewURI(controller, action);
         uri = WebConfig.getRealPath() + uri;
 
-        ApplicationConfig.getDrymlConfiguration().getDrymlTemplateHandler().handle(uri, result, null);
+        ApplicationConfig.getDrymlConfiguration().getDrymlTemplateHandler().handle(uri, result, rootContext);
 
         return html(result.toString());
     }
+
 
 }

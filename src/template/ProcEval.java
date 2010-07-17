@@ -30,8 +30,25 @@ public class ProcEval {
         return result.toString();
     }
 
+    public String call(InvocationContext _invocationContext) {
+       StringBuilder result = new StringBuilder();
+        for (Iterator iterator = element.content().iterator(); iterator.hasNext();) {
+            Node node = (Node) iterator.next();
+            drymlTemplateHandler.handleNode(node, result, _invocationContext); //shadow instance variables
+        }
+        return result.toString();
+    }
+
     @Override
     public String toString() {
         return call();
+    }
+
+    public String toString(InvocationContext _invocationContext) {
+        return call(_invocationContext);
+    }
+
+    public InvocationContext getInvocationContext() {
+        return invocationContext;
     }
 }

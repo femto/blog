@@ -1,0 +1,30 @@
+<dryml>
+    <page>
+        <param-title><title>Yabe Posts</title></param-title>
+        <param-content>
+            <if test="ognl:frontPost">
+                <display1 post="ognl:frontPost" as="home" >
+                </display1>
+
+                <if test="ognl:olderPosts">
+
+        <div class="older-posts">
+            <h3>Older posts <span class="from">from this blog</span></h3>
+
+            <repeat with="ognl:olderPosts" var="oldPost">
+                <display post="ognl:oldPost" as='teaser'>
+                </display>
+            </repeat>
+        </div>
+
+    </if>
+
+            </if>
+            <else>
+                <div class="empty">
+                    There is currently post here.
+                </div>
+            </else>
+        </param-content>
+    </page>
+</dryml>

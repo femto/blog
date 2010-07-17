@@ -9,11 +9,23 @@ public class Post extends ActiveRecord {
     public void validatesRecord() {
     	validators().validatesPresenceOf("name, title, content");
     	//validators().validatesLengthMaximum("name", 10);
-    	validators().validatesLengthMaximum("content", 140);
+    	//validators().validatesLengthMaximum("content", 140);
         //Our posts are twitter friendly.
     }
     public void registerRelations() {
         
         hasMany("comments", cascade("delete"));
     }
+
+    //private String title;
+
+    public String getTitle() {
+        String title = (String) getField("title");
+        System.out.println(title);
+        return title;
+    }
+
+//    public void setTitle(String title) {
+//        this.title = title;
+//    }
 }

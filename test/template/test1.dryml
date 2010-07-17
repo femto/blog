@@ -28,7 +28,7 @@
   <body param="true">
       <ajax-progress param="true"/>
       	<header class='page-header' param="true">
-          <account-nav param="true" if='ognl:login_url(Hobo::User.default_user_model)'/>
+          <account-nav param="true" if='ognl:login_url'/>
           <h1 param='app-name'><a href='ognl:@template.Util@getBaseUrl()'><app-name/></a></h1>
           <live-search param="true" if='ongl:defined_route("site_search")'/>
           <main-nav current='ognl:title' param="true"/>
