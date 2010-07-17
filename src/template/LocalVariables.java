@@ -25,6 +25,8 @@ public class LocalVariables extends HashMap {
         this.parent = parent;
     }
 
+
+    // a cascading get, more recent variables shadow parent
     @Override
     public Object get(Object key) {
         Object result = super.get(key);

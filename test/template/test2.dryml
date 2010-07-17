@@ -1,0 +1,25 @@
+<dryml>
+<def tag="page2" attrs='title, full-title'>
+      <do param='scripts'>
+        <javascript name='prototype, effects, dragdrop, controls, lowpro, hobo-rapid' param="true"/>
+        <if-ie version='lt IE 7' param='fix-ie6'>
+          <javascript name='IE7'/>
+          <javascript name='ie7-recalc'/>
+        </if-ie>
+        <do param='custom-scripts'/>
+        <do param='application-javascript-1'>
+          <do param='application-javascript-2'>
+            <javascript name='application' param='application-javascript'/>
+          </do>
+        </do>
+      </do>
+</def>  
+<page2>
+<param-custom-scripts>
+custom-scripts
+</param-custom-scripts>
+<param-application-javascript>
+application-javascript
+</param-application-javascript>
+</page2>
+</dryml>

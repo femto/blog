@@ -17,7 +17,7 @@ public class InvocationContext {
     private Map parameters = new HashMap();
     private Map all_parameters = new HashMap();
 
-    private LocalVariables local_variables = null;
+    private LocalVariables local_variables = new LocalVariables();
 
     public InvocationContext() {
     }

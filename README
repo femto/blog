@@ -62,3 +62,18 @@ Todo
 ------------
 1.Implicit Context handling(like this in dryml/hobo) (do we need this?)
 2.Polymorphism Tag.
+
+------------
+Design Considerations
+------------
+Split up into several parts
+1. the core of dryml and some core tags(If,Else,Repeat etc) shouldn't be tied to any framework
+2. framework related tags(rapid so-called), like ui tags, textfield, javascript tags, stylesheet tags, link_to tags etc,
+   should be related to framework
+3. more complex tags, like table, table-plus, link-remote, form-remote etc, based on part 2, is possible to not bound to framework?
+
+*And Tag Definition Implementation
+XmlTagDefinition, JavaTagDefinition, GroovyTagDefinition ?etc
+(because java is not like ruby, very dynamic, you cannot put a whole bunch of string inside xml 
+can dynamic evaluate as java, so most of logic needs to be implemented in java tag definition,
+the xml can only use some simple ognl expression. unfornately, ognl is very limited.

@@ -1,0 +1,9 @@
+<dryml>
+<def tag="view">
+<h3><ognl-append>this</ognl-append></h3>
+</def>
+<def tag="page">
+<view/>
+</def>  
+<page/>
+</dryml>

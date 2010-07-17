@@ -19,7 +19,9 @@
         </if-ie>
         <do param='custom-scripts'/>
         <do param='application-javascript-1'>
-        <javascript name='application' param='application-javascript'/>
+          <do param='application-javascript-2'>
+            <javascript name='application' param='application-javascript'/>
+          </do>
         </do>
       </do>
   </head>
@@ -37,12 +39,12 @@
     </body>
 </html>
 </def>
-<page>
+<page1>
 <param-custom-scripts>
-<javascript name='shitty'/>
+custom-scripts
 </param-custom-scripts>
 <param-application-javascript>
 application-javascript
 </param-application-javascript>
-</page>
+</page1>
 </dryml>

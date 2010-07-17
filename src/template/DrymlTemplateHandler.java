@@ -31,9 +31,13 @@ public class DrymlTemplateHandler {
     public DrymlTemplateHandler(DrymlConfiguration drymlConfiguration) {
         this.drymlConfiguration = drymlConfiguration;
 
+        initialize();
+    }
+
+    private void initialize() {
         Map map = new OgnlContext();
         ognlContext = Ognl.addDefaultContext(null, drymlConfiguration.getClassResolver(), map);
-        invocationStack.push(new TopInvocationContext());
+
     }
 
 
@@ -60,7 +64,9 @@ public class DrymlTemplateHandler {
     }
 
     public void handle(String f, StringBuilder result, Object root) {
-
+        TopInvocationContext topInvocationContext = new TopInvocationContext();
+        topInvocationContext.getLocal_variables().putAll((Map) root);
+        invocationStack.push(topInvocationContext);
 
         this.handleInternal("webapps\\blog\\WEB-INF\\views\\application.dryml", result);
         this.handleInternal(f, result);
