@@ -10,6 +10,7 @@
 %>
 <h2><%=W.label("welcome.message")%></h2>
 <h4>Have a fun drive!</h4>
+<p>Enter <a href="/blog/posts">Post </a>application.</p>
 
 <h5>Application environment</h5>
 <div id="appenv">

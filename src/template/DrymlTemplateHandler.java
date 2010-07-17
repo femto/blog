@@ -65,7 +65,9 @@ public class DrymlTemplateHandler {
 
     public void handle(String f, StringBuilder result, Object root) {
         TopInvocationContext topInvocationContext = new TopInvocationContext();
-        topInvocationContext.getLocal_variables().putAll((Map) root);
+        if (root != null) {
+            topInvocationContext.getLocal_variables().putAll((Map) root);
+        }
         invocationStack.push(topInvocationContext);
 
         this.handleInternal("webapps\\blog\\WEB-INF\\views\\application.dryml", result);
@@ -224,7 +226,10 @@ public class DrymlTemplateHandler {
         }
         invocationContext.setLocal_variables(local_variables);
 
-
+        //handle field, with etc
+        if(element.attributeValue("field") != null) { //changing context
+            local_variables.put("this", eval(element.attributeValue("field"), ognlContext, local_variables.getParent())); //evaluating in parent's context
+        }
         invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
         return invocationContext;
     }

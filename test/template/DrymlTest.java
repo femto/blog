@@ -3,6 +3,9 @@ package template;
 import junit.framework.TestCase;
 import org.custommonkey.xmlunit.XMLTestCase;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -79,7 +82,8 @@ public class DrymlTest extends XMLTestCase {
         rootContext.put("this", "a");
 
         templateHandler.handle("test\\template\\testThisShadowing.dryml", result, rootContext);
+
         System.out.println(result.toString());
-        //assertXMLEqual(result.toString(), );
+        //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
     }
 }

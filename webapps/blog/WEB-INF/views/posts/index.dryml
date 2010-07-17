@@ -1,6 +1,5 @@
 <dummy>
 <page>
-<param-title>title</param-title>
 <param-content>
 <div style="clear:both">
 <h2><ognl-append>@T@pluralize(@O@count("posts"), "post")</ognl-append></h2>
