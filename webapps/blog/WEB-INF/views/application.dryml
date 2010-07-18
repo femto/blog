@@ -83,9 +83,16 @@
         </if>
         </else>
     </def>
+    
+<!-- This is for scooter template -->
+<def tag="hv">
+    <ognl-append>@O@hv(parameters.default)</ognl-append>
+</def>
+
 
 <!-- Rapid Core -->
 <def tag="view" polymorphic="true" attrs='inline, block, if_blank, no_wrapper, truncate'>
+
 <beanshell-append>
   context_this
 </beanshell-append>

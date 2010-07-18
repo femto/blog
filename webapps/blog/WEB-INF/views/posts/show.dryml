@@ -1,44 +1,36 @@
 <dummy>
-<def tag="hv1">
-    <ognl-append>@O@hv(this)</ognl-append>
-</def>
-<def tag="hv2">
-    <ognl-append>@O@hv(parameters.default)</ognl-append>
-</def>
 <page>
 <param-content><div style="clear:both">
-<ognl>
-post = @W@request("post")
-</ognl>
 <h2>Show post</h2>
 <ognl-append>@W@errorMessage("post")</ognl-append>
+
 <p>
   <b>Id:</b>
-<ognl-append>@O@hv("post.id")</ognl-append>
+<hv>post.id</hv>
 </p>
 <p>
   <b>Name:</b>
-  <hv1 for="post.name"></hv1>
+  <hv>post.name</hv>
 </p>
 
 <p>
   <b>Title:</b>
-  <hv2>post.title</hv2>
+  <hv>post.title</hv>
 </p>
 
 <p>
   <b>Content:</b>
-  <ognl-append>@O@hv("post.content")</ognl-append>
+  <hv>post.content</hv>
 </p>
 
 <p>
   <b>Created At:</b>
-  <ognl-append>@O@hv("post.created_at")</ognl-append>
+  <hv>post.created_at</hv>
 </p>
 
 <p>
   <b>Updated At:</b>
-  <ognl-append>@O@hv("post.updated_at")</ognl-append>
+  <hv>post.updated_at</hv>
 </p>
 
 <br />

@@ -10,6 +10,9 @@ import blog.models.Post;
 import template.ApplicationConfig;
 import template.DrymlTemplateHandler;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * PostsController class handles posts related access.
  */
@@ -45,8 +48,11 @@ public class PostsController extends ApplicationController {
         else {
             storeToRequest("post", post);
         }
+
+        Map map = new HashMap();
+        map.put("this", post);
         
-        return drymlHandle("posts", "show");
+        return drymlHandle("posts", "show", map);
 
     }
     
