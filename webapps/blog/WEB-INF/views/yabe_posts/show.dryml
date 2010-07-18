@@ -1,0 +1,76 @@
+<dummy>
+<page>
+<param-content><div style="clear:both">
+<ognl>
+post = @W@request("post")
+</ognl>
+<h2>Show post</h2>
+<ognl-append>@W@errorMessage("post")</ognl-append>
+<p>
+  <b>Id:</b>
+<ognl-append>@O@hv("post.id")</ognl-append>
+</p>
+<p>
+  <b>Name:</b>
+  <ognl-append>@O@hv("post.name")</ognl-append>
+</p>
+
+<p>
+  <b>Title:</b>
+  <ognl-append>@O@hv("post.title")</ognl-append>
+</p>
+
+<p>
+  <b>Content:</b>
+  <ognl-append>@O@hv("post.content")</ognl-append>
+</p>
+
+<p>
+  <b>Created At:</b>
+  <ognl-append>@O@hv("post.created_at")</ognl-append>
+</p>
+
+<p>
+  <b>Updated At:</b>
+  <ognl-append>@O@hv("post.updated_at")</ognl-append>
+</p>
+
+<br />
+<h2>Comments</h2>
+<div id="comments">
+<repeat  with='ognl:@O@allAssociatedRecordsOf("post.comments")' var = 'comment'>
+    <p>
+        <b>Commenter: </b><ognl-append>@O@property(comment, "commenter")</ognl-append>
+        <b>posted on  </b><ognl-append>@O@property(comment, "created_at")</ognl-append>
+    </p>
+
+    <p>
+        <b>Comment:</b>
+        <ognl-append>@O@property(comment, "body")</ognl-append>
+    </p>
+</repeat>
+</div>
+
+<h2>Add comment</h2>
+<ognl-append>@W@errorMessage("comment")</ognl-append>
+
+<ognl-append>@F@formForOpen("posts", post, "comments", "comment")</ognl-append>
+  <p>
+    <ognl-append>@F@label("commenter")</ognl-append><br />
+    <input type="text" id="comment_commenter" name="commenter"
+           value='ognl:@O@hv("comment.commenter")' size="80" />
+  </p>
+  <p>
+    <ognl-append>@F@label("body")</ognl-append><br />
+    <textarea id="comment_body" name="body" cols="60" rows="10"><ognl-append>@O@hv("comment.body")</ognl-append></textarea>
+  </p>
+  <input id="comment_submit" name="commit" type="submit"
+           value="Create" /><![CDATA[&nbsp;&nbsp;&nbsp;]]><input type="reset"/>
+<ognl-append>@F@formForClose("comments")</ognl-append>
+
+<ognl-append>@W@labelLink("Edit", @R@editResourceRecordPath("posts", post))</ognl-append>|
+<ognl-append>@W@labelLink("List", @R@resourcePath("posts"))</ognl-append>|
+<ognl-append>@W@labelLink("Paged List", @R@resourcePath("posts") + "?paged=true")</ognl-append>
+</div></param-content>
+</page>
+</dummy>
