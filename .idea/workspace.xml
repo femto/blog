@@ -259,7 +259,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ACH.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceDataLoader$ReferenceDataTimerTask.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\InputInfo.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" afterPath="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\comments\show_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasOneRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\ThreadLocalTransactionManager.class" afterPath="" />
@@ -483,7 +482,7 @@
       <file leaf-file-name="index.dryml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="629" selection-end="629" vertical-scroll-proportion="0.40162602">
+            <state line="17" column="62" selection-start="391" selection-end="402" vertical-scroll-proportion="0.19966443">
               <folding />
             </state>
           </provider>
@@ -492,7 +491,7 @@
       <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="0" selection-start="5617" selection-end="5617" vertical-scroll-proportion="-1.4">
+            <state line="503" column="20" selection-start="19870" selection-end="19870" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1531,7 +1530,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19064748" sideWeight="0.61560696" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08201439" sideWeight="0.4898844" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10359712" sideWeight="0.4898844" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597124" sideWeight="0.51729107" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36376813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1702,15 +1701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="5617" selection-end="5617" vertical-scroll-proportion="-1.4">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="79" selection-start="649" selection-end="655" vertical-scroll-proportion="-12.0">
@@ -1718,9 +1708,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="503" column="20" selection-start="19870" selection-end="19870" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="629" selection-end="629" vertical-scroll-proportion="0.40162602">
+        <state line="17" column="62" selection-start="391" selection-end="402" vertical-scroll-proportion="0.19966443">
           <folding />
         </state>
       </provider>
