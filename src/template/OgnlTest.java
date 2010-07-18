@@ -2,6 +2,7 @@ package template;
 
 import ognl.Ognl;
 import ognl.OgnlContext;
+import ognl.OgnlRuntime;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +20,10 @@ public class OgnlTest {
 
         Map map = new HashMap();
 
+        
         Map result = Ognl.addDefaultContext(null, new MyClassResolver(), map);
+
+        
 
         OgnlContext ognlContext = new OgnlContext();
         //ognlContext.getLastEvaluation().get

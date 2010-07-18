@@ -1,28 +1,94 @@
 <dryml>
-<include src="card" />
-<include src="form" />
-<include src="page" />
+    <include src="card"/>
+    <include src="form"/>
+    <include src="page"/>
 
-<def tag="main-nav">
-  <ul class='navigation main-nav'>
-    <li class="" style="float:left"><a href="ognl:@template.Util@getBaseUrl()">首页</a></li>
-    <li class="" style="float:left"><a href="News"><ht key="news.nav_item">新闻</ht></a></li>
-    <li class="" style="float:left"><a href="Forum"><ht key="forums.nav_item">论坛</ht></a></li>
-    <li class="" style="float:left"><a href="Ask"><ht key="asks.nav_item">问答</ht></a></li>
-    <li class="" style="float:left"><a href="Wiki"><ht key="wikis.nav_item">专栏</ht></a></li>
-    <li class="" style="float:left"><a href="Blog"><ht key="blogs.nav_item">博客</ht></a></li>
-    <li class="" style="float:left"><a href="Article"><ht key="articles.nav_item">文摘</ht></a></li>
-    <li class="" style="float:left"><a href="Group"><ht key="groups.nav_item">圈子</ht></a></li>
-    <li class="" style="float:left"><a href="Job"><ht key="jobs.nav_item">招聘</ht></a></li>
-    <li class="" style="float:left"><a href="Service"><ht key="services.nav_item">服务</ht></a></li>
-  </ul>
-</def>
+    <def tag="main-nav">
+        <ul class='navigation main-nav'>
+            <li class="" style="float:left"><a href="ognl:@template.Util@getBaseUrl()">首页</a></li>
+            <li class="" style="float:left"><a href="News">
+                <ht key="news.nav_item">新闻</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Forum">
+                <ht key="forums.nav_item">论坛</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Ask">
+                <ht key="asks.nav_item">问答</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Wiki">
+                <ht key="wikis.nav_item">专栏</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Blog">
+                <ht key="blogs.nav_item">博客</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Article">
+                <ht key="articles.nav_item">文摘</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Group">
+                <ht key="groups.nav_item">圈子</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Job">
+                <ht key="jobs.nav_item">招聘</ht>
+            </a></li>
+            <li class="" style="float:left"><a href="Service">
+                <ht key="services.nav_item">服务</ht>
+            </a></li>
+        </ul>
+    </def>
+    <!-- this is for yabe posts -->
+    <def tag="display" attrs="post,as">
+        <div class='ognl:"post " + (as == "teaser" ?"teaser" : "")' s3="s3">
+            <h2 class="post-title">
+                <a href1='@{"yabe_posts", post}' href="ognl:'/blog/yabe_posts/'+post.id">
+                    <ognl-append>post.title</ognl-append>
+                </a>
+            </h2>
+            <div class="post-metadata">
+                <span class="post-author">by <ognl-append>post.author.name</ognl-append></span>,
+                <span class="post-date"><ognl-append>post.created_at</ognl-append></span>
 
-<def tag="display" attrs="post,as">
-  <div class='ognl:"post " + (as == "teaser" ?"teaser" : "")' s3="s3">
-    <h2 class="post-title">
-        <a href="@{Application.show(post.id)}"><ognl-append>post.title</ognl-append></a>
-    </h2>
-  </div>
+                <if test="ognl:as != 'full'">
+            <span class="post-comments">
+                <![CDATA[&nbsp;|&nbsp;]]> ${post.comments.size() ?: 'no'}
+                comment${post.comments.size().pluralize()}
+                <if test="ognl:post.comments">
+                    , latest by
+                    <ognl-append>post.comments[0].author</ognl-append>
+                </if>
+            </span>
+                </if>
+            </div>
+            <if test="ognl:as != 'teaser'">
+                <div class="post-content">
+                    <div class="about">Detail:</div>
+                    <ognl-append>post.content</ognl-append>
+                </div>
+            </if>
+        </div>
+
+        <if test="ognl:as != 'full'">
+    <span class="post-comments">
+        <![CDATA[&nbsp;|&nbsp;]]> ${_post.comments.size() ?: 'no'}
+        comment${_post.comments.size().pluralize()}
+        <if test="ognl:post.comments">
+            , latest by <ognl-append>post.comments[0].author</ognl-append>
+        </if>
+    </span>
+        </if>
+        <else><if test="ognl:post.tags">
+    <span class="post-tags">
+        - Tagged
+#{list items:_post.tags, as:'tag'}
+    <a href="@{Application.listTagged(tag.name)}">${tag}</a>${tag_isLast ? '' : ', '}
+#{/list}
+    </span>
+        </if>
+        </else>
+    </def>
+<def tag="view1" polymorphic="true" type="beanshell">
+  if(false) { //not_permit_to_view
+    throw new RuntimeException("");
+  }
 </def>
+<def tag='view1' for='com.scooterframework.orm.activerecord.ActiveRecord'><a merge-attrs="true"/></def>
 </dryml>

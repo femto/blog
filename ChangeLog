@@ -1,1 +1,3 @@
+* EXPERIMENTAL: adding beanshell support, (cause the ognl syntax is too simple)
+  unfornately this in beanshell has special meaning(refers to XThis instance).
 * Implicit Context

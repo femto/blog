@@ -1,5 +1,7 @@
 package template;
 
+import bsh.EvalError;
+import bsh.Interpreter;
 import ognl.Ognl;
 import ognl.OgnlContext;
 import ognl.OgnlException;
@@ -114,7 +116,14 @@ public class DrymlTemplateHandler {
 
     private void handleDefTag(Element tag) {
         Attribute attribute = tag.attribute("tag");
-        tagDefinitions.put(attribute.getValue(), new XmlTagDefinition(tag));
+        //todo, may examine polymorphic tags ,type etc
+        if ("true".equals(tag.attributeValue("polymorphic")) || "polymorphic".equals(tag.attributeValue("polymorphic"))) {
+            tagDefinitions.put(attribute.getValue(), new PolymorphicTagDefinition(tag));
+        } else if ("beanshell".equals(tag.attributeValue("type"))) {
+            tagDefinitions.put(attribute.getValue(), new BeanShellTagDefinition(tag));
+        } else {
+            tagDefinitions.put(attribute.getValue(), new XmlTagDefinition(tag));
+        }
     }
 
     //calling
@@ -234,12 +243,21 @@ public class DrymlTemplateHandler {
 
             local_variables.put("this", eval(element.attributeValue("field"), ognlContext, local_variables.getParent())); //evaluating in parent's context
         }
+        //todo, cannot both field and for
+        if (element.attributeValue("for") != null) { //changing context
+            //local_variables.put("this_parent", local_variables.get("this"));
+            //local_variables.put("this_field", "xxx");
+
+            local_variables.put("this", eval(element.attributeValue("for"), ognlContext, local_variables.getParent())); //evaluating in parent's context
+        }
+
         invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
         return invocationContext;
     }
 
     /**
      * dynamiclly evaluate attribute value
+     *
      * @param attr
      * @param context
      * @return
@@ -254,7 +272,7 @@ public class DrymlTemplateHandler {
 
     private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
 
-        if (element.getName().equals("ognl-append")) {
+        if ("ognl-append".equals(element.getName())) {
             try {
                 InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
 
@@ -275,6 +293,14 @@ public class DrymlTemplateHandler {
                 throw new RuntimeException(e);
             }
             return;
+        } else if ("beanshell-append".equals(element.getName())) {
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            beanshell(element, invocationContext, result, true);
+            return;
+        } else if ("beanshell".equals(element.getName())) {
+            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            beanshell(element, invocationContext, result, false);
+            return;
         } else if ("set".equals(element.getName())) {
 
 
@@ -287,7 +313,7 @@ public class DrymlTemplateHandler {
             return;
         } else if ("if".equals(element.getName())) {
             InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            if(element.attributeValue("test") != null) {
+            if (element.attributeValue("test") != null) {
                 Object retValue = eval(element.attributeValue("test"), ognlContext, invocationContext.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;
@@ -418,6 +444,26 @@ public class DrymlTemplateHandler {
 
     }
 
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+        Interpreter i = new Interpreter();  // Construct an interpreter
+        try {
+
+            for (Iterator it = invocationContext.getLocal_variables().keySet().iterator(); it.hasNext();) {
+                String key = (String) it.next();
+                i.set(key, invocationContext.getLocal_variables().get(key));
+            }
+
+// Eval a statement and get the result
+
+            Object objResult = i.eval(element.getText());
+            if (append) {
+                _result.append(objResult);
+            }
+        } catch (EvalError e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private String getParamName(Element element) {
         String paramName = element.attributeValue("param");
         //System.out.println(attribute.getName() + "=" + attribute.getValue());
@@ -480,6 +526,10 @@ public class DrymlTemplateHandler {
         if (retValue == Boolean.FALSE) {
             return false;
         }
+
+        if (retValue instanceof Collection && ((Collection) retValue).isEmpty()) { //empty collection also considered false
+            return false;
+        }
         return true;
     }
 
@@ -522,9 +572,6 @@ public class DrymlTemplateHandler {
 
     private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
 
-        Element element = invocationContext.getTagInvocation().getTag();
-
-
         //handle tagDefinition's attrs
         TagDefinition tagDefinition = invocationContext.getTagDefinition();
         TagInvocation tagInvocation = invocationContext.getTagInvocation();
@@ -538,6 +585,9 @@ public class DrymlTemplateHandler {
 
         //handle tagDefinition's body, for different TagDefinition subclasses
         if (tagDefinition != null) {
+            /*if(tagDefinition instanceof ITagDefinition) {
+                ((ITagDefinition)tagDefinition).invoke(invocationContext, result);
+            } else */
             if (tagDefinition instanceof XmlTagDefinition) {
                 XmlTagDefinition xmlTagDefinition = (XmlTagDefinition) tagDefinition;
                 for (Iterator it = xmlTagDefinition.getTag().content().iterator(); it.hasNext();) {

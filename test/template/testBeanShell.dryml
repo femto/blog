@@ -1,0 +1,8 @@
+<dryml>
+<def tag="view1">
+<beanshell-append>
+attributes
+</beanshell-append>
+</def>
+<view1 s1="s1" s2="s2"/>
+</dryml>

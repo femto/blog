@@ -3,8 +3,8 @@
         <param-title><title>Yabe Posts</title></param-title>
         <param-content>
             <if test="ognl:frontPost">
-                <display1 post="ognl:frontPost" as="home" >
-                </display1>
+                <display post="ognl:frontPost" as="home" >
+                </display>
 
                 <if test="ognl:olderPosts">
 

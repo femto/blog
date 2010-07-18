@@ -9,3 +9,4 @@ CREATE TABLE comments (
   updated_at timestamp,
   PRIMARY KEY  (id)
 ) ENGINE=InnoDB;
+

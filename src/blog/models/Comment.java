@@ -14,4 +14,8 @@ public class Comment extends ActiveRecord {
         belongsTo("post", "counter_cache:true");
         
     }
+
+    public String getAuthor() {
+        return (String) getField("commenter");
+    }
 }
