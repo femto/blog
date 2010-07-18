@@ -144,7 +144,27 @@ public class DrymlTest extends XMLTestCase {
 
         templateHandler.handle("test\\template\\testBeanShell.dryml", result, rootContext);
 
-        System.out.println(result.toString());
+        //assertEquals("37", result.toString().trim());
+        //assertEquals("false", result.toString().trim());
+        //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
+    }
+
+    public void testBeanShellThrowException() throws Exception {
+        DrymlConfiguration configuration = new DrymlConfiguration();
+        configuration.setClassResolver(new MyClassResolver());
+        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
+
+        StringBuilder result = new StringBuilder();
+        Map rootContext = new HashMap();
+        rootContext.put("this", false);
+
+        try {
+            templateHandler.handle("test\\template\\testBeanShellThrowException.dryml", result, rootContext);
+        } catch (Exception e) {
+            e.printStackTrace(); //exception expected
+        }
+
+        //assertEquals("37", result.toString().trim());
         //assertEquals("false", result.toString().trim());
         //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));
     }

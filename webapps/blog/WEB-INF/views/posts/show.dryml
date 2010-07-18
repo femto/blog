@@ -1,4 +1,10 @@
 <dummy>
+<def tag="hv1">
+    <ognl-append>@O@hv(this)</ognl-append>
+</def>
+<def tag="hv2">
+    <ognl-append>@O@hv(parameters.default)</ognl-append>
+</def>
 <page>
 <param-content><div style="clear:both">
 <ognl>
@@ -12,12 +18,12 @@ post = @W@request("post")
 </p>
 <p>
   <b>Name:</b>
-  <ognl-append>@O@hv("post.name")</ognl-append>
+  <hv1 for="post.name"></hv1>
 </p>
 
 <p>
   <b>Title:</b>
-  <ognl-append>@O@hv("post.title")</ognl-append>
+  <hv2>post.title</hv2>
 </p>
 
 <p>

@@ -241,14 +241,14 @@ public class DrymlTemplateHandler {
             //local_variables.put("this_parent", local_variables.get("this"));
             //local_variables.put("this_field", "xxx");
 
-            local_variables.put("this", eval(element.attributeValue("field"), ognlContext, local_variables.getParent())); //evaluating in parent's context
+            local_variables.put("this", evalOgnl(element.attributeValue("field"), ognlContext, local_variables.getParent())); //evaluating in parent's context
         }
         //todo, cannot both field and for
         if (element.attributeValue("for") != null) { //changing context
             //local_variables.put("this_parent", local_variables.get("this"));
             //local_variables.put("this_field", "xxx");
 
-            local_variables.put("this", eval(element.attributeValue("for"), ognlContext, local_variables.getParent())); //evaluating in parent's context
+            local_variables.put("this", evalOgnl(element.attributeValue("for"), ognlContext, local_variables.getParent())); //evaluating in parent's context
         }
 
         invocationStack.push(invocationContext); //maybe calculating the attrs and all_attrs?
@@ -452,6 +452,7 @@ public class DrymlTemplateHandler {
                 String key = (String) it.next();
                 i.set(key, invocationContext.getLocal_variables().get(key));
             }
+            i.set("context_this", eval("ognl:this", ognlContext, invocationContext.getLocal_variables()));
 
 // Eval a statement and get the result
 
@@ -470,6 +471,7 @@ public class DrymlTemplateHandler {
         if ("true".equals(paramName) || "param".equals(paramName)) {
             paramName = element.getName();
         }
+
         return paramName;
     }
 
@@ -556,16 +558,21 @@ public class DrymlTemplateHandler {
     }
 
     private Object eval(String value, Map context, Object root) {
+
+        if (value.startsWith("ognl:")) {
+            value = value.replace("ognl:", "");
+            //System.out.println("getting value for " + value);
+            return evalOgnl(value, context, root);
+        }
+        return value;
+    }
+
+    private Object evalOgnl(String value, Map context, Object root) {
         try {
-            if (value.startsWith("ognl:")) {
-                value = value.replace("ognl:", "");
-                //System.out.println("getting value for " + value);
-                return Ognl.getValue(value, context, root);
-            }
+            return Ognl.getValue(value, context, root);
         } catch (OgnlException e) {
             throw new RuntimeException(e);
         }
-        return value;
     }
 
     //really invocation

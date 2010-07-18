@@ -1,7 +1,9 @@
 <dryml>
 <def tag="view1">
 <beanshell-append>
-37
+if(true) {
+throw new RuntimeException("testBeanShellThrowException");
+}
 </beanshell-append>
 </def>
 <view1/>

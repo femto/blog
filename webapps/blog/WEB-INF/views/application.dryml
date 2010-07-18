@@ -45,12 +45,11 @@
             </h2>
             <div class="post-metadata">
                 <span class="post-author">by <ognl-append>post.author.name</ognl-append></span>,
-                <span class="post-date"><ognl-append>post.created_at</ognl-append></span>
+                <span class="post-date"><view_date for="post.created_at" format="yyyy-MM-dd"/></span>
 
                 <if test="ognl:as != 'full'">
             <span class="post-comments">
-                <![CDATA[&nbsp;|&nbsp;]]> ${post.comments.size() ?: 'no'}
-                comment${post.comments.size().pluralize()}
+                <![CDATA[&nbsp;|&nbsp;]]> <ognl-append>@T@pluralize(post.comments.size(), "comment")</ognl-append>
                 <if test="ognl:post.comments">
                     , latest by
                     <ognl-append>post.comments[0].author</ognl-append>
@@ -68,8 +67,7 @@
 
         <if test="ognl:as != 'full'">
     <span class="post-comments">
-        <![CDATA[&nbsp;|&nbsp;]]> ${_post.comments.size() ?: 'no'}
-        comment${_post.comments.size().pluralize()}
+        <![CDATA[&nbsp;|&nbsp;]]> <ognl-append>@T@pluralize(post.comments.size(), "comment")</ognl-append>
         <if test="ognl:post.comments">
             , latest by <ognl-append>post.comments[0].author</ognl-append>
         </if>
@@ -78,17 +76,30 @@
         <else><if test="ognl:post.tags">
     <span class="post-tags">
         - Tagged
-#{list items:_post.tags, as:'tag'}
-    <a href="@{Application.listTagged(tag.name)}">${tag}</a>${tag_isLast ? '' : ', '}
-#{/list}
+<repeat with="ognl:post.tags" var="tag">
+    <a href="@{Application.listTagged(tag.name)}"><ognl-append>tag</ognl-append></a><ognl-append>tag_isLast ? '' : ', '</ognl-append>
+</repeat>
     </span>
         </if>
         </else>
     </def>
-<def tag="view1" polymorphic="true" type="beanshell">
-  if(false) { //not_permit_to_view
-    throw new RuntimeException("");
-  }
+
+<!-- Rapid Core -->
+<def tag="view" polymorphic="true" attrs='inline, block, if_blank, no_wrapper, truncate'>
+<beanshell-append>
+  context_this
+</beanshell-append>
 </def>
 <def tag='view1' for='com.scooterframework.orm.activerecord.ActiveRecord'><a merge-attrs="true"/></def>
+<def tag='view2' for='boolean'><a merge-attrs="true"/></def>
+<def tag='view_date' attrs='format'>
+<beanshell-append>
+  if(format!=null) {
+    result = new java.text.SimpleDateFormat(format).format(context_this);
+  } else {
+    context_this.toString();
+  }
+  result
+</beanshell-append>
+</def>
 </dryml>

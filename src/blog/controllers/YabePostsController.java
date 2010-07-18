@@ -35,6 +35,7 @@ public class YabePostsController extends ApplicationController {
         System.out.println("frontPost");
         Map map = new HashMap();
         //map.put("posts",findAll(Post.class));
+        map.put("this", posts);
         map.put("posts", posts);
 
         if(posts.size() > 0) {

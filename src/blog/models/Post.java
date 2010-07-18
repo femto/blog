@@ -32,9 +32,13 @@ public class Post extends ActiveRecord {
         return (Integer) getField("id");
     }
 
+    public String getName() {
+        String name = (String) getField("name");
+        return name;
+    }
+
     public String getTitle() {
         String title = (String) getField("title");
-        System.out.println(title);
         return title;
     }
 

@@ -21,8 +21,9 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\Vrecord.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\posts\index2.dryml" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\UserDatabaseConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\JdbcTransaction.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/controllers/YabePostsController.java" afterPath="$PROJECT_DIR$/src/blog/controllers/YabePostsController.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\IncludeHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\JdbcTransaction.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionStarterType.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\RecordValidationException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\CRUDController.class" afterPath="" />
@@ -30,37 +31,36 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\Record.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceDataStore.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\R.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/BeanShellTagDefinition.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordRelationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\LookupFailureException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\LoadedClass.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\LookupFailureException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\Version.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\ExpandedMessage.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceGeneric.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceGeneric.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\signon\main_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\posts\show_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\databrowser\records\add_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UndefinedReverseRelationException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\DirChangeMonitor$DirChangeMonitorTimerTask.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UndefinedReverseRelationException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\misc\JdbcPageListSource.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\models\Entry.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceSpecific.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\comments\index_jsp.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RouteInfo.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessorFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RouteInfo.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/BaseRequestProcessor.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Owner.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Visit.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\FileMonitor.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Visit.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\logging\LogConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\BelongsToRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\FileUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\AppActionContext.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\StoredProcedureProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceData.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\MyClassLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceData.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\util\DataAccessUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasOneRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociatedRecordsHM.class" afterPath="" />
@@ -73,7 +73,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\WordUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\TablesController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\ParameterFactory.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/models/Comment.java" afterPath="$PROJECT_DIR$/src/blog/models/Comment.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\PrimaryKey.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnsupportedDataProcessorNameException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTOStoredProcedure.class" afterPath="" />
@@ -82,14 +81,13 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnsupportedStoredProcedureModeException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceClientTransactionTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\i18n\MessageResourcesManager.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\NamedRoute.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionControlFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\NamedRoute.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\controllers\ApplicationController.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RequestInfo.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnsupportedStoredProcedureAPINameException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RequestInfo.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\RESTified.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\RecordRelation.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.iml" afterPath="$PROJECT_DIR$/blog.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/template/DrymlTest.java" afterPath="$PROJECT_DIR$/test/template/DrymlTest.java" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\entries\edit_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessor.class" afterPath="" />
@@ -98,45 +96,44 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\security\LoginHelper.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\parser\ParameterMetaDataLoader.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\MySQLParameter.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\ATest.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\FlashMessage.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\misc\SqlPageListSourceImpl.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/PolymorphicTagDefinition.java" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\FlashMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\ATest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\ConnectionUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\DatabaseConnectionContext.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\entries\index_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionControl.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\Category.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlService.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\TableData.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlService.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\controllers\HelloController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\WebActionContext.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\welcome\sayit.jsp" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\databrowser\databases\show_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\controllers\WelcomeController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\ClassManager.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\index.jsp.bak" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\PropertyFileUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\JdbcStatementParameter.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\IncludeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\blog\WEB-INF\views\index.jsp.bak" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\CompileException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\IncludeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\JdbcStatementParameter.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RouteConstants.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\RestfulRequestProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionContext.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\CurrentThreadCache.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionContext.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\DatabasesController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileFilterSamePrefix.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\M.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\Route.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\DatabaseConnectionContextImpl.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\parser\JdbcStatementHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionResult.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTOJdbcStatement.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RootRoute.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionResult.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\GenericException.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\config\DatabaseConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RootRoute.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\RequiredDataMissingException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\config\DatabaseConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RegularRoute.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\models\Comment.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\JavaCompiler.class" afterPath="" />
@@ -147,35 +144,33 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\config\WebObjectFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\entries\paged_005flist_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecord.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\i18n\Messages.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\Database.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\i18n\Messages.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\F.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\Parameter.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\Function.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Type.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\Parameter.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\PropertyReader.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Type.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\JdbcStatementProcessorFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UnsupportedEntityInCategoryException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileFilterSameSuffix.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/template/BeanShellTest.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Pet.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\TestWordUtil.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/ITagDefinition.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\ColumnInfo.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/models/Tag.java" afterPath="$PROJECT_DIR$/src/blog/models/Tag.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceImpl.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionFilterManager.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RestRoute.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\DirChangeMonitor.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceClient.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RestRoute.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/template/testBeanShell.dryml" afterPath="$PROJECT_DIR$/test/template/testBeanShell.dryml" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\InvalidColumnNameException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceClient.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\Relation.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\BaseRequestProcessor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\i18n\I18nConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\DefaultRoute.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\BaseRequestProcessor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\ApplicationController.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnexpectedDataException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\DefaultRoute.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\Util.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnexpectedDataException.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" afterPath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\InvalidOperationException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\TestStringUtil.class" afterPath="" />
@@ -186,78 +181,72 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessorTypes.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\SqlUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\CmtTransaction.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_17.request.log" afterPath="$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_17.request.log" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\autoloader\FileMonitor$SourceFileTimerTask.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\databrowser\views\index_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\VrecordsController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\config\Constants.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/references/bsh-2.0b4.jar" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Vet.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ModelValidators.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Vet.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\DirObservable.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\WrongRecordTypeException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasManyRecordRelation.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/models/User.java" afterPath="$PROJECT_DIR$/src/blog/models/User.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileObservable.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\signon\logout_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnsupportedVendorException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\NamedProperties.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\TableGateway.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/DrymlException.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileChangeNotice.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessorImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\config\SqlConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\tag\TagHelper.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociationHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\tag\TagHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\config\SqlConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\UserDatabaseConnectionImpl.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\databrowser\databases\index_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\MatchMaker.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\Calculator.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/db/mysql/blog_development.sql" afterPath="$PROJECT_DIR$/docs/db/mysql/blog_development.sql" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceDataRecord.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\JdbcStatement.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\TransactionException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociatedRecords.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\TransactionException.class" afterPath="" />
       <change type="MODIFICATION" beforePath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/autoloader/MyClassLoader.java" afterPath="E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/autoloader/MyClassLoader.java" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\misc\DataPageListSourceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UnsupportedRelationTypeException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\PropertyFileChangeMonitor.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UnsupportedRelationTypeException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\misc\DataPageListSourceImpl.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\Cursor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\DateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\OrmObjectFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ViewFileNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\OrmObjectFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\Converters.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ViewFileNotFoundException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\Table.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\signon\login_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\OrderedProperties.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociatedRecordsHMT.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\vendor\MySQLJdbcStatementProcessor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\FunctionProcessor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionManager.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\OTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\WebApplicationStartListener.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/yabe_posts/index.dryml" afterPath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/yabe_posts/index.dryml" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\DBStore.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\OTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\misc\Paginator.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\DBStore.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\BuiltinHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\ImplicitTransactionManager.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\ScooterApplicationTest.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\MethodCreationException.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\ScooterApplicationTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\ImplicitTransactionManager.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\ApplicationConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTO.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\siteinfo\routes_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\InputParameter.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociatedRecordsInCategory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\entries\add_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\NoRouteFoundException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\FileFilterSameName.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\NoRouteFoundException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\DTest.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Specialty.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTOBasic.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Specialty.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_18.request.log" afterPath="$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_18.request.log" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\posts\edit_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\MainActionServlet.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\tag\Tag.class" afterPath="" />
@@ -282,31 +271,30 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\SiteInfoController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionFilterData.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\comments\add_jsp.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/db/mysql/blog_comments.sql" afterPath="$PROJECT_DIR$/docs/db/mysql/blog_comments.sql" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\ExecutionException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\validation\ValidationResults.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/template/XmlTagDefinition.java" afterPath="$PROJECT_DIR$/src/template/XmlTagDefinition.java" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\IncludeHelper$RecordData.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\View.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\IncludeHelper$RecordData.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionValidators.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\validation\Validators.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\Transaction.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\RowData.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\RelationManager.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\RowData.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\Transaction.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\builtin\databrowser\tables\index_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AlreadyAttachedException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\CreateConnectionFailureException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceClientTest.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionManagerUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\FailureDetectingParameterPropertyException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\TransactionManagerUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasManyThroughRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\BeanUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasManyThroughRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ActiveRecordCRUDTest.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\NoControllerFoundException.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" afterPath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\JdbcConnectionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\D.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\NoControllerFoundException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\UnregisteredCategoryException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\D.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ScooterRequestFilter.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ControllerFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\TableInfo.class" afterPath="" />
@@ -314,39 +302,36 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasManyRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\UnsupportedDataProcessorTypeException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\parser\JdbcStatementParser.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/template/OgnlTest.java" afterPath="$PROJECT_DIR$/src/template/OgnlTest.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\logging\LogUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\SqlExpressUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\config\WebConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\AbstractTransactionImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\config\WebConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\AssociatedRecord.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\Resource.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\BaseSQLException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\JdbcConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\BaseSQLException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\ViewsController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/models/PostTag.java" afterPath="$PROJECT_DIR$/src/blog/models/PostTag.java" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\BelongsToRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionContext$Cycle.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\RowInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTOStoredFunction.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\DataSourceConnectionContext.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\OmniDTOStoredFunction.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\models\Post.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\PropertyFileLoadingException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\util\DAOUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\ObjectCreationException.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\DataSourceConnection.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\exception\UnsupportFeatureException.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\DataSourceConnection.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceDataLoader.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\controllers\SignonController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\vendor\OracleJdbcStatementProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\config\RouteConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\Message.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\config\RouteConfig.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\connection\UserDatabaseConnectionFactory.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\JdbcStatementProcessor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\TableSqlPageListSource.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\StoredProcedure.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\VetSpecialty.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/blog/WEB-INF/lib/bsh-2.0b4.jar" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\A.class" afterPath="" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\webapps\${app_name}\WEB-INF\classes\blog\models\CommentTest.class" afterPath="" />
     </list>
@@ -425,10 +410,37 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BeanShellTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/template/BeanShellTest.java">
+      <file leaf-file-name="status.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/status.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="636" selection-end="636" vertical-scroll-proportion="0.5474339">
+            <state line="7" column="77" selection-start="309" selection-end="330" vertical-scroll-proportion="-4.6666665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.dryml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="22" selection-start="475" selection-end="475" vertical-scroll-proportion="0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blog/models/Post.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="19" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -436,57 +448,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XThis.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/references/bsh-2.0b4.jar!/bsh/XThis.class">
+      <file leaf-file-name="W.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/W.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="40" selection-start="168" selection-end="168" vertical-scroll-proportion="-2.6666667">
+            <state line="2185" column="54" selection-start="85117" selection-end="85117" vertical-scroll-proportion="-4.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="This.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/references/bsh-2.0b4.jar!/bsh/This.class">
+      <file leaf-file-name="F.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/F.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="148" selection-end="148" vertical-scroll-proportion="-2.6666667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interpreter.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/references/bsh-2.0b4.jar!/bsh/Interpreter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="28" selection-start="3016" selection-end="3016" vertical-scroll-proportion="-8.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="470" column="39" selection-start="18937" selection-end="18944" vertical-scroll-proportion="-9.56">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrymlTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="39" selection-start="6060" selection-end="6060" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ITagDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/ITagDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+            <state line="321" column="38" selection-start="14687" selection-end="14687" vertical-scroll-proportion="-1.48">
               <folding />
             </state>
           </provider>
@@ -495,27 +469,34 @@
       <file leaf-file-name="PolymorphicTagDefinition.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/PolymorphicTagDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="37" selection-start="142" selection-end="166" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="142" selection-end="153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanShellTagDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/BeanShellTagDefinition.java">
+      <file leaf-file-name="add.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="14" selection-start="1297" selection-end="1486" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="18" column="79" selection-start="649" selection-end="655" vertical-scroll-proportion="-12.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.dryml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/template/test.dryml">
+      <file leaf-file-name="index.dryml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="6" column="22" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="170" column="24" selection-start="5698" selection-end="5698" vertical-scroll-proportion="-18.4">
               <folding />
             </state>
           </provider>
@@ -534,22 +515,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/template/OgnlTest.java" />
-        <option value="$PROJECT_DIR$/src/blog/models/Comment.java" />
         <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/src/blog/models/PostTag.java" />
         <option value="$PROJECT_DIR$/src/blog/models/Tag.java" />
-        <option value="$PROJECT_DIR$/src/blog/models/Post.java" />
         <option value="$PROJECT_DIR$/ChangeLog" />
         <option value="$PROJECT_DIR$/src/template/DrymlException.java" />
         <option value="$PROJECT_DIR$/src/template/PolymorphicTagDefinition.java" />
-        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" />
         <option value="$PROJECT_DIR$/src/template/XmlTagDefinition.java" />
         <option value="$PROJECT_DIR$/src/template/ITagDefinition.java" />
-        <option value="$PROJECT_DIR$/test/template/DrymlTest.java" />
         <option value="$PROJECT_DIR$/src/template/BeanShellTagDefinition.java" />
         <option value="$PROJECT_DIR$/test/template/BeanShellTest.java" />
+        <option value="$PROJECT_DIR$/test/template/DrymlTest.java" />
+        <option value="$PROJECT_DIR$/src/blog/controllers/YabePostsController.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" />
         <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
+        <option value="$PROJECT_DIR$/src/blog/models/Post.java" />
+        <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" />
       </list>
     </option>
   </component>
@@ -758,33 +739,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yabe_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -849,6 +804,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -920,35 +915,7 @@
       <recent name="E:\scooter-project\blog\webapps\blog\WEB-INF\views\posts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DrymlTest.testBeanShell">
-    <configuration default="false" name="DrymlTest.testIf" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="snapshooter" />
-      <module name="blog" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="template" />
-      <option name="MAIN_CLASS_NAME" value="template.DrymlTest" />
-      <option name="METHOD_NAME" value="testIf" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Remote.Unnamed">
     <configuration default="false" name="DrymlTest.testIfTrue" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -1072,6 +1039,38 @@
       <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="2951" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DrymlTest.testBeanShellThrowException" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="snapshooter" />
+      <module name="blog" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="template" />
+      <option name="MAIN_CLASS_NAME" value="template.DrymlTest" />
+      <option name="METHOD_NAME" value="testBeanShellThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4547" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -1427,11 +1426,11 @@
       <item index="3" class="java.lang.String" itemvalue="Application.OgnlTest" />
       <item index="4" class="java.lang.String" itemvalue="Application.DrymlConfiguration" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.DrymlTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIf" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfTrue" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfFalse" />
-      <item index="9" class="java.lang.String" itemvalue="Application.BeanShellTest" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShell" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfTrue" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfFalse" />
+      <item index="8" class="java.lang.String" itemvalue="Application.BeanShellTest" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShell" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShellThrowException" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1499,24 +1498,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="844" extended-state="0" />
+    <frame x="-4" y="-4" width="1448" height="846" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4031792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62173915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52890176" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39913544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2086331" sideWeight="0.5432277" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19064748" sideWeight="0.61560696" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15755396" sideWeight="0.36811593" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12014388" sideWeight="0.5867052" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597124" sideWeight="0.51729107" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36376813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1594,121 +1593,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/template/DrymlException.java">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ActionControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+        <state line="431" column="18" selection-start="14497" selection-end="14497" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/orm/activerecord/ActiveRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/blog/controllers/YabePostsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="249" selection-end="286" vertical-scroll-proportion="0.0">
+        <state line="55" column="69" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/yabe_posts/index.dryml">
+    <entry file="file://$PROJECT_DIR$/tools/servers/jetty-embedded/logs/2010_07_17.request.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="286" selection-end="287" vertical-scroll-proportion="-3.2653062">
+        <state line="2295" column="167" selection-start="236006" selection-end="236006" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="34" selection-start="3425" selection-end="3429" vertical-scroll-proportion="-8.204082">
+        <state line="9" column="17" selection-start="276" selection-end="288" vertical-scroll-proportion="-4.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/XmlTagDefinition.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/sitemesh/twoColumnsLayout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+        <state line="28" column="64" selection-start="1079" selection-end="1079" vertical-scroll-proportion="-15.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/TagDefinition.java">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ACH.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+        <state line="19" column="13" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/template/test.dryml">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/status.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="77" selection-start="309" selection-end="330" vertical-scroll-proportion="-4.6666665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/edit.dryml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/ITagDefinition.java">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+        <state line="170" column="24" selection-start="5698" selection-end="5698" vertical-scroll-proportion="-18.4">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/references/bsh-2.0b4.jar!/bsh/Interpreter.class">
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/W.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="28" selection-start="3016" selection-end="3016" vertical-scroll-proportion="-8.375">
+        <state line="2185" column="54" selection-start="85117" selection-end="85117" vertical-scroll-proportion="-4.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/F.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="321" column="38" selection-start="14687" selection-end="14687" vertical-scroll-proportion="-1.48">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/template/PolymorphicTagDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="142" selection-end="166" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="142" selection-end="153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/references/bsh-2.0b4.jar!/bsh/This.class">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="148" selection-end="148" vertical-scroll-proportion="-2.6666667">
+        <state line="6" column="22" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/references/bsh-2.0b4.jar!/bsh/XThis.class">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/add.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="168" selection-end="168" vertical-scroll-proportion="-2.6666667">
+        <state line="18" column="79" selection-start="649" selection-end="655" vertical-scroll-proportion="-12.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
+    <entry file="file://$PROJECT_DIR$/src/blog/models/Post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="39" selection-start="6060" selection-end="6060" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/BeanShellTagDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="1297" selection-end="1486" vertical-scroll-proportion="0.0">
+        <state line="36" column="19" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="470" column="39" selection-start="18937" selection-end="18944" vertical-scroll-proportion="-9.56">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/template/BeanShellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="636" selection-end="636" vertical-scroll-proportion="0.5474339">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="25" column="22" selection-start="475" selection-end="475" vertical-scroll-proportion="0.625">
+          <folding />
         </state>
       </provider>
     </entry>
