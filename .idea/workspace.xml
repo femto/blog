@@ -87,6 +87,7 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\route\RequestInfo.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\RESTified.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\RecordRelation.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/template/DrymlTest.java" afterPath="$PROJECT_DIR$/test/template/DrymlTest.java" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\entries\edit_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\processor\DataProcessor.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\W.class" afterPath="" />
@@ -156,7 +157,6 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\test\models\Pet.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\common\util\TestWordUtil.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\object\ColumnInfo.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml" afterPath="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\SqlServiceImpl.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ActionFilterManager.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\admin\DirChangeMonitor.class" afterPath="" />
@@ -249,7 +249,6 @@
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\posts\edit_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\MainActionServlet.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\tag\Tag.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/template/testThisShadowing.dryml" afterPath="$PROJECT_DIR$/test/template/testThisShadowing.dryml" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\builtin\databrowser\RecordsController.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\exception\FailureDetectingRowMetaDataException.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\util\O.class" afterPath="" />
@@ -259,6 +258,7 @@
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\web\controller\ACH.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\ReferenceDataLoader$ReferenceDataTimerTask.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\sqldataexpress\service\InputInfo.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" afterPath="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
       <change type="DELETED" beforePath="E:\scooter-project\blog\tools\servers\jetty-embedded\work\Jetty_0_0_0_0_8080_blog__blog__o57z0p\jsp\org\apache\jsp\WEB_002dINF\views\comments\show_jsp.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\orm\activerecord\HasOneRecordRelation.class" afterPath="" />
       <change type="DELETED" beforePath="E:\toolset\scooter-source-1.0.RC3\out\production\scooter-source-1.0.RC3\com\scooterframework\transaction\ThreadLocalTransactionManager.class" afterPath="" />
@@ -351,7 +351,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="516" class="template.DrymlTemplateHandler" package="template">
+      <breakpoint url="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" line="530" class="template.DrymlTemplateHandler" package="template">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -452,15 +452,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="W.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/W.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2079" column="23" selection-start="81065" selection-end="81065" vertical-scroll-proportion="-8.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="O.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/util/O.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -479,19 +470,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.dryml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.dryml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="62" selection-start="391" selection-end="402" vertical-scroll-proportion="0.19966443">
+            <state line="26" column="28" selection-start="681" selection-end="681" vertical-scroll-proportion="-6.3469386">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BeanShellTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/template/BeanShellTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrymlTemplateHandler.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="503" column="20" selection-start="19870" selection-end="19870" vertical-scroll-proportion="0.0">
+            <state line="216" column="22" selection-start="7972" selection-end="7972" vertical-scroll-proportion="0.12231405">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -502,7 +504,7 @@
       <file leaf-file-name="DrymlTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+            <state line="168" column="31" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -538,14 +540,14 @@
         <option value="$PROJECT_DIR$/src/template/ITagDefinition.java" />
         <option value="$PROJECT_DIR$/src/template/BeanShellTagDefinition.java" />
         <option value="$PROJECT_DIR$/test/template/BeanShellTest.java" />
-        <option value="$PROJECT_DIR$/test/template/DrymlTest.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/YabePostsController.java" />
         <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/application.dryml" />
         <option value="$PROJECT_DIR$/src/blog/models/Post.java" />
         <option value="$PROJECT_DIR$/src/blog/controllers/PostsController.java" />
         <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/show.dryml" />
-        <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
         <option value="$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml" />
+        <option value="$PROJECT_DIR$/test/template/DrymlTest.java" />
+        <option value="$PROJECT_DIR$/src/template/DrymlTemplateHandler.java" />
       </list>
     </option>
   </component>
@@ -738,36 +740,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -930,41 +902,7 @@
       <recent name="E:\scooter-project\blog\webapps\blog\WEB-INF\views\posts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DrymlTest">
-    <configuration default="false" name="DrymlTest.testIfTrue" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="snapshooter" />
-      <module name="blog" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="template" />
-      <option name="MAIN_CLASS_NAME" value="template.DrymlTest" />
-      <option name="METHOD_NAME" value="testIfTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2522" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.DrymlTest.testParameterOfParameter">
     <configuration default="false" name="DrymlTest.testIfFalse" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -1090,6 +1028,40 @@
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DrymlTest.testParameterOfParameter" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="snapshooter" />
+      <module name="blog" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="template" />
+      <option name="MAIN_CLASS_NAME" value="template.DrymlTest" />
+      <option name="METHOD_NAME" value="testParameterOfParameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4630" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -1441,11 +1413,11 @@
       <item index="3" class="java.lang.String" itemvalue="Application.OgnlTest" />
       <item index="4" class="java.lang.String" itemvalue="Application.DrymlConfiguration" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.DrymlTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfTrue" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfFalse" />
-      <item index="8" class="java.lang.String" itemvalue="Application.BeanShellTest" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShell" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShellThrowException" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.DrymlTest.testIfFalse" />
+      <item index="7" class="java.lang.String" itemvalue="Application.BeanShellTest" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShell" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.DrymlTest.testBeanShellThrowException" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.DrymlTest.testParameterOfParameter" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1520,7 +1492,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35260117" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7369942" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.632948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39913544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1530,10 +1502,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19064748" sideWeight="0.61560696" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10359712" sideWeight="0.4898844" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15755396" sideWeight="0.35693642" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597124" sideWeight="0.51729107" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36376813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4465318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1608,13 +1580,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/toolset/scooter-source-1.0.RC3/src/com/scooterframework/web/controller/ACH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/layouts/includes/status.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="77" selection-start="309" selection-end="330" vertical-scroll-proportion="-4.6666665">
@@ -1687,13 +1652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/template/ProcEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0">
@@ -1708,19 +1666,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="503" column="20" selection-start="19870" selection-end="19870" vertical-scroll-proportion="0.0">
+        <state line="26" column="28" selection-start="681" selection-end="681" vertical-scroll-proportion="-6.3469386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/template/BeanShellTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/blog/WEB-INF/views/posts/index.dryml">
+    <entry file="file://$PROJECT_DIR$/test/template/DrymlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="62" selection-start="391" selection-end="402" vertical-scroll-proportion="0.19966443">
+        <state line="168" column="31" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DrymlTemplateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="22" selection-start="7972" selection-end="7972" vertical-scroll-proportion="0.12231405">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

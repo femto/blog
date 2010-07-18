@@ -210,7 +210,21 @@ public class DrymlTemplateHandler {
             if (ele.getName().indexOf("param-") != -1) {
                 String name = ele.getName().substring("param-".length());
                 //System.out.println(name);
-                ProcEval procEval = new ProcEval(ele, this, context);
+                ProcEval procEval = null;
+                //todo: if this also has a param named, then needn't this
+                if (ele.attributeValue("param") != null) {
+                    String paramName = getParamName(ele);
+                    //System.out.println("paraming " + paramName);
+                    if (((TagParameters) context.getAll_parameters()).fetch(paramName) != null) {
+                        procEval = (ProcEval) ((TagParameters) context.getAll_parameters()).fetch(paramName);
+                    } else {
+                        procEval = new ProcEval(ele, this, context);
+                    }
+                } else {
+                    procEval = new ProcEval(ele, this, context);
+                }
+
+
                 if (!tagDefinition.getParams().containsKey(name)) {
                     parameters.put(name, procEval); //or ele's content?
                 }

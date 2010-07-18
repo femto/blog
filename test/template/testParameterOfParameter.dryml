@@ -1,0 +1,15 @@
+<dryml>
+<def tag="s1">
+  <s2>
+    <param-content param="content">zz</param-content>
+  </s2>
+</def>
+<def tag="s2">
+<div param="content">div</div>
+</def>
+<s1>
+<param-content>yy</param-content>
+</s1>
+<s1>
+</s1>
+</dryml>

@@ -164,6 +164,20 @@ public class DrymlTest extends XMLTestCase {
             e.printStackTrace(); //exception expected
         }
 
+    }
+
+    public void testParameterOfParameter() throws Exception {
+        DrymlConfiguration configuration = new DrymlConfiguration();
+        configuration.setClassResolver(new MyClassResolver());
+        DrymlTemplateHandler templateHandler = configuration.getDrymlTemplateHandler();
+
+        StringBuilder result = new StringBuilder();
+        Map rootContext = new HashMap();
+        rootContext.put("this", false);
+
+        templateHandler.handle("test\\template\\testParameterOfParameter.dryml", result, rootContext);
+        System.out.println(result.toString());
+
         //assertEquals("37", result.toString().trim());
         //assertEquals("false", result.toString().trim());
         //assertXMLEqual(new FileReader("test\\template\\testThisShadowing.dryml"), new StringReader(result.toString()));

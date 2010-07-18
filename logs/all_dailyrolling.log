@@ -21509,3 +21509,1170 @@ sss
 10/07/19 03:38:23,218  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/themes/clean/images/101-3B5F87-ACD3E6.png": 0 ms
 10/07/19 03:38:23,234  INFO [15020576@qtp-15091334-7] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 16 ms
 10/07/19 03:38:23,234  INFO [23257749@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/themes/clean/images/30-3E547A-242E42.png": 16 ms
+10/07/19 04:54:14,156 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 04:57:02,171 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 04:57:02,562 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:216: 需要 ';'
+                    String paramName = getParamName()
+                                                     ^
+1 错误
+
+10/07/19 04:57:22,187 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 04:57:58,187 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 04:57:58,218 ERROR [Timer-5] FileMonitor - Failed to compile. Error details: 
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:218: 非法的表达式开始
+                    if()
+                       ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:219: 非法的表达式开始
+                }
+                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:274: 非法的表达式开始
+    private Object getAttributeValue(Attribute attr, InvocationContext invocationContext) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:274: 需要 ';'
+    private Object getAttributeValue(Attribute attr, InvocationContext invocationContext) {
+                                    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:274: 需要 ';'
+    private Object getAttributeValue(Attribute attr, InvocationContext invocationContext) {
+                                                                      ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:274: 不是语句
+    private Object getAttributeValue(Attribute attr, InvocationContext invocationContext) {
+                                                                       ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:274: 需要 ';'
+    private Object getAttributeValue(Attribute attr, InvocationContext invocationContext) {
+                                                                                        ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:278: 非法的表达式开始
+    private void handleScriptlet(Element element) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:278: 非法的表达式开始
+    private void handleScriptlet(Element element) {
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:278: 需要 ';'
+    private void handleScriptlet(Element element) {
+                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:278: 需要 ';'
+    private void handleScriptlet(Element element) {
+                                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 非法的表达式开始
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 非法的表达式开始
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 需要 ';'
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 需要 ';'
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+                                                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 不是语句
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+                                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 需要 ';'
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+                                                                       ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:282: 需要 ';'
+    private void handleDefaultTag(Element element, StringBuilder result, InvocationContext context) { //default invocation doesn't change invocationContext's attr & params
+                                                                                                  ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 非法的表达式开始
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 非法的表达式开始
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 需要 ';'
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                          ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 需要 ';'
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                                                             ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 不是语句
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                                                              ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 需要 ';'
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                                                                               ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 需要 <标识符>
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                                                                                                       ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 不是语句
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                                                                                                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:456: 需要 ';'
+    private void beanshell(Element element, InvocationContext invocationContext, StringBuilder _result, boolean append) {
+                                                                                                                      ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:477: 非法的表达式开始
+    private String getParamName(Element element) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:477: 需要 ';'
+    private String getParamName(Element element) {
+                               ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:477: 需要 ';'
+    private String getParamName(Element element) {
+                                               ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:487: 非法的表达式开始
+    private Map mergeAttributes(Map attrs, Map map2) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:487: 需要 ';'
+    private Map mergeAttributes(Map attrs, Map map2) {
+                               ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:487: 需要 ';'
+    private Map mergeAttributes(Map attrs, Map map2) {
+                                              ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:487: 不是语句
+    private Map mergeAttributes(Map attrs, Map map2) {
+                                               ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:487: 需要 ';'
+    private Map mergeAttributes(Map attrs, Map map2) {
+                                                   ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 非法的表达式开始
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 非法的表达式开始
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 需要 ';'
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                       ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 需要 ';'
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 不是语句
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 需要 ';'
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                        ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 需要 ';'
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 不是语句
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                                                  ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 需要 ';'
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                                                      ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:502: 需要 ';'
+    private void repeat(Object retValue, Element element, Map ognlContext, Object root, StringBuilder result) {
+                                                                                                            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:535: 非法的表达式开始
+    private boolean trueValue(Object retValue) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:535: 需要 ';'
+    private boolean trueValue(Object retValue) {
+                             ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:535: 需要 ';'
+    private boolean trueValue(Object retValue) {
+                                             ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:549: 非法的表达式开始
+    private boolean attrContains(Element element, String attrName) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:549: 需要 ';'
+    private boolean attrContains(Element element, String attrName) {
+                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:549: 需要 ';'
+    private boolean attrContains(Element element, String attrName) {
+                                                        ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:549: 不是语句
+    private boolean attrContains(Element element, String attrName) {
+                                                         ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:549: 需要 ';'
+    private boolean attrContains(Element element, String attrName) {
+                                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:559: 非法的表达式开始
+    private String nameValue(String name, String value) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:559: 需要 ';'
+    private String nameValue(String name, String value) {
+                            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:559: 需要 ';'
+    private String nameValue(String name, String value) {
+                                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:559: 不是语句
+    private String nameValue(String name, String value) {
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:559: 需要 ';'
+    private String nameValue(String name, String value) {
+                                                      ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:563: 非法的表达式开始
+    private String nameValue(String name, Object value) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:563: 需要 ';'
+    private String nameValue(String name, Object value) {
+                            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:563: 需要 ';'
+    private String nameValue(String name, Object value) {
+                                                ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:563: 不是语句
+    private String nameValue(String name, Object value) {
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:563: 需要 ';'
+    private String nameValue(String name, Object value) {
+                                                      ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:571: 非法的表达式开始
+    private Object eval(String value, Map context, Object root) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:571: 需要 ';'
+    private Object eval(String value, Map context, Object root) {
+                       ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:571: 需要 ';'
+    private Object eval(String value, Map context, Object root) {
+                                         ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:571: 不是语句
+    private Object eval(String value, Map context, Object root) {
+                                          ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:571: 需要 ';'
+    private Object eval(String value, Map context, Object root) {
+                                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:571: 需要 ';'
+    private Object eval(String value, Map context, Object root) {
+                                                              ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:581: 非法的表达式开始
+    private Object evalOgnl(String value, Map context, Object root) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:581: 需要 ';'
+    private Object evalOgnl(String value, Map context, Object root) {
+                           ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:581: 需要 ';'
+    private Object evalOgnl(String value, Map context, Object root) {
+                                             ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:581: 不是语句
+    private Object evalOgnl(String value, Map context, Object root) {
+                                              ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:581: 需要 ';'
+    private Object evalOgnl(String value, Map context, Object root) {
+                                                     ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:581: 需要 ';'
+    private Object evalOgnl(String value, Map context, Object root) {
+                                                                  ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:591: 非法的表达式开始
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:591: 非法的表达式开始
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+            ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:591: 需要 ';'
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+                                 ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:591: 需要 ';'
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+                                                                                    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:591: 不是语句
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+                                                                                     ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:591: 需要 ';'
+    private void handleInvocation(InvocationContext invocationContext, StringBuilder result) {
+                                                                                           ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 非法的表达式开始
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 非法的表达式开始
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+           ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 需要 ';'
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+                          ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 需要 ';'
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+                                                   ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 不是语句
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+                                                    ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 需要 ';'
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+                                                          ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:624: 需要 ';'
+    public void handleNode(Node node, StringBuilder result, InvocationContext invocationContext) {
+                                                                                               ^
+E:\scooter-project\blog\src\template\DrymlTemplateHandler.java:634: 进行语法解析时已到达文件结尾
+}         
+ ^
+89 错误
+
+10/07/19 05:00:01,312 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 05:00:24,312 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 05:01:05,406 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 05:02:55,515 DEBUG [Timer-5] FileMonitor - recompile classes: [E:\scooter-project\blog\src\template\DrymlTemplateHandler.java]
+10/07/19 05:03:03,015 DEBUG [23257749@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/posts"
+10/07/19 05:03:03,015 DEBUG [23257749@qtp-15091334-6] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/19 05:03:03,031 DEBUG [23257749@qtp-15091334-6] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/19 05:03:03,031 DEBUG [23257749@qtp-15091334-6] RestfulRequestProcessor -   routeInfo: index = 16, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/19 05:03:03,031 DEBUG [23257749@qtp-15091334-6] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/19 05:03:03,265 DEBUG [23257749@qtp-15091334-6] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:03,453 DEBUG [23257749@qtp-15091334-6] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:03,453 DEBUG [23257749@qtp-15091334-6] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS
+10/07/19 05:03:03,453 DEBUG [23257749@qtp-15091334-6] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/19 05:03:03,453 DEBUG [23257749@qtp-15091334-6] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/19 05:03:03,453 DEBUG [23257749@qtp-15091334-6] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS
+parameters size = 0
+coursors size = 0
+
+10/07/19 05:03:03,453 DEBUG [23257749@qtp-15091334-6] MySQLJdbcStatementProcessor - execute - parameters: []
+10/07/19 05:03:03,515 DEBUG [23257749@qtp-15091334-6] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/19 05:03:03,515 DEBUG [23257749@qtp-15091334-6] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/19 05:03:03,515 DEBUG [23257749@qtp-15091334-6] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/19 05:03:03,843 DEBUG [23257749@qtp-15091334-6] RestfulRequestProcessor - execution result: html=>
+<html>
+
+  <head>
+  	<title>Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body>
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1><a href="/blog">Blog</a></h1>
+          <live-search></live-search>
+          
+        <ul class="navigation main-nav">
+            <li style="float:left" class=""><a href="/blog">首页</a></li>
+            <li style="float:left" class=""><a href="News">
+                <ht key="news.nav_item">新闻</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Forum">
+                <ht key="forums.nav_item">论坛</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Ask">
+                <ht key="asks.nav_item">问答</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Wiki">
+                <ht key="wikis.nav_item">专栏</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Blog">
+                <ht key="blogs.nav_item">博客</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Article">
+                <ht key="articles.nav_item">文摘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Group">
+                <ht key="groups.nav_item">圈子</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Job">
+                <ht key="jobs.nav_item">招聘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Service">
+                <ht key="services.nav_item">服务</ht>
+            </a></li>
+        </ul>
+    
+        </div>
+
+        
+<div style="clear:both">
+<h2>3 posts</h2>
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+    </tr>
+
+    
+
+        <tr class="odd">
+        <td>
+12
+</td>
+        <td>
+first post
+</td>
+        <td>
+this is first post
+</td>
+        <td>
+The model has a central position in 
+
+</td>
+        <td>
+2010-07-18 02:44:01
+</td>
+        <td>
+2010-07-19 03:36:55
+</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="even">
+        <td>
+13
+</td>
+        <td>
+second post
+</td>
+        <td>
+this is second post
+</td>
+        <td>
+this is second post
+</td>
+        <td>
+2010-07-18 02:44:01
+</td>
+        <td>
+2010-07-18 02:22:03
+</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+        <tr class="odd">
+        <td>
+15
+</td>
+        <td>
+ss
+</td>
+        <td>
+ss
+</td>
+        <td>
+sss
+</td>
+        <td>
+2010-07-18 02:44:01
+</td>
+        <td>
+2010-07-07 23:40:28
+</td>
+        <td nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+    
+
+    </table>
+    <br></br>
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/19 05:03:03,843  INFO [23257749@qtp-15091334-6] ScooterRequestFilter - "GET /blog/posts": 828 ms
+10/07/19 05:03:03,921 DEBUG [23257749@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/reset.css"
+10/07/19 05:03:03,921  INFO [23257749@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/stylesheets/reset.css": 0 ms
+10/07/19 05:03:03,984 DEBUG [23257749@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/prototype.js"
+10/07/19 05:03:03,984  INFO [23257749@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/javascripts/prototype.js": 0 ms
+10/07/19 05:03:04,046 DEBUG [23257749@qtp-15091334-6] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/19 05:03:04,046  INFO [23257749@qtp-15091334-6] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/19 05:03:04,093 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/19 05:03:04,093 DEBUG [8703610@qtp-15091334-3] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/stylesheets/clean.css"
+10/07/19 05:03:04,109  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 16 ms
+10/07/19 05:03:04,125  INFO [8703610@qtp-15091334-3] ScooterRequestFilter - "GET /blog/static/themes/clean/stylesheets/clean.css": 32 ms
+10/07/19 05:03:04,109 DEBUG [23602584@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/controls.js"
+10/07/19 05:03:04,125 DEBUG [19623049@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/dragdrop.js"
+10/07/19 05:03:04,125 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/effects.js"
+10/07/19 05:03:04,125  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/javascripts/dragdrop.js": 0 ms
+10/07/19 05:03:04,125  INFO [23602584@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/controls.js": 16 ms
+10/07/19 05:03:04,140  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/effects.js": 15 ms
+10/07/19 05:03:04,156 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/lowpro.js"
+10/07/19 05:03:04,171  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/javascripts/lowpro.js": 15 ms
+10/07/19 05:03:04,171 DEBUG [23602584@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/hobo-rapid.js"
+10/07/19 05:03:04,171  INFO [23602584@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/hobo-rapid.js": 0 ms
+10/07/19 05:03:04,218 DEBUG [23602584@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/javascripts/application.js"
+10/07/19 05:03:04,218 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/300-ACD3E6-fff.png"
+10/07/19 05:03:04,234  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/clean/images/300-ACD3E6-fff.png": 16 ms
+10/07/19 05:03:04,234  INFO [23602584@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/javascripts/application.js": 16 ms
+10/07/19 05:03:04,328 DEBUG [23602584@qtp-15091334-5] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/101-3B5F87-ACD3E6.png"
+10/07/19 05:03:04,328 DEBUG [19623049@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/spinner.gif"
+10/07/19 05:03:04,343  INFO [23602584@qtp-15091334-5] ScooterRequestFilter - "GET /blog/static/themes/clean/images/101-3B5F87-ACD3E6.png": 15 ms
+10/07/19 05:03:04,343  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/themes/clean/images/spinner.gif": 15 ms
+10/07/19 05:03:04,343 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/clean/images/30-3E547A-242E42.png"
+10/07/19 05:03:04,343  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/clean/images/30-3E547A-242E42.png": 0 ms
+10/07/19 05:03:05,109 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/posts/add"
+10/07/19 05:03:05,109 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/19 05:03:05,109 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - requestInfo: requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/19 05:03:05,109 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor -   routeInfo: index = 17, routeName = add post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = add, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts/add, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/19 05:03:05,109 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = add, model = post, format = null
+10/07/19 05:03:05,109 DEBUG [11733267@qtp-15091334-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:05,203 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - execution result: html=>
+<html>
+
+  <head>
+  	<title>Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body>
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1><a href="/blog">Blog</a></h1>
+          <live-search></live-search>
+          
+        <ul class="navigation main-nav">
+            <li style="float:left" class=""><a href="/blog">首页</a></li>
+            <li style="float:left" class=""><a href="News">
+                <ht key="news.nav_item">新闻</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Forum">
+                <ht key="forums.nav_item">论坛</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Ask">
+                <ht key="asks.nav_item">问答</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Wiki">
+                <ht key="wikis.nav_item">专栏</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Blog">
+                <ht key="blogs.nav_item">博客</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Article">
+                <ht key="articles.nav_item">文摘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Group">
+                <ht key="groups.nav_item">圈子</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Job">
+                <ht key="jobs.nav_item">招聘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Service">
+                <ht key="services.nav_item">服务</ht>
+            </a></li>
+        </ul>
+    
+        </div>
+
+        
+<div style="clear:both">
+<h2>Add post</h2>
+
+
+<form action="/blog/posts" class="add_post" id="add_post" method="POST">
+  <p>
+    <label for="post_name" >Name</label><br></br>
+    <input id="post_name" name="name" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_title" >Title</label><br></br>
+    <input id="post_title" name="title" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="post_content" >Content</label><br></br>
+    <textarea id="post_content" cols="60" name="content" rows="10"></textarea>
+  </p>
+  <input id="post_submit" name="commit" value="Create" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+<br></br>
+
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/19 05:03:05,203  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/posts/add": 94 ms
+10/07/19 05:03:05,312 DEBUG [19623049@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/19 05:03:05,312 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/19 05:03:05,312  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 0 ms
+10/07/19 05:03:05,312  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/posts?paged=true"
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - name=[paged] values=[true]
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - requestInfo: requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor -   routeInfo: index = 16, routeName = index posts, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = index, id = null, format = null, requiredFieldValues = {}, requestInfo {requestPath = /posts, requestHttpMethod = GET, format = null, segmentCount = 1}
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = index, model = post, format = null
+10/07/19 05:03:07,046 DEBUG [11733267@qtp-15091334-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:07,093 DEBUG [11733267@qtp-15091334-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?                             
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {SCOOTER.RECORDS_LIMIT=10, FINDER_SQL=SELECT POSTS.* FROM POSTS, PAGED=true, SCOOTER.USE_PAGINATION=Y}
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] JdbcStatementParser - name = SELECT COUNT(*) TOTAL FROM (SELECT POSTS.* FROM POSTS) XXX LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/19 05:03:07,109 DEBUG [11733267@qtp-15091334-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/19 05:03:07,125 DEBUG [11733267@qtp-15091334-2] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:07,125 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS LIMIT ?                             
+10/07/19 05:03:07,125 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - parsed inputs: {FINDER_SQL=SELECT POSTS.* FROM POSTS, SCOOTER.RECORDS_LIMIT=10, PAGED=true, SCOOTER.USE_PAGINATION=Y, SCOOTER.RECORDS_OFFSET=0}
+10/07/19 05:03:07,125 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - outputFilters: {}
+10/07/19 05:03:07,125 DEBUG [11733267@qtp-15091334-2] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS LIMIT ?SCOOTER.RECORDS_LIMIT:INTEGER
+parameters size = 1
+index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false
+coursors size = 0
+
+10/07/19 05:03:07,125 DEBUG [11733267@qtp-15091334-2] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = SCOOTER.RECORDS_LIMIT, mode = 1, sqlDataType = 4, sqlDataTypeName = null, javaClassName = null, bIsCursorType = false, vendor = null, tableName = null, columnName = null, bUsedByCount = false]
+10/07/19 05:03:07,140 DEBUG [11733267@qtp-15091334-2] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/19 05:03:07,140 DEBUG [11733267@qtp-15091334-2] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/19 05:03:07,140 DEBUG [11733267@qtp-15091334-2] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/19 05:03:07,281 DEBUG [11733267@qtp-15091334-2] RestfulRequestProcessor - execution result: html=>
+<html>
+
+  <head>
+  	<title>Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body>
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1><a href="/blog">Blog</a></h1>
+          <live-search></live-search>
+          
+        <ul class="navigation main-nav">
+            <li style="float:left" class=""><a href="/blog">首页</a></li>
+            <li style="float:left" class=""><a href="News">
+                <ht key="news.nav_item">新闻</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Forum">
+                <ht key="forums.nav_item">论坛</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Ask">
+                <ht key="asks.nav_item">问答</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Wiki">
+                <ht key="wikis.nav_item">专栏</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Blog">
+                <ht key="blogs.nav_item">博客</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Article">
+                <ht key="articles.nav_item">文摘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Group">
+                <ht key="groups.nav_item">圈子</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Job">
+                <ht key="jobs.nav_item">招聘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Service">
+                <ht key="services.nav_item">服务</ht>
+            </a></li>
+        </ul>
+    
+        </div>
+
+        
+            <div style="clear:both">
+                
+
+<h2>post List</h2>
+
+<table>
+    <tr>
+        <td align="left">
+            Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp
+            ;
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp
+            ;
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+
+<table class="sTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>&nbsp;
+        </th>
+        
+    </tr>
+
+    <tr class="odd">
+        <td>12</td>
+        <td>first post</td>
+        <td>this is first post</td>
+        <td>The model has a central position in 
+</td>
+        <td>2010-07-18 02:44:01</td>
+        <td>2010-07-19 03:36:55</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/12" >show</a>
+            <a href="/blog/posts/12/edit" >edit</a>
+            <a href="/blog/posts/12" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="even">
+        <td>13</td>
+        <td>second post</td>
+        <td>this is second post</td>
+        <td>this is second post</td>
+        <td>2010-07-18 02:44:01</td>
+        <td>2010-07-18 02:22:03</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/13" >show</a>
+            <a href="/blog/posts/13/edit" >edit</a>
+            <a href="/blog/posts/13" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+    <tr class="odd">
+        <td>15</td>
+        <td>ss</td>
+        <td>ss</td>
+        <td>sss</td>
+        <td>2010-07-18 02:44:01</td>
+        <td>2010-07-07 23:40:28</td>
+        <td class="multilink" nowrap="nowrap">
+            <a href="/blog/posts/15" >show</a>
+            <a href="/blog/posts/15/edit" >edit</a>
+            <a href="/blog/posts/15" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m); f.submit(); }; return false;">delete</a>
+        </td>
+    </tr>
+
+</table>
+
+    </td>
+    </tr>
+    <tr>
+        <td align="left">
+        Page 1/1. </td>
+        <td align="right" class="multilink">
+            Showing 1 - 3 of 3&nbsp;
+            
+            <a href="/blog/posts?" >First</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Previous</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Next</a>&nbsp;|&nbsp;
+            
+            <a href="/blog/posts?" >Last</a>
+        </td>
+    </tr>
+
+</table>
+<br></br>
+
+                <span class="nextprev">&#171; Previous</span> <span class="current">1</span> <span class="nextprev">Next &#187;</span>
+                <form action="/blog/posts" method="GET">
+<input name="r" value="page" type="hidden"></input>
+<input name="limit" value="10" type="hidden"></input>
+<input name="paged" value="true" type="hidden"></input>
+Go to page <input id="npage" name="npage" type="text" size="2"></input><input value="Go" type="submit"></input>
+</form>
+
+<a href="/blog/posts/add" >Add post</a>|
+<a href="/blog/posts" >List</a>
+            </div>
+        
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/19 05:03:07,281  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/posts?paged=true": 235 ms
+10/07/19 05:03:07,343 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/19 05:03:07,343 DEBUG [19623049@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/19 05:03:07,359  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 16 ms
+10/07/19 05:03:07,359  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/19 05:03:09,343 DEBUG [19623049@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/posts/12"
+10/07/19 05:03:09,343 DEBUG [19623049@qtp-15091334-4] RestfulRequestProcessor - User locale is 'en_US'.
+10/07/19 05:03:09,343 DEBUG [19623049@qtp-15091334-4] RestfulRequestProcessor - requestInfo: requestPath = /posts/12, requestHttpMethod = GET, format = null, segmentCount = 2
+10/07/19 05:03:09,343 DEBUG [19623049@qtp-15091334-4] RestfulRequestProcessor -   routeInfo: index = 19, routeName = show post, viewPath = posts, routeType = rest_route, resourceName = posts, controller = posts, controllerClassName = blog.controllers.PostsController, model = post, modelClassName = blog.models.Post, action = show, id = 12, format = null, requiredFieldValues = {id=12}, requestInfo {requestPath = /posts/12, requestHttpMethod = GET, format = null, segmentCount = 2}
+10/07/19 05:03:09,343 DEBUG [19623049@qtp-15091334-4] RestfulRequestProcessor - aps: controllerPath = /posts, controller = posts, controllerClassName = blog.controllers.PostsController, resource = posts, action = show, model = post, format = null
+10/07/19 05:03:09,343 DEBUG [19623049@qtp-15091334-4] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT POSTS.* FROM POSTS WHERE ID = ? 
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, FINDER_SQL=SELECT POSTS.* FROM POSTS WHERE id = ? , SCOOTER.RECORDS_LIMIT=-1, ID=12, SCOOTER.RECORDS_OFFSET=0}
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] JdbcStatementParser - Leave getTableName: found table name POSTS for column ID
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] JdbcStatementParser - name = SELECT POSTS.* FROM POSTS WHERE id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false
+coursors size = 0
+
+10/07/19 05:03:09,390 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = POSTS, columnName = ID, bUsedByCount = false]
+10/07/19 05:03:09,421 DEBUG [19623049@qtp-15091334-4] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/19 05:03:09,421 DEBUG [19623049@qtp-15091334-4] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/19 05:03:09,421 DEBUG [19623049@qtp-15091334-4] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/19 05:03:09,500 DEBUG [19623049@qtp-15091334-4] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:09,609 DEBUG [19623049@qtp-15091334-4] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:09,671 DEBUG [19623049@qtp-15091334-4] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] ConnectionUtil - pool connecting to database represented by blog_development
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - parsed expecutable sql: SELECT COMMENTS.* FROM COMMENTS WHERE POST_ID = ? 
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - parsed inputs: {1=12, POST_ID=12, FINDER_SQL=SELECT COMMENTS.* FROM COMMENTS WHERE post_id = ? , SCOOTER.RECORDS_LIMIT=-1, SCOOTER.RECORDS_OFFSET=0}
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - outputFilters: null
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] JdbcStatementParser - Leave getTableName: found table name COMMENTS for column POST_ID
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] JdbcStatementParser - name = SELECT COMMENTS.* FROM COMMENTS WHERE post_id = ? 
+parameters size = 1
+index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = COMMENTS, columnName = POST_ID, bUsedByCount = false
+coursors size = 0
+
+10/07/19 05:03:09,718 DEBUG [19623049@qtp-15091334-4] MySQLJdbcStatementProcessor - execute - parameters: [index = 1, catalog = null, schema = null, name = 1, mode = 1, sqlDataType = 4, sqlDataTypeName = INT, javaClassName = java.lang.Integer, bIsCursorType = false, vendor = null, tableName = COMMENTS, columnName = POST_ID, bUsedByCount = false]
+10/07/19 05:03:09,734 DEBUG [19623049@qtp-15091334-4] SqlServiceImpl - displayDS for afterRelease -      num_connections: 10
+10/07/19 05:03:09,734 DEBUG [19623049@qtp-15091334-4] SqlServiceImpl - displayDS for afterRelease - num_busy_connections: 0
+10/07/19 05:03:09,734 DEBUG [19623049@qtp-15091334-4] SqlServiceImpl - displayDS for afterRelease - num_idle_connections: 10
+10/07/19 05:03:09,765 DEBUG [19623049@qtp-15091334-4] RestfulRequestProcessor - execution result: html=>
+<html>
+
+  <head>
+  	<title>Blog</title>
+  	
+
+        
+  <link href="/blog/static/stylesheets/reset.css" rel="stylesheet" type="text/css"/>
+
+
+        
+	<link href="/blog/static/themes/clean/stylesheets/clean.css" rel="stylesheet" type="text/css"/>
+
+        
+	<link href="/blog/static/themes/rapid-ui/stylesheets/rapid-ui.css" rel="stylesheet" type="text/css"/>
+
+        
+  <link href="/blog/static/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+      
+
+      
+
+        
+  <script src="/blog/static/javascripts/prototype.js" type="text/javascript"></script><script src="/blog/static/javascripts/effects.js" type="text/javascript"></script><script src="/blog/static/javascripts/dragdrop.js" type="text/javascript"></script><script src="/blog/static/javascripts/controls.js" type="text/javascript"></script><script src="/blog/static/javascripts/lowpro.js" type="text/javascript"></script><script src="/blog/static/javascripts/hobo-rapid.js" type="text/javascript"></script>
+
+        
+  
+
+        
+
+
+        
+  <script src="/blog/static/javascripts/application.js" type="text/javascript"></script>
+
+      
+
+  </head>
+  <body>
+      
+  <div id="ajax-progress" style="display:none" param="true">
+    <div>
+      <span id="ajax-progress-text"></span>
+    </div>
+  </div>
+
+      	
+  
+  <div param="true" class="header page-header">
+          
+
+    <ul class="navigation account-nav">
+      <li><dev-user-changer></dev-user-changer></li>
+      
+
+    </ul>
+
+
+          <h1><a href="/blog">Blog</a></h1>
+          <live-search></live-search>
+          
+        <ul class="navigation main-nav">
+            <li style="float:left" class=""><a href="/blog">首页</a></li>
+            <li style="float:left" class=""><a href="News">
+                <ht key="news.nav_item">新闻</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Forum">
+                <ht key="forums.nav_item">论坛</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Ask">
+                <ht key="asks.nav_item">问答</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Wiki">
+                <ht key="wikis.nav_item">专栏</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Blog">
+                <ht key="blogs.nav_item">博客</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Article">
+                <ht key="articles.nav_item">文摘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Group">
+                <ht key="groups.nav_item">圈子</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Job">
+                <ht key="jobs.nav_item">招聘</ht>
+            </a></li>
+            <li style="float:left" class=""><a href="Service">
+                <ht key="services.nav_item">服务</ht>
+            </a></li>
+        </ul>
+    
+        </div>
+
+        <div style="clear:both">
+<h2>Show post</h2>
+
+
+<p>
+  <b>Id:</b>
+
+    12
+
+</p>
+<p>
+  <b>Name:</b>
+  
+    first post
+
+</p>
+
+<p>
+  <b>Title:</b>
+  
+    this is first post
+
+</p>
+
+<p>
+  <b>Content:</b>
+  
+    The model has a central position in 
+
+
+</p>
+
+<p>
+  <b>Created At:</b>
+  
+    2010-07-18 02:44:01
+
+</p>
+
+<p>
+  <b>Updated At:</b>
+  
+    2010-07-19 03:36:55
+
+</p>
+
+<br></br>
+<h2>Comments</h2>
+<div id="comments">
+
+    <p>
+        <b>Commenter: </b>ok
+        <b>posted on  </b>2010-07-18 04:13:37
+    </p>
+
+    <p>
+        <b>Comment:</b>
+        ok
+    </p>
+
+</div>
+
+<h2>Add comment</h2>
+
+
+<form action="/blog/posts/$post_id/comments" class="add_comment" id="add_comment" method="POST">
+  <p>
+    <label for="comment_commenter" >Commenter</label><br></br>
+    <input id="comment_commenter" name="commenter" value="" type="text" size="80"></input>
+  </p>
+  <p>
+    <label for="comment_body" >Body</label><br></br>
+    <textarea id="comment_body" cols="60" name="body" rows="10"></textarea>
+  </p>
+  <input id="comment_submit" name="commit" value="Create" type="submit"></input>&nbsp;&nbsp;&nbsp;<input type="reset"></input>
+</form>
+
+Edit|
+<a href="/blog/posts" >List</a>|
+<a href="/blog/posts?paged=true" >Paged List</a>
+</div>
+        
+  
+  <div param="true" class="footer page-footer"></div>
+
+        <page-scripts></page-scripts>
+    </body>
+</html>
+
+10/07/19 05:03:09,765  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/posts/12": 422 ms
+10/07/19 05:03:09,843 DEBUG [19623049@qtp-15091334-4] ScooterRequestFilter - ============>>"GET /blog/static/stylesheets/application.css"
+10/07/19 05:03:09,859 DEBUG [11733267@qtp-15091334-2] ScooterRequestFilter - ============>>"GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css"
+10/07/19 05:03:09,859  INFO [19623049@qtp-15091334-4] ScooterRequestFilter - "GET /blog/static/stylesheets/application.css": 16 ms
+10/07/19 05:03:09,859  INFO [11733267@qtp-15091334-2] ScooterRequestFilter - "GET /blog/static/themes/rapid-ui/stylesheets/rapid-ui.css": 0 ms
