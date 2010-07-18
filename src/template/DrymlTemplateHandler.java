@@ -231,9 +231,11 @@ public class DrymlTemplateHandler {
         local_variables.put("all_attributes", all_attributes);
         local_variables.put("parameters", parameters);
         local_variables.put("all_parameters", all_parameters);
-        if (invocationStack.size() > 0) {
-            local_variables.setParent(((InvocationContext) invocationStack.peek()).getLocal_variables());
-        }
+
+        local_variables.setParent(context.getLocal_variables());
+//        if (invocationStack.size() > 0) {
+//            local_variables.setParent(((InvocationContext) invocationStack.peek()).getLocal_variables());
+//        }
         invocationContext.setLocal_variables(local_variables);
 
         //handle field, with etc
@@ -274,52 +276,52 @@ public class DrymlTemplateHandler {
 
         if ("ognl-append".equals(element.getName())) {
             try {
-                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+                //InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
 
                 //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
-                result.append(Ognl.getValue(element.getText(), ognlContext, invocationContext.getLocal_variables()));
+                result.append(Ognl.getValue(element.getText(), ognlContext, context.getLocal_variables()));
             } catch (OgnlException e) {
                 throw new RuntimeException(e);
             }
             return;
         } else if ("ognl".equals(element.getName())) {
             try {
-                InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+                //InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
 
                 //System.out.println(Ognl.getValue(element.getText(), new HashMap(), invocationContext.getAll_attributes()));
-                Ognl.getValue(element.getText(), ognlContext, invocationContext.getLocal_variables());
+                Ognl.getValue(element.getText(), ognlContext, context.getLocal_variables());
                 //System.out.println("...");
             } catch (OgnlException e) {
                 throw new RuntimeException(e);
             }
             return;
         } else if ("beanshell-append".equals(element.getName())) {
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            beanshell(element, invocationContext, result, true);
+            //InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            beanshell(element, context, result, true);
             return;
         } else if ("beanshell".equals(element.getName())) {
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            beanshell(element, invocationContext, result, false);
+            //InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            beanshell(element, context, result, false);
             return;
         } else if ("set".equals(element.getName())) {
 
 
             //System.out.println(element.getName());
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+            //for this? InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
             for (Iterator it = element.attributeIterator(); it.hasNext();) {
                 Attribute attribute = (Attribute) it.next();
-                invocationContext.getLocal_variables().put(attribute.getName(), eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables()));
+                context.getLocal_variables().put(attribute.getName(), eval(attribute.getValue(), ognlContext, context.getLocal_variables()));
             }
             return;
         } else if ("if".equals(element.getName())) {
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+
             if (element.attributeValue("test") != null) {
-                Object retValue = eval(element.attributeValue("test"), ognlContext, invocationContext.getLocal_variables());
+                Object retValue = eval(element.attributeValue("test"), ognlContext, context.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;
                 }
             } else {
-                Object retValue = eval("ognl:this", ognlContext, invocationContext.getLocal_variables());
+                Object retValue = eval("ognl:this", ognlContext, context.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;
                 }
@@ -332,11 +334,11 @@ public class DrymlTemplateHandler {
 
             prelude(element, context);
             //System.out.println("repeat");
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
-            Object retValue = eval(element.attribute("with").getValue(), ognlContext, invocationContext.getLocal_variables());
+
+            Object retValue = eval(element.attribute("with").getValue(), ognlContext, context.getLocal_variables());
             last_if = trueValue(retValue);
             if (last_if) {
-                repeat(retValue, element, ognlContext, invocationContext.getLocal_variables(), result);
+                repeat(retValue, element, ognlContext, context.getLocal_variables(), result);
             } else { //doing nothing
             }
             //finally
@@ -349,12 +351,12 @@ public class DrymlTemplateHandler {
 
         if (!ifElseArray.contains(element.getName())) {
 
-            InvocationContext invocationContext = (InvocationContext) invocationStack.peek();
+
             //checking attrs, to see if there is any "if", "repeat", "unless"
             if (attrContains(element, "if")) {
                 String controlValue = element.attribute("if").getValue();
                 //System.out.println("evaluating " + controlValue);
-                Object retValue = eval(controlValue, ognlContext, invocationContext.getLocal_variables());
+                Object retValue = eval(controlValue, ognlContext, context.getLocal_variables());
                 if (!(last_if = trueValue(retValue))) {
                     return;
                 }
@@ -376,7 +378,7 @@ public class DrymlTemplateHandler {
                 } //skip if, repeat, unless, already tested
 
                 if (attribute.getValue().startsWith("ognl:")) {
-                    Object evalResult = eval(attribute.getValue(), ognlContext, invocationContext.getLocal_variables());
+                    Object evalResult = eval(attribute.getValue(), ognlContext, context.getLocal_variables());
                     attrs.put(attribute.getName(), evalResult);
                 } else {
                     attrs.put(attribute.getName(), attribute.getValue());
@@ -388,12 +390,12 @@ public class DrymlTemplateHandler {
 
                 String paramName = getParamName(element);
                 //System.out.println("paramName is " + paramName);
-                invocationContext = (InvocationContext) invocationStack.peek();
+                //invocationContext = (InvocationContext) invocationStack.peek();
                 //System.out.println(invocationContext.getParameters().get(paramName));
 
 
                 //result.append()
-                Object value = invocationContext.getParameters().get(paramName);
+                Object value = context.getParameters().get(paramName);
                 if (value != null) {
                     result.append(">");
                     for (Iterator it = ((Element) value).content().iterator(); it.hasNext();) {
@@ -411,7 +413,7 @@ public class DrymlTemplateHandler {
             }
 
             if (attrContains(element, "merge-attrs") || attrContains(element, "merge")) { //merging attrs
-                attrs = mergeAttributes(attrs, invocationContext.getAttributes());
+                attrs = mergeAttributes(attrs, context.getAttributes());
             }
 
 
@@ -502,10 +504,12 @@ public class DrymlTemplateHandler {
                     Ognl.setValue(element.attribute("var").getValue() + "_index", ognlContext, root, i);
 
                     //yields to body, with original context appended var etc. 
-                    ProcEval procEval = (ProcEval) Ognl.getValue("parameters.fetch(\"default\")", ognlContext, root);
+                    //ProcEval procEval = (ProcEval) Ognl.getValue("parameters.fetch(\"default\")", ognlContext, root);
+                    ProcEval procEval = (ProcEval) Ognl.getValue("parameters.fetch(\"default\")", ognlContext, invocationStack.peek());
                     //wrap procEval invocationContext with some var, var_index
                     FakeInvocationContext fakeContext = new FakeInvocationContext(procEval.getInvocationContext());
                     fakeContext.getLocal_variables().put(element.attributeValue("var"), o);
+                    fakeContext.getLocal_variables().put("this", o);
                     fakeContext.getLocal_variables().put(element.attributeValue("var") + "_index", i);
                     fakeContext.getLocal_variables().put("even_odd", i % 2 == 0 ? "odd" : "even"); //because we start with i==0;...
 

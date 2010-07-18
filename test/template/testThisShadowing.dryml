@@ -4,7 +4,7 @@
 </def>
 <def tag="page">
 <view />
-<view field='ognl:"this changed"' />
+<view field='"thisx changed"' />
 <view />
 </def>  
 <page>

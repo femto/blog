@@ -88,6 +88,9 @@
 <def tag="hv">
     <ognl-append>@O@hv(parameters.default)</ognl-append>
 </def>
+<def tag="hp">
+<ognl-append>@O@hp(this, parameters.default)</ognl-append>
+</def>
 
 
 <!-- Rapid Core -->
